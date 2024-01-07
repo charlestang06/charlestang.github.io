@@ -167,7 +167,7 @@ export default function Page() {
           </div>
         </Section>
 
-        <Section className="print-force-new-page scroll-mb-16">
+        <Section className=" croll-mb-16">
           <h2 className="text-xl font-bold">Projects</h2>
           <div className="-mx-3 grid grid-cols-1 gap-3 print:grid-cols-3 print:gap-2 md:grid-cols-2 lg:grid-cols-3">
             {RESUME_DATA.projects.map((project) => {
@@ -183,9 +183,26 @@ export default function Page() {
             })}
           </div>
         </Section>
+
+        <Section className="scroll-mb-16">
+          <h2 className="text-xl font-bold">Papers</h2>
+          <div className="-mx-3 grid grid-cols-1 gap-3 print:grid-cols-3 print:gap-2 md:grid-cols-2 lg:grid-cols-3">
+            {RESUME_DATA.papers.map((paper) => {
+              return (
+                <ProjectCard
+                  key={paper.title}
+                  title={paper.title}
+                  description={paper.description}
+                  tags={paper.awards}
+                  link={"link" in paper ? paper.link.href : undefined}
+                />
+              );
+            })}
+          </div>
+        </Section>
       </section>
 
-      <CommandMenu
+      {/* <CommandMenu
         links={[
           {
             url: RESUME_DATA.personalWebsiteUrl,
@@ -196,7 +213,7 @@ export default function Page() {
             title: socialMediaLink.name,
           })),
         ]}
-      />
+      /> */}
     </main>
   );
 }
