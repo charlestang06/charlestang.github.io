@@ -26,8 +26,8 @@ export const RESUME_DATA = {
   locationLink: "https://www.google.com/maps/place/Massachusetts",
   about: "Incoming Freshman at Brown University",
   summary:
-    "I am currently a high school senior matriculating to Brown University next fall, pursuing an interest in Applied Mathematics, Computer Science, Artificial Intelligence, and Education. I am most interested in problems regarding using AI and math to solve real-world problems.",
-  avatarUrl: "https://charlestang.dev/profile5.jpg",
+    "I am currently a high school senior matriculating to Brown University next fall, pursuing an interest in Applied Mathematics, Computer Science, Artificial Intelligence, and Education. I am most interested in problems regarding using AI and mathematical modeling to solve real-world problems.",
+  avatarUrl: "https://portfolio.charlestang.dev/profile5.jpg",
   personalWebsiteUrl: "https://charlestang.dev",
   contact: {
     email: "charles_tang@brown.edu",
@@ -49,12 +49,14 @@ export const RESUME_DATA = {
     {
       school: "Brown University",
       degree: "Bachelor's Degree in Applied Mathematics and Computer Science",
+      coursework: "TBD",
       start: "2024",
       end: "(2028)",
     },
     {
       school: "Massachusetts Academy of Math and Science",
-      degree: "High School Diploma",
+      degree: "High School Diploma + Dual Enrollment @ WPI",
+      coursework: "Calculus, ODEs, Linear Algebra, Discrete Math, Probability Theory, Real Analysis, Object Oriented Programming, Algorithms, Intro to ECE",
       start: "2020",
       end: "2024",
     },
@@ -155,6 +157,64 @@ export const RESUME_DATA = {
       link: {
         label: "paper",
         href: "https://charlestang.dev/projects/HiMCM2022.pdf",
+      },
+    },
+    {
+      title: "E-Bike Demand",
+      awards: [
+        "2nd Round Selection",
+      ],
+      description: "Paper written for 2022 M3 Modeling challenge",
+      link: {
+        label: "paper",
+        href: "https://charlestang.dev/projects/2023_mathworks_scand_paper.pdf",
+      },
+    },
+
+  ],
+  certificates: [
+    {
+      title: "MatLab Image Processing",
+      awardee: [
+        "MathWorks",
+      ],
+      description: "Image/video segmentation algorithms specialization",
+      link: {
+        label: "certificate",
+        href: "https://coursera.org/verify/specialization/R9NF498A6XFW",
+      },
+    },
+    {
+      title: "Tensorflow Advanced Techniques",
+      awardee: [
+        "DeepLearning.AI",
+      ],
+      description: "Computer vision, generative models, custom fxs specialization",
+      link: {
+        label: "certificate",
+        href: "https://coursera.org/verify/specialization/9QYJU4ZA6X6L",
+      },
+    },
+    {
+      title: "Tensorflow Developer Certificate",
+      awardee: [
+        "DeepLearning.AI",
+      ],
+      description: "TF CNNs, RNNs, LSTMs, time-series analysis specialization",
+      link: {
+        label: "certificate",
+        href: "https://coursera.org/verify/professional-cert/3ST535EFVLWR",
+      },
+    },
+    {
+      title: "Deep Learning",
+      awardee: [
+        "DeepLearning.AI",
+      ],
+      description: "Principles of DL specialization",
+      link: {
+        label: "certificate",
+        href: "https://coursera.org/verify/specialization/KYHNBX4NFNTU",
       },
     },
 
