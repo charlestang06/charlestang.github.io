@@ -115,7 +115,14 @@ export default function Page() {
                   </div>
                 </CardHeader>
                 <CardContent className="mt-2">{education.degree}</CardContent>
-                <CardContent className="mt-2 text-xs">Relevant coursework: {education.coursework}</CardContent>
+                {education.gpa != null ? (
+                  <CardContent className="mt-2 text-xs">
+                    GPA: {education.gpa} / 4.0
+                  </CardContent>
+                ) : null}
+                <CardContent className="mt-2 text-xs">
+                  Relevant coursework: {education.coursework}
+                </CardContent>
               </Card>
             );
           })}
@@ -161,7 +168,7 @@ export default function Page() {
             );
           })}
         </Section>
-        
+
         <Section className=" croll-mb-16">
           <h2 className="text-xl font-bold">Projects</h2>
           <div className="-mx-3 grid grid-cols-1 gap-3 print:grid-cols-3 print:gap-2 md:grid-cols-2 lg:grid-cols-3">
@@ -206,7 +213,9 @@ export default function Page() {
                   title={certificate.title}
                   description={certificate.description}
                   tags={certificate.awardee}
-                  link={"link" in certificate ? certificate.link.href : undefined}
+                  link={
+                    "link" in certificate ? certificate.link.href : undefined
+                  }
                 />
               );
             })}

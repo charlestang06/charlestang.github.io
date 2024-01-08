@@ -50,6 +50,7 @@ export const RESUME_DATA = {
       school: "Brown University",
       degree: "Bachelor's Degree in Applied Mathematics and Computer Science",
       coursework: "TBD",
+      gpa: null,
       start: "2024",
       end: "(2028)",
     },
@@ -57,6 +58,7 @@ export const RESUME_DATA = {
       school: "Massachusetts Academy of Math and Science",
       degree: "High School Diploma + Dual Enrollment @ WPI",
       coursework: "Calculus, ODEs, Linear Algebra, Discrete Math, Probability Theory, Real Analysis, Object Oriented Programming, Algorithms, Intro to ECE",
+      gpa: "4.0",
       start: "2020",
       end: "2024",
     },
@@ -133,7 +135,7 @@ export const RESUME_DATA = {
       description: "Paper written for 2023 HiMCM challenge",
       link: {
         label: "paper",
-        href: "https://charlestang.dev/projects/HiMCM2023.pdf",
+        href: "https://portfolio.charlestang.dev/projects/HiMCM2023.pdf",
       },
     },
     {
@@ -145,7 +147,7 @@ export const RESUME_DATA = {
       description: "Paper written for 2023 IMMC challenge",
       link: {
         label: "paper",
-        href: "https://charlestang.dev/projects/2023_IM2C_12519_Solution.pdf",
+        href: "https://portfolio.charlestang.dev/projects/2023_IM2C_12519_Solution.pdf",
       },
     },
     {
@@ -156,7 +158,7 @@ export const RESUME_DATA = {
       description: "Paper written for 2022 HiMCM challenge",
       link: {
         label: "paper",
-        href: "https://charlestang.dev/projects/HiMCM2022.pdf",
+        href: "https://portfolio.charlestang.dev/projects/HiMCM2022.pdf",
       },
     },
     {
@@ -167,7 +169,7 @@ export const RESUME_DATA = {
       description: "Paper written for 2022 M3 Modeling challenge",
       link: {
         label: "paper",
-        href: "https://charlestang.dev/projects/2023_mathworks_scand_paper.pdf",
+        href: "https://portfolio.charlestang.dev/projects/2023_mathworks_scand_paper.pdf",
       },
     },
 
