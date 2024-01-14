@@ -100,7 +100,7 @@ export const RESUME_DATA = {
     {
       title: "WPI Roadmap",
       techStack: ["ReactJS", "NodeJS", "Firebase", "Ant-Design"],
-      description: "Plan your academic success at WPI",
+      description: "Plan your academic success at WPI (2024 WPI GoatHacks Winner)",
       link: {
         label: "roadmap-wpi.web.app",
         href: "https://roadmap-wpi.web.app",
