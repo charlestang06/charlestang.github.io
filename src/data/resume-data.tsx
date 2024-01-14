@@ -57,7 +57,8 @@ export const RESUME_DATA = {
     {
       school: "Massachusetts Academy of Math and Science",
       degree: "High School Diploma + Dual Enrollment @ WPI",
-      coursework: "Calculus, ODEs, Linear Algebra, Discrete Math, Probability Theory, Real Analysis, Object Oriented Programming, Algorithms, Intro to ECE",
+      coursework:
+        "Calculus, ODEs, Linear Algebra, Discrete Math, Probability Theory, Real Analysis, Object Oriented Programming, Algorithms, Intro to ECE",
       gpa: "4.0",
       start: "2020",
       end: "2024",
@@ -89,13 +90,7 @@ export const RESUME_DATA = {
   projects: [
     {
       title: "MAMS SISO",
-      techStack: [
-        "ReactJS",
-        "NodeJS",
-        "MySQL",
-        "Raspberry Pi",
-        "Python",
-      ],
+      techStack: ["ReactJS", "NodeJS", "MySQL", "Raspberry Pi", "Python"],
       description: "A digital student attendance system",
       link: {
         label: "mams-siso.wpi.edu",
@@ -103,12 +98,17 @@ export const RESUME_DATA = {
       },
     },
     {
+      title: "WPI Roadmap",
+      techStack: ["ReactJS", "NodeJS", "Firebase", "Ant-Design"],
+      description: "Plan your academic success at WPI",
+      link: {
+        label: "roadmap-wpi.web.app",
+        href: "https://roadmap-wpi.web.app",
+      },
+    },
+    {
       title: "Pantry Access",
-      techStack: [
-        "ReactJS",
-        "HTML/CSS",
-        "Firebase",
-      ],
+      techStack: ["ReactJS", "HTML/CSS", "Firebase"],
       description: "A universal food pantry management system",
       link: {
         label: "pantryaccess.web.app",
@@ -129,9 +129,7 @@ export const RESUME_DATA = {
   papers: [
     {
       title: "Dandelion Populations",
-      awards: [
-        "Awards Pending",
-      ],
+      awards: ["Awards Pending"],
       description: "Paper written for 2023 HiMCM challenge",
       link: {
         label: "paper",
@@ -140,10 +138,7 @@ export const RESUME_DATA = {
     },
     {
       title: "Land Use Analysis",
-      awards: [
-        "USA Outstanding Winner",
-        "Intl. Meritorious (Top 6)"
-      ],
+      awards: ["USA Outstanding Winner", "Intl. Meritorious (Top 6)"],
       description: "Paper written for 2023 IMMC challenge",
       link: {
         label: "paper",
@@ -152,9 +147,7 @@ export const RESUME_DATA = {
     },
     {
       title: "Honeybee Populations",
-      awards: [
-        "USA Finalist (Top 6%)",
-      ],
+      awards: ["USA Finalist (Top 6%)"],
       description: "Paper written for 2022 HiMCM challenge",
       link: {
         label: "paper",
@@ -163,23 +156,18 @@ export const RESUME_DATA = {
     },
     {
       title: "E-Bike Demand",
-      awards: [
-        "2nd Round Selection",
-      ],
+      awards: ["2nd Round Selection"],
       description: "Paper written for 2022 M3 Modeling challenge",
       link: {
         label: "paper",
         href: "https://portfolio.charlestang.dev/projects/2023_mathworks_scand_paper.pdf",
       },
     },
-
   ],
   certificates: [
     {
       title: "MatLab Image Processing",
-      awardee: [
-        "MathWorks",
-      ],
+      awardee: ["MathWorks"],
       description: "Image/video segmentation algorithms specialization",
       link: {
         label: "certificate",
@@ -188,10 +176,9 @@ export const RESUME_DATA = {
     },
     {
       title: "Tensorflow Advanced Techniques",
-      awardee: [
-        "DeepLearning.AI",
-      ],
-      description: "Computer vision, generative models, custom fxs specialization",
+      awardee: ["DeepLearning.AI"],
+      description:
+        "Computer vision, generative models, custom fxs specialization",
       link: {
         label: "certificate",
         href: "https://coursera.org/verify/specialization/9QYJU4ZA6X6L",
@@ -199,9 +186,7 @@ export const RESUME_DATA = {
     },
     {
       title: "Tensorflow Developer Certificate",
-      awardee: [
-        "DeepLearning.AI",
-      ],
+      awardee: ["DeepLearning.AI"],
       description: "TF CNNs, RNNs, LSTMs, time-series analysis specialization",
       link: {
         label: "certificate",
@@ -210,15 +195,12 @@ export const RESUME_DATA = {
     },
     {
       title: "Deep Learning",
-      awardee: [
-        "DeepLearning.AI",
-      ],
+      awardee: ["DeepLearning.AI"],
       description: "Principles of DL specialization",
       link: {
         label: "certificate",
         href: "https://coursera.org/verify/specialization/KYHNBX4NFNTU",
       },
     },
-
   ],
 } as const;
