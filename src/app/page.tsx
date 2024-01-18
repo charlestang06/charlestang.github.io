@@ -98,12 +98,12 @@ export default function Page() {
             {RESUME_DATA.summary}
           </p>
         </Section>
-
+        
         <Section>
           <h2 className="text-xl font-bold">Education</h2>
           {RESUME_DATA.education.map((education) => {
             return (
-              <Card key={education.school}>
+              <Card key={education.school} >
                 <CardHeader>
                   <div className="flex items-center justify-between gap-x-2 text-base">
                     <h3 className="font-semibold leading-none">
@@ -180,6 +180,7 @@ export default function Page() {
                   description={project.description}
                   tags={project.techStack}
                   link={"link" in project ? project.link.href : undefined}
+                  isProject={true}
                 />
               );
             })}
@@ -197,6 +198,7 @@ export default function Page() {
                   description={paper.description}
                   tags={paper.awards}
                   link={"link" in paper ? paper.link.href : undefined}
+                  isProject={true}
                 />
               );
             })}
@@ -216,6 +218,7 @@ export default function Page() {
                   link={
                     "link" in certificate ? certificate.link.href : undefined
                   }
+                  isProject={true}
                 />
               );
             })}

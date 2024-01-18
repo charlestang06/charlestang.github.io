@@ -31,7 +31,7 @@ export const RESUME_DATA = {
   personalWebsiteUrl: "https://charlestang.dev",
   contact: {
     email: "charles_tang@brown.edu",
-    tel: "+19784939450",
+    // tel: "+19784939450",
     social: [
       {
         name: "GitHub",
@@ -86,11 +86,12 @@ export const RESUME_DATA = {
     "MatLab Image Processing",
     "Raspberry Pi",
     "MySQL",
+    "Firebase"
   ],
   projects: [
     {
       title: "MAMS SISO",
-      techStack: ["ReactJS", "NodeJS", "MySQL", "Raspberry Pi", "Python"],
+      techStack: ["ReactJS", "NodeJS", "ExpressJS", "MySQL", "Raspberry Pi", "Python"],
       description: "A digital student attendance system",
       link: {
         label: "mams-siso.wpi.edu",
@@ -99,7 +100,7 @@ export const RESUME_DATA = {
     },
     {
       title: "WPI Roadmap",
-      techStack: ["ReactJS", "NodeJS", "Firebase", "Ant-Design"],
+      techStack: ["Firebase", "ExpressJS", "ReactJS", "NodeJS", "Ant-Design"],
       description: "Plan your academic success at WPI (2024 WPI GoatHacks Winner)",
       link: {
         label: "roadmap-wpi.web.app",
@@ -130,7 +131,7 @@ export const RESUME_DATA = {
     {
       title: "Dandelion Populations",
       awards: ["Awards Pending"],
-      description: "Paper written for 2023 HiMCM challenge",
+      description: "Math modeling paper written for 2023 HiMCM challenge",
       link: {
         label: "paper",
         href: "https://portfolio.charlestang.dev/projects/HiMCM2023.pdf",
@@ -139,7 +140,7 @@ export const RESUME_DATA = {
     {
       title: "Land Use Analysis",
       awards: ["USA Outstanding Winner", "Intl. Meritorious (Top 6)"],
-      description: "Paper written for 2023 IMMC challenge",
+      description: "Math modeling paper written for 2023 IMMC challenge",
       link: {
         label: "paper",
         href: "https://portfolio.charlestang.dev/projects/2023_IM2C_12519_Solution.pdf",
@@ -148,7 +149,7 @@ export const RESUME_DATA = {
     {
       title: "Honeybee Populations",
       awards: ["USA Finalist (Top 6%)"],
-      description: "Paper written for 2022 HiMCM challenge",
+      description: "Math modeling paper written for 2022 HiMCM challenge",
       link: {
         label: "paper",
         href: "https://portfolio.charlestang.dev/projects/HiMCM2022.pdf",
@@ -157,7 +158,7 @@ export const RESUME_DATA = {
     {
       title: "E-Bike Demand",
       awards: ["2nd Round Selection"],
-      description: "Paper written for 2022 M3 Modeling challenge",
+      description: "Math modeling paper written for 2022 M3 Modeling challenge",
       link: {
         label: "paper",
         href: "https://portfolio.charlestang.dev/projects/2023_mathworks_scand_paper.pdf",

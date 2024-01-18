@@ -12,11 +12,28 @@ interface Props {
   description: string;
   tags: readonly string[];
   link?: string;
+  isProject?: boolean;
 }
 
-export function ProjectCard({ title, description, tags, link }: Props) {
+
+
+export function ProjectCard({ title, description, tags, link, isProject }: Props) {
+
+  const styles = `
+  .glow {
+    transition: box-shadow 0.3s ease-in-out;
+  }
+
+  .glow:hover {
+    box-shadow: 0 0 20px 2px rgba(0, 0, 0, 0.15); /* Adjust the glow effect */
+  }
+`;
+
   return (
-    <Card className="flex flex-col overflow-hidden border border-muted p-3">
+    <>
+    {isProject &&
+    <style>{styles}</style>}
+    <Card className="flex flex-col overflow-hidden border border-muted p-3 glow">
       <CardHeader className="">
         <div className="space-y-1">
           <CardTitle className="text-base">
@@ -55,5 +72,6 @@ export function ProjectCard({ title, description, tags, link }: Props) {
         </div>
       </CardContent>
     </Card>
+    </>
   );
 }
