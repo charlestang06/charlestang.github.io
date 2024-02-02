@@ -130,7 +130,7 @@ export const RESUME_DATA = {
   papers: [
     {
       title: "Dandelion Populations",
-      awards: ["USA Outstanding Winner (1st/967)"],
+      awards: ["USA Outstanding Winner (1st/967)", "NCTM Award"],
       description: "Math modeling paper written for 2023 HiMCM challenge",
       link: {
         label: "paper",
