@@ -229,7 +229,9 @@ export default function Page() {
           <h2 className="text-xl font-bold">Skills</h2>
           <div className="flex flex-wrap gap-1">
             {RESUME_DATA.skills.map((skill) => {
-              return <Badge key={skill}>{skill}</Badge>;
+              return (
+              <Badge key={skill}>{skill}</Badge>
+                );
             })}
           </div>
         </Section>

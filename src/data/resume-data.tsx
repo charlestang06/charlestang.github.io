@@ -99,6 +99,15 @@ export const RESUME_DATA = {
       },
     },
     {
+      title: "Proj-X",
+      techStack: ["Firebase", "ExpressJS", "ReactJS", "NodeJS", "Ant-Design"],
+      description: "Kickstarting your career with projects",
+      link: {
+        label: "projx-hbp.web.app",
+        href: "https://projx-hbp.web.app",
+      },
+    },
+    {
       title: "WPI Roadmap",
       techStack: ["Firebase", "ExpressJS", "ReactJS", "NodeJS", "Ant-Design"],
       description: "Plan your academic success at WPI (2024 WPI GoatHacks Winner)",
