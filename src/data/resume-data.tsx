@@ -26,7 +26,7 @@ export const RESUME_DATA = {
   locationLink: "https://www.google.com/maps/place/Massachusetts",
   about: "Incoming Freshman at Brown University",
   summary:
-    "I am currently a high school senior matriculating to Brown University next fall, pursuing an interest in Applied Mathematics, Computer Science, Artificial Intelligence, and Education. I am most interested in problems regarding using AI and mathematical modeling to solve real-world problems.",
+    "I am an incoming student at Brown University, pursuing an interest in Applied Mathematics, Computer Science, Artificial Intelligence, and Education. I am most interested in problems regarding using AI and mathematical modeling to solve real-world problems.",
   avatarUrl: "https://portfolio.charlestang.dev/profile5.jpg",
   personalWebsiteUrl: "https://charlestang.dev",
   contact: {
@@ -58,7 +58,7 @@ export const RESUME_DATA = {
       school: "Massachusetts Academy of Math and Science",
       degree: "High School Diploma + Dual Enrollment @ WPI",
       coursework:
-        "Calculus, ODEs, Linear Algebra, Discrete Math, Probability Theory, Real Analysis, Object Oriented Programming, Algorithms, Intro to ECE",
+        "Calculus, ODEs, LinAlg, Discrete, Probability Theory, Real Analysis, Stochastic Models, Econometrics, Object Oriented Programming, Algorithms, Intro to ECE",
       gpa: "4.0",
       start: "2020",
       end: "2024",
@@ -78,15 +78,18 @@ export const RESUME_DATA = {
   ],
   skills: [
     "Python",
-    "Tensorflow",
+    "Keras/Tensorflow",
     "LaTeX",
     "Java",
     "ReactJS",
+    "NodeJS",
+    "Django",
     "HTML/CSS",
     "MatLab Image Processing",
     "Raspberry Pi",
     "MySQL",
-    "Firebase"
+    "Firebase",
+    "CPanel/Apache",
   ],
   projects: [
     {
@@ -97,6 +100,15 @@ export const RESUME_DATA = {
         label: "mams-siso.wpi.edu",
         href: "https://mams-siso.wpi.edu",
       },
+    },
+    {
+      title: "Iridium Tutoring Portal",
+      techStack: ["Django", "MySQL", "Bootstrap", "CPanel/Apache"],
+      description: "B2C tutoring portal for students and tutors",
+      link : {
+        label: "github.com/charlestang06/iridisite",
+        href: "https://github.com/charlestang06/iridisite"
+      }
     },
     {
       title: "Proj-X",
