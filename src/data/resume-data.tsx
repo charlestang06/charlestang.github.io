@@ -24,7 +24,7 @@ export const RESUME_DATA = {
   initials: "CT",
   location: "Massachusetts, USA",
   locationLink: "https://www.google.com/maps/place/Massachusetts",
-  about: "Incoming Freshman at Brown University",
+  about: "Incoming Student at Brown University",
   summary:
     "I am an incoming student at Brown University, pursuing an interest in Applied Mathematics, Computer Science, Artificial Intelligence, and Education. I am most interested in problems regarding using AI and mathematical modeling to solve real-world problems.",
   avatarUrl: "https://portfolio.charlestang.dev/profile5.jpg",
@@ -55,26 +55,36 @@ export const RESUME_DATA = {
       end: "(2028)",
     },
     {
-      school: "Massachusetts Academy of Math and Science",
-      degree: "High School Diploma + Dual Enrollment @ WPI",
+      school: "Worcester Polytechnic Institute",
+      degree: "Computer Science and Mathematics",
       coursework:
         "Calculus, ODEs, LinAlg, Discrete, Probability Theory, Real Analysis, Stochastic Models, Econometrics, Object Oriented Programming, Algorithms, Intro to ECE",
       gpa: "4.0",
-      start: "2020",
+      start: "2023",
       end: "2024",
     },
   ],
   work: [
     {
-      company: "IOMICS",
+      company: "IOMICS Corporation",
       link: "https://iomics.us/",
       badges: ["Remote"],
       title: "Machine Learning Intern",
       start: "2023",
       end: "2024",
       description:
-        "Implemented SOTA CNNs with Tensorflow for Scientific/Medical Image Analysis. Technologies: Tensorflow, Keras",
+        "Researched and delivered recommendations on various deep learning techniques, including computer vision architectures (ViTs, CNNs, FCNs, image processing) for medical image analysis. Developed state-of-the-art LLM RAG chat app with LangChain and OLlama.",
     },
+    {
+      company: "Iridium Tutoring",
+      link: "https://iridiumtutoring.com/",
+      badges: ["Southborough, MA"],
+      title: "Founder & Lead Director",
+      start: "2020",
+      end: "2024",
+      description: 
+      "Founded 501c3 organization providing free tutoring to K-12 students nationwide since June of 2020, impacting 500+ students with 10K+ tutoring sessions, fundraised $15K+, and featured nationwide on television. Developed Django + MySQL + CPanel B2C web portal for hundreds of tutors, students, and administrators."
+    }
   ],
   skills: [
     "Python",
@@ -89,7 +99,7 @@ export const RESUME_DATA = {
     "Raspberry Pi",
     "MySQL",
     "Firebase",
-    "CPanel/Apache",
+    "CPanel",
   ],
   projects: [
     {
@@ -103,7 +113,7 @@ export const RESUME_DATA = {
     },
     {
       title: "Iridium Tutoring Portal",
-      techStack: ["Django", "MySQL", "Bootstrap", "CPanel/Apache"],
+      techStack: ["Django", "MySQL", "Bootstrap", "CPanel"],
       description: "B2C tutoring portal for students and tutors",
       link : {
         label: "github.com/charlestang06/iridisite",
