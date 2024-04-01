@@ -100,6 +100,7 @@ export const RESUME_DATA = {
     "MySQL",
     "Firebase",
     "CPanel",
+    "LangChain", 
   ],
   projects: [
     {
@@ -110,6 +111,15 @@ export const RESUME_DATA = {
         label: "mams-siso.wpi.edu",
         href: "https://mams-siso.wpi.edu",
       },
+    },
+    {
+      title: "Finsight (FinnAI)",
+      techStack: ["LangChain", "FastAPI", "ReactJS", "Ant-Design", "Firebase"],
+      description: "Financial market AI RAG app with dashboard UI",
+      link : {
+        label: "github.com/charlestang06/finsight",
+        href: "https://github.com/charlestang06/finsight"
+      }
     },
     {
       title: "Iridium Tutoring Portal",
@@ -123,7 +133,7 @@ export const RESUME_DATA = {
     {
       title: "Proj-X",
       techStack: ["Firebase", "ExpressJS", "ReactJS", "NodeJS", "Ant-Design"],
-      description: "Kickstarting your career with projects",
+      description: "Career advancement with micro-projx",
       link: {
         label: "projx-hbp.web.app",
         href: "https://projx-hbp.web.app",
@@ -132,7 +142,7 @@ export const RESUME_DATA = {
     {
       title: "WPI Roadmap",
       techStack: ["Firebase", "ExpressJS", "ReactJS", "NodeJS", "Ant-Design"],
-      description: "Plan your academic success at WPI (2024 WPI GoatHacks Winner)",
+      description: "Academic planner (2024 WPI GoatHacks Winner)",
       link: {
         label: "roadmap-wpi.web.app",
         href: "https://roadmap-wpi.web.app",
@@ -140,8 +150,8 @@ export const RESUME_DATA = {
     },
     {
       title: "Pantry Access",
-      techStack: ["ReactJS", "HTML/CSS", "Firebase"],
-      description: "A universal food pantry management system",
+      techStack: ["ReactJS", "HTML/CSS", "MUI", "Firebase"],
+      description: "Food pantry management system",
       link: {
         label: "pantryaccess.web.app",
         href: "https://pantryaccess.web.app",
