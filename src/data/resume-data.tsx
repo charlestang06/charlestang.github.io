@@ -111,6 +111,7 @@ export const RESUME_DATA = {
         label: "mams-siso.wpi.edu",
         href: "https://mams-siso.wpi.edu",
       },
+      production: true,
     },
     {
       title: "Finsight (FinnAI)",
@@ -128,7 +129,8 @@ export const RESUME_DATA = {
       link : {
         label: "github.com/charlestang06/iridisite",
         href: "https://github.com/charlestang06/iridisite"
-      }
+      },
+      production: true,
     },
     {
       title: "Proj-X",

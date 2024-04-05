@@ -20,6 +20,10 @@ export default function Page() {
       <section className="mx-auto w-full max-w-2xl space-y-8 bg-white print:space-y-6">
         <div className="flex items-center justify-between">
           <div className="flex-1 space-y-2">
+            <Avatar className="mb-8 size-40 lg:hidden">
+              <AvatarImage alt={RESUME_DATA.name} src={RESUME_DATA.avatarUrl} />
+              <AvatarFallback>{RESUME_DATA.initials}</AvatarFallback>
+            </Avatar>
             <h1 className="text-3xl font-bold">{RESUME_DATA.name}</h1>
             <p className="max-w-md text-pretty font-mono text-base text-muted-foreground">
               {RESUME_DATA.about}
@@ -47,18 +51,6 @@ export default function Page() {
                   </a>
                 </Button>
               ) : null}
-              {/* {RESUME_DATA.contact.tel ? (
-                <Button
-                  className="size-10"
-                  variant="outline"
-                  size="icon"
-                  asChild
-                >
-                  <a href={`tel:${RESUME_DATA.contact.tel}`}>
-                    <PhoneIcon className="size-5" />
-                  </a>
-                </Button>
-              ) : null} */}
               {RESUME_DATA.contact.social.map((social) => (
                 <Button
                   key={social.name}
@@ -87,7 +79,7 @@ export default function Page() {
             </div>
           </div>
 
-          <Avatar className="size-40">
+          <Avatar className="hidden size-40 sm:block">
             <AvatarImage alt={RESUME_DATA.name} src={RESUME_DATA.avatarUrl} />
             <AvatarFallback>{RESUME_DATA.initials}</AvatarFallback>
           </Avatar>
@@ -98,12 +90,12 @@ export default function Page() {
             {RESUME_DATA.summary}
           </p>
         </Section>
-        
+
         <Section>
           <h2 className="text-xl font-bold">Education</h2>
           {RESUME_DATA.education.map((education) => {
             return (
-              <Card key={education.school} >
+              <Card key={education.school}>
                 <CardHeader>
                   <div className="flex items-center justify-between gap-x-2 text-base">
                     <h3 className="font-semibold leading-none">
@@ -152,7 +144,7 @@ export default function Page() {
                         ))}
                       </span>
                     </h3>
-                    <div className="text-sm tabular-nums text-gray-500">
+                    <div className="text-sm tabular-nums">
                       {work.start} - {work.end}
                     </div>
                   </div>
@@ -171,6 +163,19 @@ export default function Page() {
 
         <Section className=" croll-mb-16">
           <h2 className="text-xl font-bold">Projects</h2>
+          <p className="text-xs font-mono inline-flex items-center gap-2 text-gray-500">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="grey"
+              className="bi bi-gear-fill hover:scale-110"
+              viewBox="0 0 16 16"
+            >
+              <path d="M9.405 1.05c-.413-1.4-2.397-1.4-2.81 0l-.1.34a1.464 1.464 0 0 1-2.105.872l-.31-.17c-1.283-.698-2.686.705-1.987 1.987l.169.311c.446.82.023 1.841-.872 2.105l-.34.1c-1.4.413-1.4 2.397 0 2.81l.34.1a1.464 1.464 0 0 1 .872 2.105l-.17.31c-.698 1.283.705 2.686 1.987 1.987l.311-.169a1.464 1.464 0 0 1 2.105.872l.1.34c.413 1.4 2.397 1.4 2.81 0l.1-.34a1.464 1.464 0 0 1 2.105-.872l.31.17c1.283.698 2.686-.705 1.987-1.987l-.169-.311a1.464 1.464 0 0 1 .872-2.105l.34-.1c1.4-.413 1.4-2.397 0-2.81l-.34-.1a1.464 1.464 0 0 1-.872-2.105l.17-.31c.698-1.283-.705-2.686-1.987-1.987l-.311.169a1.464 1.464 0 0 1-2.105-.872zM8 10.93a2.929 2.929 0 1 1 0-5.86 2.929 2.929 0 0 1 0 5.858z" />
+            </svg>{" "}
+            = production app
+          </p>
           <div className="-mx-3 grid grid-cols-1 gap-3 print:grid-cols-3 print:gap-2 md:grid-cols-2 lg:grid-cols-3">
             {RESUME_DATA.projects.map((project) => {
               return (
@@ -181,6 +186,8 @@ export default function Page() {
                   tags={project.techStack}
                   link={"link" in project ? project.link.href : undefined}
                   isProject={true}
+                  production={project.production ? project.production : false}
+                  award={project.award ? project.award : false}
                 />
               );
             })}
@@ -229,9 +236,7 @@ export default function Page() {
           <h2 className="text-xl font-bold">Skills</h2>
           <div className="flex flex-wrap gap-1">
             {RESUME_DATA.skills.map((skill) => {
-              return (
-              <Badge key={skill}>{skill}</Badge>
-                );
+              return <Badge key={skill}>{skill}</Badge>;
             })}
           </div>
         </Section>
