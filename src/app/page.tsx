@@ -187,7 +187,6 @@ export default function Page() {
                   link={"link" in project ? project.link.href : undefined}
                   isProject={true}
                   production={project.production ? project.production : false}
-                  award={project.award ? project.award : false}
                 />
               );
             })}

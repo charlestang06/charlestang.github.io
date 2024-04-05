@@ -13,7 +13,6 @@ interface Props {
   link?: string;
   isProject?: boolean;
   production?: boolean;
-  award?: boolean
 }
 
 export function ProjectCard({

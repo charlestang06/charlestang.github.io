@@ -120,7 +120,8 @@ export const RESUME_DATA = {
       link : {
         label: "github.com/charlestang06/finsight",
         href: "https://github.com/charlestang06/finsight"
-      }
+      },
+      production: false,
     },
     {
       title: "Iridium Tutoring Portal",
@@ -140,6 +141,7 @@ export const RESUME_DATA = {
         label: "projx-hbp.web.app",
         href: "https://projx-hbp.web.app",
       },
+      production: false,
     },
     {
       title: "WPI Roadmap",
@@ -149,6 +151,7 @@ export const RESUME_DATA = {
         label: "roadmap-wpi.web.app",
         href: "https://roadmap-wpi.web.app",
       },
+      production: false,
     },
     {
       title: "Pantry Access",
@@ -158,6 +161,7 @@ export const RESUME_DATA = {
         label: "pantryaccess.web.app",
         href: "https://pantryaccess.web.app",
       },
+      production: false,
     },
 
     {
@@ -168,6 +172,7 @@ export const RESUME_DATA = {
         label: "arXiv",
         href: "https://arxiv.org/abs/2303.11223",
       },
+      production: false,
     },
   ],
   papers: [
