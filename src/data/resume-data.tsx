@@ -1,32 +1,13 @@
-import {
-  AmbitLogo,
-  BarepapersLogo,
-  BimLogo,
-  CDGOLogo,
-  ClevertechLogo,
-  ConsultlyLogo,
-  EvercastLogo,
-  Howdy,
-  JarockiMeLogo,
-  JojoMobileLogo,
-  Minimal,
-  MobileVikingsLogo,
-  MonitoLogo,
-  NSNLogo,
-  ParabolLogo,
-  TastyCloudLogo,
-  YearProgressLogo,
-} from "@/images/logos";
-import { GitHubIcon, LinkedInIcon, XIcon } from "@/components/icons";
+import { GitHubIcon, LinkedInIcon } from "@/components/icons";
 
 export const RESUME_DATA = {
   name: "Charles Tang",
   initials: "CT",
   location: "Massachusetts, USA",
   locationLink: "https://www.google.com/maps/place/Massachusetts",
-  about: "Incoming Student at Brown University",
+  about: "Incoming APMA at Brown University",
   summary:
-    "I am an incoming student at Brown University, pursuing an interest in Applied Mathematics, Computer Science, Artificial Intelligence, and Education. I am most interested in problems regarding using AI and mathematical modeling to solve real-world problems.",
+    "I am an incoming student at Brown University, pursuing an interest in Applied Mathematics, Computer Science, and Artificial Intelligence. I am most interested in problems regarding using AI and mathematical modeling to solve real-world problems. This summer, I will be interning at BJs Wholesale as a Robotics & Automation Intern.",
   avatarUrl: "https://portfolio.charlestang.dev/profile5.jpg",
   personalWebsiteUrl: "https://charlestang.dev",
   contact: {
@@ -48,11 +29,11 @@ export const RESUME_DATA = {
   education: [
     {
       school: "Brown University",
-      degree: "Bachelor's Degree in Applied Mathematics and Computer Science",
+      degree: "Bachelor's Degree in APMA-CS (Applied Mathematics + Computer Science)",
       coursework: "TBD",
       gpa: null,
       start: "2024",
-      end: "(2028)",
+      end: "(2027)",
     },
     {
       school: "Worcester Polytechnic Institute",
@@ -66,14 +47,23 @@ export const RESUME_DATA = {
   ],
   work: [
     {
+      company: "BJ's Wholesale Club",
+      link: "https://bjs.com",
+      badges: ["Westborough, MA"],
+      title: "Robotics & Automation Intern",
+      start: "Jun. 2024", 
+      end: "Aug. 2024",
+      description: "Explored robot performance data (Excel + Tableau).",
+    },
+    {
       company: "IOMICS Corporation",
       link: "https://iomics.us/",
-      badges: ["Remote"],
+      badges: ["Cambridge, MA"],
       title: "Machine Learning Intern",
-      start: "2023",
-      end: "2024",
+      start: "Dec. 2023",
+      end: "Aug. 2024",
       description:
-        "Researched and delivered recommendations on various deep learning techniques, including computer vision architectures (ViTs, CNNs, FCNs, image processing) for medical image analysis. Developed state-of-the-art LLM RAG chat app with LangChain and OLlama.",
+        "Researched computer vision technologies (ViTs, CNNs, machine learning) for brain injury detection and presented a literature review to healthcare professionals. Developed SOTA RAG app from scratch with fine-tuned/merged medical LLMs, ChromeDB, and PubMed API, with custom evaluation workflows. Deployed to a multi-million dollar advanced life sciences platform.",
     },
     {
       company: "Iridium Tutoring",
@@ -82,8 +72,7 @@ export const RESUME_DATA = {
       title: "Founder & Lead Director",
       start: "2020",
       end: "2024",
-      description: 
-      "Founded 501c3 organization providing free tutoring to K-12 students nationwide since June of 2020, impacting 500+ students with 10K+ tutoring sessions, fundraised $15K+, and featured nationwide on television. Developed Django + MySQL + CPanel B2C web portal for hundreds of tutors, students, and administrators."
+      description: "Founded Boston’s leading free tutoring 501(c)(3) nonprofit for 500+ students and 150+ tutors. Fundraised over $15K from local foundations and featured nationwide on  FOX, CBS, ABC, Spectrum 1, etc. Revamped legacy Excel tutoring system into Django web portal for tutors, students, and administrators.",
     }
   ],
   skills: [
@@ -96,10 +85,8 @@ export const RESUME_DATA = {
     "Django",
     "HTML/CSS",
     "MatLab Image Processing",
-    "Raspberry Pi",
     "MySQL",
     "Firebase",
-    "CPanel",
     "LangChain", 
   ],
   projects: [
@@ -186,8 +173,17 @@ export const RESUME_DATA = {
       },
     },
     {
+      title: "MA Mortgage Markets",
+      awards: ["ECON 3130"],
+      description: "Logit regression analysis of discrimination",
+      link: {
+        label: "paper",
+        href: "https://portfolio.charlestang.dev/projects/ECON3130_Paper.pdf",
+      },
+    },
+    {
       title: "Land Use Analysis",
-      awards: ["USA Outstanding Winner", "Intl. Meritorious (Top 6)"],
+      awards: ["Intl. Meritorious (Top 6)"],
       description: "Math modeling paper written for 2023 IMMC challenge",
       link: {
         label: "paper",
