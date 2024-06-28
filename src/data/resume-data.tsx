@@ -5,9 +5,9 @@ export const RESUME_DATA = {
   initials: "CT",
   location: "Massachusetts, USA",
   locationLink: "https://www.google.com/maps/place/Massachusetts",
-  about: "Incoming APMA at Brown University",
+  about: "APMA at Brown University",
   summary:
-    "I am an incoming student at Brown University, pursuing an interest in Applied Mathematics, Computer Science, and Artificial Intelligence. I am most interested in problems regarding using AI and mathematical modeling to solve real-world problems. This summer, I will be interning at BJs Wholesale as a Robotics & Automation Intern.",
+    "I am student at Brown University, pursuing an interest in Applied Mathematics, Computer Science, and Artificial Intelligence. I am most interested in problems regarding using AI and mathematical modeling to solve real-world problems.",
   avatarUrl: "https://portfolio.charlestang.dev/profile5.jpg",
   personalWebsiteUrl: "https://charlestang.dev",
   contact: {
@@ -53,7 +53,10 @@ export const RESUME_DATA = {
       title: "Robotics & Automation Intern",
       start: "Jun. 2024", 
       end: "Aug. 2024",
-      description: "Explored robot performance data (Excel + Tableau).",
+      description: `Analyzed 3 months of forklift data to optimize DC layouts. Created first-ever DC maps & simulated millions of routes (Matplotlib) to streamline picking/delivery. Standardized Xdocking KPIs & recommended improvements to DC Operations.
+                    Optimized DC forklift picking operations using shortest path algorithms (BFS) and route optimization techniques (greedy algorithms, VRP, constraint programming). Improved operator efficiency by 30% with an ROI of $1 million+ annually.
+                    Designed Robotics team status report (Excel) delivered to COO weekly, as well as an Excel data dashboard extracting performance insights on Tally (BJ's flagship club robot) across 200+ clubs nationwide.
+                    `,
     },
     {
       company: "IOMICS Corporation",
@@ -63,7 +66,10 @@ export const RESUME_DATA = {
       start: "Dec. 2023",
       end: "Aug. 2024",
       description:
-        "Researched computer vision technologies (ViTs, CNNs, machine learning) for brain injury detection and presented a literature review to healthcare professionals. Developed SOTA RAG app from scratch with fine-tuned/merged medical LLMs, ChromeDB, and PubMed API, with custom evaluation workflows. Deployed to a multi-million dollar advanced life sciences platform.",
+        ` Researched and delivered recommendations (50+ papers read/literature review) to medical specialists on various deep learning techniques, including computer vision architectures (ViTs, CNNs, FCNs, image processing) for traumatic brain injury analysis.
+          Developed RAG app with LangChain, Ollama (mistral, llama3, dbrx, openbiollm), Docker, and FastAPI. Answered 90-95% of questions accurately on expert-grade medical questions with web-search capabilities to be on par with billion-dollar platforms like PerplexityAi, SciSpace, etc. Implemented custom evaluation framework for 10+ LLMs and deployed to a multi-million dollar advanced life sciences platform. 
+          Contributed to HuggingFace open-source with quantized and merged medical models. Researched fine-tune, merging, and other LLM optimizations.
+        `,
     },
     {
       company: "Iridium Tutoring",
@@ -72,7 +78,11 @@ export const RESUME_DATA = {
       title: "Founder & Lead Director",
       start: "2020",
       end: "2024",
-      description: "Founded Boston’s leading free tutoring 501(c)(3) nonprofit for 500+ students and 150+ tutors. Fundraised over $15K from local foundations and featured nationwide on  FOX, CBS, ABC, Spectrum 1, etc. Revamped legacy Excel tutoring system into Django web portal for tutors, students, and administrators.",
+      description:  `
+        Founded and led 501c3 organization providing free tutoring to K-12 students nationwide, impacting 500+ students with 10K+ tutoring sessions, fundraised $15K+, and featured nationwide on television. 
+        Implemented organization-wide tutor training and educational resources and onboarded 100+ tutors and volunteers with an average tutor quality of 4.8/5.0. Pioneered Courses@Iridium, Coding for Kids, and Webinars@Iridium projects with hundreds of students attending.
+        Developed Django + MySQL web portal for hundreds of tutors, students, and administrators. Eliminated tutoring session management saving $5000/yr and enhanced student data privacy. 
+      `
     }
   ],
   skills: [
@@ -88,6 +98,9 @@ export const RESUME_DATA = {
     "MySQL",
     "Firebase",
     "LangChain", 
+    "Math modeling", 
+    "Data Visualization/Analysis",
+    "Math modeling"
   ],
   projects: [
     {
