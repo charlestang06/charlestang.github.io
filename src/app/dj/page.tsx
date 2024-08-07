@@ -9,8 +9,8 @@ import { ThemeProvider } from "@/components/ui/theme-provider";
 import Image from "next/image";
 
 export const metadata: Metadata = {
-  title: `${RESUME_DATA.name} | ${RESUME_DATA.about}`,
-  description: RESUME_DATA.summary,
+  title: `DJ EQ | Charles Tang`,
+  description: RESUME_DATA.djSummary,
 };
 
 export default function Page() {
@@ -94,7 +94,7 @@ export default function Page() {
                   key="Number of Events"
                   title="Number of Events"
                   description="Parties, Graduations, Events"
-                  number="4"
+                  number="5"
                   text_size="lg"
                 />
             <NumberCard
