@@ -1,13 +1,12 @@
 import type { Metadata } from "next";
 import { Analytics } from "@vercel/analytics/react";
 import { Inter } from "next/font/google";
-
 import "./globals.css";
 import React from "react";
 
 export const metadata: Metadata = {
   title: "Charles Tang",
-  description: "Rising freshman at Brown University",
+  description: "APMA at Brown University",
 };
 
 // If loading a variable font, you don't need to specify the font weight

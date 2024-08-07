@@ -4,7 +4,7 @@ import { Badge } from "@/components/ui/badge";
 import { CommandMenu } from "@/components/command-menu";
 import { Metadata } from "next";
 import { Section } from "@/components/ui/section";
-import { GlobeIcon, MailIcon, PhoneIcon } from "lucide-react";
+import { GlobeIcon, MailIcon, PhoneIcon, Headphones } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { RESUME_DATA } from "@/data/resume-data";
 import { ProjectCard } from "@/components/project-card";
@@ -20,7 +20,7 @@ export default function Page() {
       <section className="mx-auto w-full max-w-2xl space-y-8 bg-white print:space-y-6">
         <div className="flex items-center justify-between">
           <div className="flex-1 space-y-2">
-            <Avatar className="mb-8 size-40 lg:hidden">
+            <Avatar className="mb-8 size-40 sm:hidden">
               <AvatarImage alt={RESUME_DATA.name} src={RESUME_DATA.avatarUrl} />
               <AvatarFallback>{RESUME_DATA.initials}</AvatarFallback>
             </Avatar>
@@ -64,6 +64,19 @@ export default function Page() {
                   </a>
                 </Button>
               ))}
+              {RESUME_DATA.contact.dj ? (
+                <Button
+                  key={RESUME_DATA.contact.dj.name}
+                  className="size-10"
+                  variant="outline"
+                  size="icon"
+                  asChild
+                >
+                  <a href={RESUME_DATA.contact.dj.url}>
+                    <Headphones className="size-5" />
+                  </a>
+                </Button>
+              ) : null}
             </div>
             <div className="hidden flex-col gap-x-1 font-mono text-sm text-muted-foreground print:flex">
               {RESUME_DATA.contact.email ? (

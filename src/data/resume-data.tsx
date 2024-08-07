@@ -1,5 +1,4 @@
 import { GitHubIcon, LinkedInIcon } from "@/components/icons";
-
 export const RESUME_DATA = {
   name: "Charles Tang",
   initials: "CT",
@@ -8,11 +7,12 @@ export const RESUME_DATA = {
   about: "APMA at Brown University",
   summary:
     "I am student at Brown University, pursuing an interest in Applied Mathematics, Computer Science, and Artificial Intelligence. I am most interested in problems regarding using AI and mathematical modeling to solve real-world problems.",
-  avatarUrl: "https://portfolio.charlestang.dev/profile5.jpg",
+  djSummary: "I'm currently a DJ spinning the latest tracks in the Boston/Providence area. I started in December 2023 to mix for my friends and began to get into house, pop, and hip-hop music.",
+  avatarUrl: "https://charlestang06.github.io/photos/pfp.jpg",
+  djAvatarUrl: "https://charlestang06.github.io/photos/IMG_0710.JPEG",
   personalWebsiteUrl: "https://charlestang.dev",
   contact: {
     email: "charles_tang@brown.edu",
-    // tel: "+19784939450",
     social: [
       {
         name: "GitHub",
@@ -25,6 +25,10 @@ export const RESUME_DATA = {
         icon: LinkedInIcon,
       },
     ],
+    dj: {
+      name: "DJ EQ",
+      url: "/dj",
+    },
   },
   education: [
     {
@@ -53,10 +57,7 @@ export const RESUME_DATA = {
       title: "Robotics & Automation Intern",
       start: "Jun. 2024", 
       end: "Aug. 2024",
-      description: `Analyzed 3 months of forklift data to optimize DC layouts. Created first-ever DC maps & simulated millions of routes (Matplotlib) to streamline picking/delivery. Standardized Xdocking KPIs & recommended improvements to DC Operations.
-                    Optimized DC forklift picking operations using shortest path algorithms (BFS) and route optimization techniques (greedy algorithms, VRP, constraint programming). Improved operator efficiency by 30% with an ROI of $1 million+ annually.
-                    Designed Robotics team status report (Excel) delivered to COO weekly, as well as an Excel data dashboard extracting performance insights on Tally (BJ's flagship club robot) across 200+ clubs nationwide.
-                    `,
+      description: `Analyzed four months of forklift data and simulated millions of routes using Python, optimizing DC operations and improving theoretical operator efficiency by 20%, resulting in an ROI of $650K+ annually. Coordinated a team of 10 to deploy the first-ever autonomous forklifts and designed an Excel dashboard to extract performance insights on Tally across 200+ clubs nationwide.`,
     },
     {
       company: "IOMICS Corporation",
@@ -66,10 +67,7 @@ export const RESUME_DATA = {
       start: "Dec. 2023",
       end: "Aug. 2024",
       description:
-        ` Researched and delivered recommendations (50+ papers read/literature review) to medical specialists on various deep learning techniques, including computer vision architectures (ViTs, CNNs, FCNs, image processing) for traumatic brain injury analysis.
-          Developed RAG app with LangChain, Ollama (mistral, llama3, dbrx, openbiollm), Docker, and FastAPI. Answered 90-95% of questions accurately on expert-grade medical questions with web-search capabilities to be on par with billion-dollar platforms like PerplexityAi, SciSpace, etc. Implemented custom evaluation framework for 10+ LLMs and deployed to a multi-million dollar advanced life sciences platform. 
-          Contributed to HuggingFace open-source with quantized and merged medical models. Researched fine-tune, merging, and other LLM optimizations.
-        `,
+        ` Researched and delivered recommendations on deep learning techniques for traumatic brain injury analysis by reviewing 50+ papers, contributing to HuggingFace with quantized and merged medical models. Developed a RAG app with LangChain, achieving 90-95% accuracy on expert-grade medical questions, and deployed it to a multi-million dollar life sciences platform, implementing a custom evaluation framework for 10+ LLMs.`,
     },
     {
       company: "Iridium Tutoring",
@@ -79,10 +77,7 @@ export const RESUME_DATA = {
       start: "2020",
       end: "2024",
       description:  `
-        Founded and led 501c3 organization providing free tutoring to K-12 students nationwide, impacting 500+ students with 10K+ tutoring sessions, fundraised $15K+, and featured nationwide on television. 
-        Implemented organization-wide tutor training and educational resources and onboarded 100+ tutors and volunteers with an average tutor quality of 4.8/5.0. Pioneered Courses@Iridium, Coding for Kids, and Webinars@Iridium projects with hundreds of students attending.
-        Developed Django + MySQL web portal for hundreds of tutors, students, and administrators. Eliminated tutoring session management saving $5000/yr and enhanced student data privacy. 
-      `
+       Founded and led a 501c3 organization providing free tutoring to 500+ K-12 students nationwide, delivering 10K+ sessions, raising $15K+, and gaining nationwide TV coverage. Implemented training for 100+ tutors with an average quality rating of 4.8/5.0, pioneered educational projects, and developed a Django + MySQL web portal, saving $5K annually and enhancing student data privacy.`
     }
   ],
   skills: [
@@ -100,7 +95,7 @@ export const RESUME_DATA = {
     "LangChain", 
     "Math modeling", 
     "Data Visualization/Analysis",
-    "Math modeling"
+    "AWS"
   ],
   projects: [
     {
