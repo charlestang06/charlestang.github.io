@@ -219,6 +219,15 @@ export const RESUME_DATA = {
   ],
   certificates: [
     {
+      title: "AWS Certified Cloud Practitioner",
+      awardee: ["Amazon Web Services"], 
+      description: "Cloud computing, AWS services",
+      link: {
+        label: "certificate",
+        href: "https://www.credly.com/badges/34da7b8b-c623-43ba-8421-01d90216d653",
+      },
+    },
+    {
       title: "MatLab Image Processing",
       awardee: ["MathWorks"],
       description: "Image/video segmentation algorithms specialization",
