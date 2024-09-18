@@ -1,18 +1,18 @@
 import { GitHubIcon, LinkedInIcon } from "@/components/icons";
-
 export const RESUME_DATA = {
   name: "Charles Tang",
   initials: "CT",
   location: "Massachusetts, USA",
   locationLink: "https://www.google.com/maps/place/Massachusetts",
-  about: "Incoming APMA at Brown University",
+  about: "APMA at Brown University",
   summary:
-    "I am a student at Brown University, pursuing an interest in Applied Mathematics, Computer Science, and Artificial Intelligence. I am most interested in problems regarding using AI and mathematical modeling to solve real-world problems.",
-  avatarUrl: "https://portfolio.charlestang.dev/profile5.jpg",
+    "I am student at Brown University, pursuing an interest in Applied Mathematics, Computer Science, and Artificial Intelligence. I am most interested in problems regarding using AI and mathematical modeling to solve real-world problems.",
+  djSummary: "I'm currently a DJ spinning the latest tracks in the Boston/Providence area. I started in December 2023 to mix for my friends and began to get into house, pop, and hip-hop music.",
+  avatarUrl: "https://charlestang06.github.io/photos/pfp.jpg",
+  djAvatarUrl: "https://charlestang06.github.io/photos/IMG_0710.JPEG",
   personalWebsiteUrl: "https://charlestang.dev",
   contact: {
     email: "charles_tang@brown.edu",
-    // tel: "+19784939450",
     social: [
       {
         name: "GitHub",
@@ -25,6 +25,10 @@ export const RESUME_DATA = {
         icon: LinkedInIcon,
       },
     ],
+    dj: {
+      name: "DJ EQ",
+      url: "/dj",
+    },
   },
   education: [
     {
@@ -75,9 +79,9 @@ export const RESUME_DATA = {
       title: "Founder & Lead Director",
       start: "2020",
       end: "2024",
-      description:
-        "Founded Boston’s leading free tutoring 501(c)(3) nonprofit for 500+ students and 150+ tutors. Fundraised over $15K from local foundations and featured nationwide on  FOX, CBS, ABC, Spectrum 1, etc. Revamped legacy Excel tutoring system into Django web portal for tutors, students, and administrators.",
-    },
+      description:  `
+       Founded and led a 501c3 organization providing free tutoring to 500+ K-12 students nationwide, delivering 10K+ sessions, raising $15K+, and gaining nationwide TV coverage. Implemented training for 100+ tutors with an average quality rating of 4.8/5.0, pioneered educational projects, and developed a Django + MySQL web portal, saving $5K annually and enhancing student data privacy.`
+    }
   ],
   skills: [
     "Python",
@@ -236,6 +240,15 @@ export const RESUME_DATA = {
     },
   ],
   certificates: [
+    {
+      title: "AWS Certified Cloud Practitioner",
+      awardee: ["Amazon Web Services"], 
+      description: "Cloud computing, AWS services",
+      link: {
+        label: "certificate",
+        href: "https://www.credly.com/badges/34da7b8b-c623-43ba-8421-01d90216d653",
+      },
+    },
     {
       title: "MatLab Image Processing",
       awardee: ["MathWorks"],
