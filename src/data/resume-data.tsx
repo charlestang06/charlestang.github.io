@@ -7,7 +7,7 @@ export const RESUME_DATA = {
   locationLink: "https://www.google.com/maps/place/Massachusetts",
   about: "Incoming APMA at Brown University",
   summary:
-    "I am an incoming student at Brown University, pursuing an interest in Applied Mathematics, Computer Science, and Artificial Intelligence. I am most interested in problems regarding using AI and mathematical modeling to solve real-world problems. This summer, I will be interning at BJs Wholesale as a Robotics & Automation Intern.",
+    "I am a student at Brown University, pursuing an interest in Applied Mathematics, Computer Science, and Artificial Intelligence. I am most interested in problems regarding using AI and mathematical modeling to solve real-world problems.",
   avatarUrl: "https://portfolio.charlestang.dev/profile5.jpg",
   personalWebsiteUrl: "https://charlestang.dev",
   contact: {
@@ -29,9 +29,11 @@ export const RESUME_DATA = {
   education: [
     {
       school: "Brown University",
-      degree: "Bachelor's Degree in APMA-CS (Applied Mathematics + Computer Science)",
-      coursework: "TBD",
-      gpa: null,
+      degree:
+        "Bachelor's Degree in APMA-CS (Applied Mathematics + Computer Science)",
+      coursework:
+        "Stochastic Calculus, Optimization, Operations Research, Functional Programming",
+      gpa: "4.0",
       start: "2024",
       end: "(2027)",
     },
@@ -50,20 +52,21 @@ export const RESUME_DATA = {
       company: "BJ's Wholesale Club",
       link: "https://bjs.com",
       badges: ["Westborough, MA"],
-      title: "Robotics & Automation Intern",
-      start: "Jun. 2024", 
+      title: "Data Science Intern",
+      start: "Jun. 2024",
       end: "Aug. 2024",
-      description: "Explored robot performance data (Excel + Tableau).",
+      description:
+        "Developed CLI to simulate millions of historical forklift routes (Python/Pandas) to streamline picking/delivery. Optimized forklift pick path by 20% with an annual ROI of $851K with integer and linear programming. Pioneered robotic forklift deployment initiatives (annual ROI of $331K) in East Coast distribution centers. Designed Excel dashboard for 200+ clubs nationwide on performance insights on Tally (BJ's flagship robot).",
     },
     {
       company: "IOMICS Corporation",
       link: "https://iomics.us/",
       badges: ["Cambridge, MA"],
-      title: "Machine Learning Intern",
+      title: "Software Engineering Intern",
       start: "Dec. 2023",
       end: "Aug. 2024",
       description:
-        "Researched computer vision technologies (ViTs, CNNs, machine learning) for brain injury detection and presented a literature review to healthcare professionals. Developed SOTA RAG app from scratch with fine-tuned/merged medical LLMs, ChromeDB, and PubMed API, with custom evaluation workflows. Deployed to a multi-million dollar advanced life sciences platform.",
+        "Developed a chatbot app with LangChain, Django, Postgres, and Docker answering 95% correctly on medical Q/A. Increased brain injury analysis accuracy by 10% by delivering computer vision recommendations to specialists. Reduced feature selection software computational time by 80% by implementing parallel processing (sklearn).",
     },
     {
       company: "Iridium Tutoring",
@@ -72,27 +75,50 @@ export const RESUME_DATA = {
       title: "Founder & Lead Director",
       start: "2020",
       end: "2024",
-      description: "Founded Boston’s leading free tutoring 501(c)(3) nonprofit for 500+ students and 150+ tutors. Fundraised over $15K from local foundations and featured nationwide on  FOX, CBS, ABC, Spectrum 1, etc. Revamped legacy Excel tutoring system into Django web portal for tutors, students, and administrators.",
-    }
+      description:
+        "Founded Boston’s leading free tutoring 501(c)(3) nonprofit for 500+ students and 150+ tutors. Fundraised over $15K from local foundations and featured nationwide on  FOX, CBS, ABC, Spectrum 1, etc. Revamped legacy Excel tutoring system into Django web portal for tutors, students, and administrators.",
+    },
   ],
   skills: [
     "Python",
-    "Keras/Tensorflow",
-    "LaTeX",
+    "Javascript",
     "Java",
-    "ReactJS",
-    "NodeJS",
-    "Django",
     "HTML/CSS",
-    "MatLab Image Processing",
-    "MySQL",
+    "MATLAB",
+    "Linux",
+    "REST APIs",
+    "LaTeX",
+    "MySQL/PostgreSQL",
+    "Docker",
+    "AWS",
+    "Git",
+    "Postman",
+    "VS Code",
+    "NodeJS",
     "Firebase",
-    "LangChain", 
+    "Profilers (Scalene)",
+    "Bootstrap",
+    "Django",
+    "React.js",
+    "Pandas",
+    "Sklearn",
+    "Tensorflow",
+    "LangChain",
+    "Computer Vision Toolbox",
+    "OR Tools",
+    "PULP",
   ],
   projects: [
     {
       title: "MAMS SISO",
-      techStack: ["ReactJS", "NodeJS", "ExpressJS", "MySQL", "Raspberry Pi", "Python"],
+      techStack: [
+        "ReactJS",
+        "NodeJS",
+        "ExpressJS",
+        "MySQL",
+        "Raspberry Pi",
+        "Python",
+      ],
       description: "A digital student attendance system",
       link: {
         label: "mams-siso.wpi.edu",
@@ -104,9 +130,9 @@ export const RESUME_DATA = {
       title: "Finsight (FinnAI)",
       techStack: ["LangChain", "FastAPI", "ReactJS", "Ant-Design", "Firebase"],
       description: "Financial market AI RAG app with dashboard UI",
-      link : {
+      link: {
         label: "github.com/charlestang06/finsight",
-        href: "https://github.com/charlestang06/finsight"
+        href: "https://github.com/charlestang06/finsight",
       },
       production: false,
     },
@@ -114,9 +140,9 @@ export const RESUME_DATA = {
       title: "Iridium Tutoring Portal",
       techStack: ["Django", "MySQL", "Bootstrap", "CPanel"],
       description: "B2C tutoring portal for students and tutors",
-      link : {
+      link: {
         label: "github.com/charlestang06/iridisite",
-        href: "https://github.com/charlestang06/iridisite"
+        href: "https://github.com/charlestang06/iridisite",
       },
       production: true,
     },
