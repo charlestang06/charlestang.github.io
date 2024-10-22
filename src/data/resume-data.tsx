@@ -4,10 +4,11 @@ export const RESUME_DATA = {
   initials: "CT",
   location: "Massachusetts, USA",
   locationLink: "https://www.google.com/maps/place/Massachusetts",
-  about: "APMA at Brown University",
+  about: "APMA-CS at Brown University",
   summary:
     "I am student at Brown University, pursuing an interest in Applied Mathematics, Computer Science, and Artificial Intelligence. I am most interested in problems regarding using AI and mathematical modeling to solve real-world problems.",
-  djSummary: "I'm currently a DJ spinning the latest tracks in the Boston/Providence area. I started in December 2023 to mix for my friends and began to get into house, pop, and hip-hop music.",
+  djSummary:
+    "I'm currently a DJ spinning the latest tracks in the Boston/Providence area. I started in December 2023 to mix for my friends and began to get into house, pop, and hip-hop music.",
   avatarUrl: "https://charlestang06.github.io/photos/pfp.jpg",
   djAvatarUrl: "https://charlestang06.github.io/photos/IMG_0710.JPEG",
   personalWebsiteUrl: "https://charlestang.dev",
@@ -53,9 +54,19 @@ export const RESUME_DATA = {
   ],
   work: [
     {
+      company: "Full Stack @ Brown",
+      link: "https://github.com/fullstackatbrown",
+      badges: ["Providence, RI"],
+      title: "Project Manager",
+      start: "Aug. 2024",
+      end: "Present",
+      description:
+        "Led team of 15 developers to create Django (Python) app for NECYSC, serving 100+ campers and 50+ staff annually. Coordinated weekly team standups and served as a liaison between developers and the client organization. Set up CI/CD pipeline with GitHub Actions to automate testing, build, and deployment onto AWS.",
+    },
+    {
       company: "BJ's Wholesale Club",
       link: "https://bjs.com",
-      badges: ["Westborough, MA"],
+      badges: ["Marlborough, MA"],
       title: "Data Science Intern",
       start: "Jun. 2024",
       end: "Aug. 2024",
@@ -79,9 +90,9 @@ export const RESUME_DATA = {
       title: "Founder & Lead Director",
       start: "2020",
       end: "2024",
-      description:  `
-       Founded and led a 501c3 organization providing free tutoring to 500+ K-12 students nationwide, delivering 10K+ sessions, raising $15K+, and gaining nationwide TV coverage. Implemented training for 100+ tutors with an average quality rating of 4.8/5.0, pioneered educational projects, and developed a Django + MySQL web portal, saving $5K annually and enhancing student data privacy.`
-    }
+      description: `
+       Founded and led a 501c3 organization providing free tutoring to 500+ K-12 students nationwide, delivering 10K+ sessions, raising $15K+, and gaining nationwide TV coverage. Implemented training for 100+ tutors with an average quality rating of 4.8/5.0, pioneered educational projects, and developed a Django + MySQL web portal, saving $5K annually and enhancing student data privacy.`,
+    },
   ],
   skills: [
     "Python",
@@ -127,6 +138,16 @@ export const RESUME_DATA = {
       link: {
         label: "mams-siso.wpi.edu",
         href: "https://mams-siso.wpi.edu",
+      },
+      production: true,
+    },
+    {
+      title: "NECYSC Camp App",
+      techStack: ["Django", "MySQL", "Bootstrap", "AWS"],
+      description: "A summer camp management system",
+      link: {
+        label: "github.com/fullstackatbrown/project-necysc",
+        href: "https://github.com/fullstackatbrown/project-necysc",
       },
       production: true,
     },
@@ -242,7 +263,7 @@ export const RESUME_DATA = {
   certificates: [
     {
       title: "AWS Certified Cloud Practitioner",
-      awardee: ["Amazon Web Services"], 
+      awardee: ["Amazon Web Services"],
       description: "Cloud computing, AWS services",
       link: {
         label: "certificate",
