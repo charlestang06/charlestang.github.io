@@ -6,7 +6,7 @@ export const RESUME_DATA = {
   locationLink: "https://www.google.com/maps/place/Massachusetts",
   about: "APMA-CS at Brown University",
   summary:
-    "I am student at Brown University, pursuing an interest in Applied Mathematics, Computer Science, and Artificial Intelligence. I am most interested in problems regarding using AI and mathematical modeling to solve real-world problems.",
+    "I am student at Brown University, pursuing an interest in Applied Mathematics and Computer Science. This summer, I will be joining Cisco Meraki as a Software Engineering Intern (Test Automation Team).",
   djSummary:
     "I'm currently a DJ spinning the latest tracks in the Boston/Providence area. I started in December 2023 to mix for my friends and began to get into house, pop, and hip-hop music.",
   avatarUrl: "https://charlestang06.github.io/photos/pfp.jpg",
