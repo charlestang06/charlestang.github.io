@@ -220,7 +220,7 @@ export const RESUME_DATA = {
       description: "Math modeling paper written for 2024 Brown MCM challenge",
       link: {
         label: "paper",
-        href: "https://portfolio.charlestang.dev/projects/",
+        href: "https://portfolio.charlestang.dev/projects/Team_01_BMCM_Final_Paper.pdf",
       },
     },
     {
