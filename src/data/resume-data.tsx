@@ -215,6 +215,15 @@ export const RESUME_DATA = {
   ],
   papers: [
     {
+      title: "March Madness",
+      awards: ["Pending submission"],
+      description: "Math modeling paper written for 2024 Brown MCM challenge",
+      link: {
+        label: "paper",
+        href: "https://portfolio.charlestang.dev/projects/",
+      },
+    },
+    {
       title: "Dandelion Populations",
       awards: ["USA Outstanding Winner (1st/967)", "NCTM Award"],
       description: "Math modeling paper written for 2023 HiMCM challenge",
