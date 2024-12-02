@@ -220,7 +220,7 @@ export const RESUME_DATA = {
       description: "Math modeling paper written for 2024 Brown MCM challenge",
       link: {
         label: "paper",
-        href: "https://portfolio.charlestang.dev/projects/Team_01_BMCM_Final_Paper.pdf",
+        href: "/Team_01_BMCM_Final_Paper.pdf",
       },
     },
     {
@@ -229,16 +229,16 @@ export const RESUME_DATA = {
       description: "Math modeling paper written for 2023 HiMCM challenge",
       link: {
         label: "paper",
-        href: "https://portfolio.charlestang.dev/projects/HiMCM2023.pdf",
+        href: "HiMCM2023.pdf",
       },
     },
     {
       title: "MA Mortgage Markets",
       awards: ["ECON 3130"],
-      description: "Logit regression analysis of discrimination",
+      description: "Logit regression analysis of discrimination (ECON 3130)",
       link: {
         label: "paper",
-        href: "https://portfolio.charlestang.dev/projects/ECON3130_Paper.pdf",
+        href: "ECON3130_Paper.pdf",
       },
     },
     {
@@ -247,7 +247,7 @@ export const RESUME_DATA = {
       description: "Math modeling paper written for 2023 IMMC challenge",
       link: {
         label: "paper",
-        href: "https://portfolio.charlestang.dev/projects/2023_IM2C_12519_Solution.pdf",
+        href: "2023_IM2C_12519_Solution.pdf",
       },
     },
     {
@@ -256,7 +256,7 @@ export const RESUME_DATA = {
       description: "Math modeling paper written for 2022 HiMCM challenge",
       link: {
         label: "paper",
-        href: "https://portfolio.charlestang.dev/projects/HiMCM2022.pdf",
+        href: "HiMCM2022.pdf",
       },
     },
     {
@@ -265,7 +265,7 @@ export const RESUME_DATA = {
       description: "Math modeling paper written for 2022 M3 Modeling challenge",
       link: {
         label: "paper",
-        href: "https://portfolio.charlestang.dev/projects/2023_mathworks_scand_paper.pdf",
+        href: "2023_mathworks_scand_paper.pdf",
       },
     },
   ],
