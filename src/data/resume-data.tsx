@@ -4,14 +4,15 @@ export const RESUME_DATA = {
   initials: "CT",
   location: "Massachusetts, USA",
   locationLink: "https://www.google.com/maps/place/Massachusetts",
-  about: "APMA-CS at Brown University",
+  about: "CS & Applied Math at Brown University",
   summary:
-    "I am student at Brown University, pursuing an interest in Applied Mathematics and Computer Science. This summer, I will be joining Cisco Meraki as a Software Engineering Intern (Test Automation Team).",
+    "I am student at Brown University, pursuing an interest in Applied Mathematics and Computer Science. I am interested in software engineering (full-stack, back-end, DevOps). This summer, I will be joining Cisco Meraki in San Francisco as a Software Engineering Intern.",
   djSummary:
     "I'm currently a DJ spinning the latest tracks in the Boston/Providence area. I started in December 2023 to mix for my friends and began to get into house, pop, and hip-hop music.",
-  avatarUrl: "https://charlestang06.github.io/photos/pfp.jpg",
+  avatarUrl: "pfp.jpg",
   djAvatarUrl: "https://charlestang06.github.io/photos/IMG_0710.JPEG",
   personalWebsiteUrl: "https://charlestang.dev",
+  resumeUrl: "Charles_Tang_resume.pdf",
   contact: {
     email: "charles_tang@brown.edu",
     social: [

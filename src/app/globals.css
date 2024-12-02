@@ -68,12 +68,12 @@
   .skillimg {
     height: 3.5rem;
     margin: 0.5rem;
-    transition: all .3s ease-in-out;
+    transition: all 0.3s ease-in-out;
   }
 
-  .skillimg:hover{
-    -webkit-filter: drop-shadow(0 5px 15px rgba(0,0,0,.3));
-    filter: drop-shadow(0 5px 15px rgba(0,0,0,.3));
+  .skillimg:hover {
+    -webkit-filter: drop-shadow(0 5px 15px rgba(0, 0, 0, 0.3));
+    filter: drop-shadow(0 5px 15px rgba(0, 0, 0, 0.3));
     -webkit-transform: translateY(-5px);
     transform: translateY(-5px);
   }
@@ -90,4 +90,8 @@
 
 .print-force-new-page {
   page-break-before: always;
+}
+
+.resume-link:hover {
+  text-underline-offset: 10px;
 }

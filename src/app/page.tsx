@@ -96,6 +96,16 @@ export default function Page() {
           <p className="text-pretty font-mono text-sm text-muted-foreground">
             {RESUME_DATA.summary}
           </p>
+          <p className="text-pretty font-mono text-sm text-muted-foreground">
+            View my{" "}
+            <a
+              className="resume-link underline"
+              href={RESUME_DATA.resumeUrl}
+              style={{ textUnderlineOffset: "6px" }}
+            >
+              resume
+            </a>
+          </p>
         </Section>
 
         <Section>
@@ -170,7 +180,7 @@ export default function Page() {
 
         <Section className=" croll-mb-16">
           <h2 className="text-xl font-bold">Projects</h2>
-          <p className="text-xs font-mono inline-flex items-center gap-2 text-gray-500">
+          <p className="inline-flex items-center gap-2 font-mono text-xs text-gray-500">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="16"
