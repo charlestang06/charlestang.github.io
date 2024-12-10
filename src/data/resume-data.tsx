@@ -38,20 +38,20 @@ export const RESUME_DATA = {
       degree:
         "Bachelor's Degree in APMA-CS (Applied Mathematics + Computer Science)",
       coursework:
-        "Stochastic Calculus, Optimization, Operations Research, Functional Programming",
-      gpa: "4.0",
-      start: "2024",
-      end: "(2027)",
-    },
-    {
-      school: "Worcester Polytechnic Institute",
-      degree: "Computer Science and Mathematics",
-      coursework:
-        "Calculus, ODEs, LinAlg, Discrete, Probability Theory, Real Analysis, Stochastic Models, Econometrics, Object Oriented Programming, Algorithms, Intro to ECE",
+        "Stochastic Optimization, Operations Research, Data Structures & Algorithms, Machine Learning",
       gpa: "4.0",
       start: "2023",
-      end: "2024",
+      end: "(2027)",
     },
+    // {
+    //   school: "Worcester Polytechnic Institute",
+    //   degree: "Computer Science and Mathematics",
+    //   coursework:
+    //     "Calculus, ODEs, LinAlg, Discrete, Probability Theory, Real Analysis, Stochastic Models, Econometrics, Object Oriented Programming, Algorithms, Intro to ECE",
+    //   gpa: "4.0",
+    //   start: "2023",
+    //   end: "2024",
+    // },
   ],
   work: [
     {
@@ -60,7 +60,7 @@ export const RESUME_DATA = {
       badges: ["Providence, RI"],
       title: "Project Manager",
       start: "Aug. 2024",
-      end: "Present",
+      end: "Dec. 2024",
       description:
         "Led team of 15 developers to create Django (Python) app for NECYSC, serving 100+ campers and 50+ staff annually. Coordinated weekly team standups and served as a liaison between developers and the client organization. Set up CI/CD pipeline with GitHub Actions to automate testing, build, and deployment onto AWS.",
     },
@@ -122,7 +122,7 @@ export const RESUME_DATA = {
     "LangChain",
     "Computer Vision Toolbox",
     "OR Tools",
-    "PULP",
+    "FastAPI",
   ],
   projects: [
     {
@@ -217,8 +217,8 @@ export const RESUME_DATA = {
   papers: [
     {
       title: "March Madness",
-      awards: ["Pending submission"],
-      description: "Math modeling paper written for 2024 Brown MCM challenge",
+      awards: ["Outstanding Winner (1st/22)"],
+      description: "Math modeling paper written for 2024 Brown MCM contest",
       link: {
         label: "paper",
         href: "/Team_01_BMCM_Final_Paper.pdf",
