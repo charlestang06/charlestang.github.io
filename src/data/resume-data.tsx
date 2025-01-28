@@ -216,6 +216,15 @@ export const RESUME_DATA = {
   ],
   papers: [
     {
+      title: "Food Web & Agriculture",
+      awards: ["Pending submission"],
+      description: "Math modeling paper written for 2025 MCM/ICM contest",
+      link: {
+        label: "paper",
+        href: "/2025_MCM.pdf",
+      },
+    },
+    {
       title: "March Madness",
       awards: ["Outstanding Winner (1st/22)"],
       description: "Math modeling paper written for 2024 Brown MCM contest",
