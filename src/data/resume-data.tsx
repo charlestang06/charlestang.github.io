@@ -116,6 +116,7 @@ export const RESUME_DATA = {
     "Bootstrap",
     "Django",
     "React.js",
+    "Next.js",
     "Pandas",
     "Sklearn",
     "Tensorflow",
@@ -202,7 +203,26 @@ export const RESUME_DATA = {
       },
       production: false,
     },
-
+    {
+      title: "Buzz Board",
+      techStack: ["NextJS", "Supabase", "Vercel"],
+      description: "Social leaderboard for students",
+      link: {
+        label: "buzz-leaderboard.vercel.app",
+        href: "https://buzz-leaderboard.vercel.app/",
+      },
+      production: false,
+    },
+    {
+      title: "Cafe Providence",
+      techStack: ["NextJS", "HeroUI", "Vercel"],
+      description: "Recommending cafes in Providence",
+      link: {
+        label: "cafe-providence.vercel.app/",
+        href: "https://cafe-providence.vercel.app/",
+      },
+      production: false,
+    },
     {
       title: "Cyclist Detection",
       techStack: ["Python", "Rasbperry Pi", "Tensorflow Lite"],
