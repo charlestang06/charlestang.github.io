@@ -214,6 +214,16 @@ export const RESUME_DATA = {
       production: false,
     },
     {
+      title: "Mortgage Markets",
+      techStack: ["Python", "Pandas", "Streamlit"],
+      description: "Identifying trends in mortgage discrimination",
+      link: {
+        label: "hmda-visualization.streamlit.app",
+        href: "https://hmda-visualization.streamlit.app/",
+      },
+      production: true,
+    },
+    {
       title: "Cafe Providence",
       techStack: ["NextJS", "HeroUI", "Vercel"],
       description: "Recommending cafes in Providence",
