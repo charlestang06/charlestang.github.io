@@ -27,42 +27,41 @@ export const RESUME_DATA = {
         icon: LinkedInIcon,
       },
     ],
-    dj: {
-      name: "DJ EQ",
-      url: "/dj",
-    },
+    // dj: {
+    //   name: "DJ EQ",
+    //   url: "/dj",
+    // },
   },
   education: [
     {
       school: "Brown University",
-      degree:
-        "Bachelor's Degree in APMA-CS (Applied Mathematics + Computer Science)",
+      degree: "Bachelor's Degree in Computer Science & Applied Mathematics",
       coursework:
         "Stochastic Optimization, Operations Research, Data Structures & Algorithms, Machine Learning",
       gpa: "4.0",
       start: "2023",
       end: "(2027)",
     },
-    // {
-    //   school: "Worcester Polytechnic Institute",
-    //   degree: "Computer Science and Mathematics",
-    //   coursework:
-    //     "Calculus, ODEs, LinAlg, Discrete, Probability Theory, Real Analysis, Stochastic Models, Econometrics, Object Oriented Programming, Algorithms, Intro to ECE",
-    //   gpa: "4.0",
-    //   start: "2023",
-    //   end: "2024",
-    // },
   ],
   work: [
     {
+      company: "Cisco Meraki",
+      link: "https://meraki.cisco.com/",
+      badges: ["San Francisco, CA"],
+      title: "Software Engineering Intern",
+      start: "May 2025",
+      end: "Aug. 2025",
+      description:
+        "E2E testing library for Meraki's cloud-managed switches platform.",
+    },
+    {
       company: "Full Stack @ Brown",
-      link: "https://github.com/fullstackatbrown",
+      link: "https://www.fullstackatbrown.com/",
       badges: ["Providence, RI"],
       title: "Project Manager",
       start: "Aug. 2024",
       end: "Dec. 2024",
-      description:
-        "Led team of 15 developers to create Django (Python) app for NECYSC, serving 100+ campers and 50+ staff annually. Coordinated weekly team standups and served as a liaison between developers and the client organization. Set up CI/CD pipeline with GitHub Actions to automate testing, build, and deployment onto AWS.",
+      description: "Led team developers to create app for NECYSC.",
     },
     {
       company: "BJ's Wholesale Club",
@@ -72,7 +71,7 @@ export const RESUME_DATA = {
       start: "Jun. 2024",
       end: "Aug. 2024",
       description:
-        "Developed CLI to simulate millions of historical forklift routes (Python/Pandas) to streamline picking/delivery. Optimized forklift pick path by 20% with an annual ROI of $851K with integer and linear programming. Pioneered robotic forklift deployment initiatives (annual ROI of $331K) in East Coast distribution centers. Designed Excel dashboard for 200+ clubs nationwide on performance insights on Tally (BJ's flagship robot).",
+        "Optimizing warehouse operations with math modeling and software engineering.",
     },
     {
       company: "IOMICS Corporation",
@@ -81,8 +80,7 @@ export const RESUME_DATA = {
       title: "Software Engineering Intern",
       start: "Dec. 2023",
       end: "Aug. 2024",
-      description:
-        "Developed a chatbot app with LangChain, Django, Postgres, and Docker answering 95% correctly on medical Q/A. Increased brain injury analysis accuracy by 10% by delivering computer vision recommendations to specialists. Reduced feature selection software computational time by 80% by implementing parallel processing (sklearn).",
+      description: "Developed a AI applications (RAG/chatbot apps).",
     },
     {
       company: "Iridium Tutoring",
@@ -92,12 +90,12 @@ export const RESUME_DATA = {
       start: "2020",
       end: "2024",
       description: `
-       Founded and led a 501c3 organization providing free tutoring to 500+ K-12 students nationwide, delivering 10K+ sessions, raising $15K+, and gaining nationwide TV coverage. Implemented training for 100+ tutors with an average quality rating of 4.8/5.0, pioneered educational projects, and developed a Django + MySQL web portal, saving $5K annually and enhancing student data privacy.`,
+       Founded and led a 501c3 organization providing free tutoring.`,
     },
   ],
   skills: [
     "Python",
-    "Javascript",
+    "JavaScript",
     "Java",
     "HTML/CSS",
     "MATLAB",
