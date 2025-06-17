@@ -27,10 +27,10 @@ export const RESUME_DATA = {
         icon: LinkedInIcon,
       },
     ],
-    // dj: {
-    //   name: "DJ EQ",
-    //   url: "/dj",
-    // },
+    dj: {
+      name: "DJ",
+      url: "/dj",
+    },
   },
   education: [
     {
