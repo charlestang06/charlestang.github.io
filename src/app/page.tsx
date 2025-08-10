@@ -64,7 +64,7 @@ export default function Page() {
                   </a>
                 </Button>
               ))}
-              {RESUME_DATA.contact.dj ? (
+              {/* {RESUME_DATA.contact.dj ? (
                 <Button
                   key={RESUME_DATA.contact.dj.name}
                   className="size-10"
@@ -76,7 +76,7 @@ export default function Page() {
                     <Headphones className="size-5" />
                   </a>
                 </Button>
-              ) : null}
+              ) : null} */}
             </div>
             <div className="hidden flex-col gap-x-1 font-mono text-sm text-muted-foreground print:flex">
               {RESUME_DATA.contact.email ? (

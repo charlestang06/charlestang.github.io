@@ -6,7 +6,7 @@ export const RESUME_DATA = {
   locationLink: "https://www.google.com/maps/place/Massachusetts",
   about: "CS & Applied Math at Brown University",
   summary:
-    "I am student at Brown University, pursuing an interest in Applied Mathematics and Computer Science. I am interested in software engineering (full-stack, back-end, DevOps). This summer, I will be joining Cisco Meraki in San Francisco as a Software Engineering Intern.",
+    "I am student at Brown University, pursuing an interest in Applied Mathematics and Computer Science. I am interested in software engineering (full-stack, back-end, AI, and infra). Last summer, I interned with Cisco Meraki in San Francisco on the Meraki MS (switches) team.",
   djSummary:
     "I'm currently a DJ spinning the latest tracks in the Boston/Providence area. I started in December 2023 to mix for my friends and began to get into house, pop, and hip-hop music.",
   avatarUrl: "pfp.jpg",
@@ -37,10 +37,10 @@ export const RESUME_DATA = {
       school: "Brown University",
       degree: "Bachelor's Degree in Computer Science & Applied Mathematics",
       coursework:
-        "Stochastic Optimization, Operations Research, Data Structures & Algorithms, Machine Learning",
+        "Stochastic Optimization, Real Analysis, Operations Research, Data Structures & Algorithms, Machine Learning, Reinforcement Learning, Computer Systems",
       gpa: "4.0",
       start: "2023",
-      end: "(2027)",
+      end: "(May 2027)",
     },
   ],
   work: [
@@ -48,7 +48,7 @@ export const RESUME_DATA = {
       company: "Cisco Meraki",
       link: "https://meraki.cisco.com/",
       badges: ["San Francisco, CA"],
-      title: "Software Engineering Intern",
+      title: "Software Engineer Intern",
       start: "May 2025",
       end: "Aug. 2025",
       description:
@@ -67,7 +67,7 @@ export const RESUME_DATA = {
       company: "BJ's Wholesale Club",
       link: "https://bjs.com",
       badges: ["Marlborough, MA"],
-      title: "Data Science Intern",
+      title: "Software Engineer Intern",
       start: "Jun. 2024",
       end: "Aug. 2024",
       description:
@@ -77,14 +77,14 @@ export const RESUME_DATA = {
       company: "IOMICS Corporation",
       link: "https://iomics.us/",
       badges: ["Cambridge, MA"],
-      title: "Software Engineering Intern",
+      title: "Software Engineer Intern",
       start: "Dec. 2023",
       end: "Aug. 2024",
       description: "Developed a AI applications (RAG/chatbot apps).",
     },
     {
       company: "Iridium Tutoring",
-      link: "https://iridiumtutoring.com/",
+      link: "https://sites.google.com/view/iridiumtutoring",
       badges: ["Southborough, MA"],
       title: "Founder & Lead Director",
       start: "2020",
@@ -106,6 +106,7 @@ export const RESUME_DATA = {
     "Docker",
     "AWS",
     "Git",
+    "Jenkins",
     "Postman",
     "VS Code",
     "NodeJS",
@@ -119,6 +120,7 @@ export const RESUME_DATA = {
     "Sklearn",
     "Tensorflow",
     "LangChain",
+    "LangGraph",
     "Computer Vision Toolbox",
     "OR Tools",
     "FastAPI",
