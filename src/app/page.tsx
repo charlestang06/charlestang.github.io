@@ -141,38 +141,48 @@ export default function Page() {
           <h2 className="text-xl font-bold">Work Experience</h2>
           {RESUME_DATA.work.map((work) => {
             return (
-              <Card key={work.company}>
-                <CardHeader>
-                  <div className="flex items-center justify-between gap-x-2 text-base">
-                    <h3 className="inline-flex items-center justify-center gap-x-1 font-semibold leading-none">
-                      <a className="hover:underline" href={work.link}>
-                        {work.company}
-                      </a>
+              <Card key={work.company} className="flex items-start gap-4">
+                <div className="flex-shrink-0">
+                  <Avatar>
+                    <AvatarImage alt={work.company} src={work.logo} />
+                    <AvatarFallback>
+                      {work.company?.charAt(0).toUpperCase()}
+                    </AvatarFallback>
+                  </Avatar>
+                </div>
+                <div className="flex-1">
+                  <CardHeader>
+                    <div className="flex items-center justify-between gap-x-2 text-base">
+                      <h3 className="inline-flex items-center justify-center gap-x-1 font-semibold leading-none">
+                        <a className="hover:underline" href={work.link}>
+                          {work.company}
+                        </a>
 
-                      <span className="inline-flex gap-x-1">
-                        {work.badges.map((badge) => (
-                          <Badge
-                            variant="secondary"
-                            className="align-middle text-xs"
-                            key={badge}
-                          >
-                            {badge}
-                          </Badge>
-                        ))}
-                      </span>
-                    </h3>
-                    <div className="text-sm tabular-nums">
-                      {work.start} - {work.end}
+                        <span className="inline-flex gap-x-2">
+                          {work.badges.map((badge) => (
+                            <Badge
+                              variant="secondary"
+                              className="mx-3 align-middle text-xs"
+                              key={badge}
+                            >
+                              {badge}
+                            </Badge>
+                          ))}
+                        </span>
+                      </h3>
+                      <div className="text-sm tabular-nums">
+                        {work.start} - {work.end}
+                      </div>
                     </div>
-                  </div>
 
-                  <h4 className="font-mono text-sm leading-none">
-                    {work.title}
-                  </h4>
-                </CardHeader>
-                <CardContent className="mt-2 text-xs">
-                  {work.description}
-                </CardContent>
+                    <h4 className="font-mono text-sm leading-none">
+                      {work.title}
+                    </h4>
+                  </CardHeader>
+                  <CardContent className="mt-2 text-xs">
+                    {work.description}
+                  </CardContent>
+                </div>
               </Card>
             );
           })}

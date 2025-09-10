@@ -45,7 +45,18 @@ export const RESUME_DATA = {
   ],
   work: [
     {
+      company: "(Incoming) Palantir Technologies",
+      logo: "logos/palantir.jpeg",
+      link: "https://www.palantir.com/",
+      badges: ["New York, NY"],
+      title: "Incoming Software Engineer Intern",
+      start: "Jun. 2026",
+      end: "Aug. 2026",
+      description: "Production infrastructure",
+    },
+    {
       company: "Cisco Meraki",
+      logo: "logos/meraki.png",
       link: "https://meraki.cisco.com/",
       badges: ["San Francisco, CA"],
       title: "Software Engineer Intern",
@@ -56,6 +67,7 @@ export const RESUME_DATA = {
     },
     {
       company: "Full Stack @ Brown",
+      logo: "logos/fullstack.png",
       link: "https://www.fullstackatbrown.com/",
       badges: ["Providence, RI"],
       title: "Project Manager",
@@ -65,6 +77,7 @@ export const RESUME_DATA = {
     },
     {
       company: "BJ's Wholesale Club",
+      logo: "logos/bjs.png",
       link: "https://bjs.com",
       badges: ["Marlborough, MA"],
       title: "Software Engineer Intern",
@@ -75,6 +88,7 @@ export const RESUME_DATA = {
     },
     {
       company: "IOMICS Corporation",
+      logo: "logos/iomics.png",
       link: "https://iomics.us/",
       badges: ["Cambridge, MA"],
       title: "Software Engineer Intern",
@@ -84,6 +98,7 @@ export const RESUME_DATA = {
     },
     {
       company: "Iridium Tutoring",
+      logo: "logos/iridium.png",
       link: "https://sites.google.com/view/iridiumtutoring",
       badges: ["Southborough, MA"],
       title: "Founder & Lead Director",
