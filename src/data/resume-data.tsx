@@ -88,24 +88,24 @@ export const RESUME_DATA = {
     },
     {
       company: "IOMICS Corporation",
-      logo: "logos/iomics.png",
+      logo: "logos/iomics.jpg",
       link: "https://iomics.us/",
       badges: ["Cambridge, MA"],
       title: "Software Engineer Intern",
       start: "Dec. 2023",
       end: "Aug. 2024",
-      description: "Developed a AI applications (RAG/chatbot apps).",
+      description: "Developed AI applications (RAG/chatbot apps).",
     },
     {
       company: "Iridium Tutoring",
       logo: "logos/iridium.png",
       link: "https://sites.google.com/view/iridiumtutoring",
       badges: ["Southborough, MA"],
-      title: "Founder & Lead Director",
+      title: "Founder",
       start: "2020",
       end: "2024",
       description: `
-       Founded and led a 501c3 organization providing free tutoring.`,
+       Founded and a 501c3 organization providing nationwide, free tutoring.`,
     },
   ],
   skills: [
