@@ -40,7 +40,7 @@ export const RESUME_DATA = {
         "Stochastic Optimization, Real Analysis, Operations Research, Data Structures & Algorithms, Machine Learning, Reinforcement Learning, Computer Systems",
       gpa: "4.0",
       start: "2023",
-      end: "(May 2027)",
+      end: "(Dec 2027)",
     },
   ],
   work: [
