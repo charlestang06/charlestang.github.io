@@ -61,7 +61,7 @@ export const RESUME_DATA = {
       badges: ["San Francisco, CA"],
       title: "Incoming Software Engineer Intern",
       start: "Jan. 2026",
-      end: "Apr. 2026",
+      end: "May 2026",
       description: "Payments infrastructure",
     },
     {
