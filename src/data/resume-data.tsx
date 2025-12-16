@@ -179,6 +179,16 @@ export const RESUME_DATA = {
       production: true,
     },
     {
+      title: "Advent Calendar",
+      techStack: ["Vite", "ReactJS", "ExpressJS", "Vercel", "Firebase"],
+      description: "Christmas countdown app with daily puzzles",
+      link: {
+        label: "advent-calendar-ashen-nine.vercel.app",
+        href: "https://advent-calendar-ashen-nine.vercel.app/",
+      },
+      production: false,
+    },
+    {
       title: "Finsight (FinnAI)",
       techStack: ["LangChain", "FastAPI", "ReactJS", "Ant-Design", "Firebase"],
       description: "Financial market AI RAG app with dashboard UI",
