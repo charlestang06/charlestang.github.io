@@ -55,14 +55,14 @@ export const RESUME_DATA = {
       description: "Production infrastructure",
     },
     {
-      company: "(Incoming) Stripe",
+      company: "Stripe",
       logo: "logos/stripe.png",
       link: "https://stripe.com/",
       badges: ["San Francisco, CA"],
-      title: "Incoming Software Engineer Intern",
+      title: "Software Engineer Intern",
       start: "Jan. 2026",
       end: "May 2026",
-      description: "Payments infrastructure",
+      description: "Payments frontend consumer platform",
     },
     {
       company: "Cisco Meraki",
