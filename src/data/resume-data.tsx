@@ -6,7 +6,7 @@ export const RESUME_DATA = {
   locationLink: "https://www.google.com/maps/place/Massachusetts",
   about: "CS & Applied Math at Brown University",
   summary:
-    "I am student at Brown University, pursuing an interest in Applied Mathematics and Computer Science. I am interested in software engineering (full-stack, back-end, AI, and infra). Last summer, I interned with Cisco Meraki in San Francisco on the Meraki MS (switches) team.",
+    "I am student at Brown University, pursuing an interest in Applied Mathematics and Computer Science. I am interested in software engineering.",
   djSummary:
     "I'm currently a DJ spinning the latest tracks in the Boston/Providence area. I started in December 2023 to mix for my friends and began to get into house, pop, and hip-hop music.",
   avatarUrl: "pfp.jpg",
@@ -39,17 +39,16 @@ export const RESUME_DATA = {
       coursework:
         "Stochastic Optimization, Real Analysis, Operations Research, Data Structures & Algorithms, Machine Learning, Reinforcement Learning, Computer Systems",
       gpa: "4.0",
-      start: "2023",
       end: "(Dec 2027)",
     },
   ],
   work: [
     {
-      company: "(Incoming) Palantir Technologies",
+      company: "Palantir Technologies",
       logo: "logos/palantir.jpeg",
       link: "https://www.palantir.com/",
       badges: ["New York, NY"],
-      title: "Incoming Software Engineer Intern",
+      title: "Software Engineer Intern",
       start: "Jun. 2026",
       end: "Aug. 2026",
       description: "Production infrastructure",
