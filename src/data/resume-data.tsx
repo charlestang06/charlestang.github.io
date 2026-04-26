@@ -7,10 +7,7 @@ export const RESUME_DATA = {
   about: "CS & Applied Math at Brown University",
   summary:
     "I am student at Brown University, pursuing an interest in Applied Mathematics and Computer Science. I am interested in software engineering.",
-  djSummary:
-    "I'm currently a DJ spinning the latest tracks in the Boston/Providence area. I started in December 2023 to mix for my friends and began to get into house, pop, and hip-hop music.",
   avatarUrl: "pfp.jpg",
-  djAvatarUrl: "https://charlestang06.github.io/photos/IMG_0710.JPEG",
   personalWebsiteUrl: "https://charlestang.dev",
   resumeUrl: "Charles_Tang_resume.pdf",
   contact: {
@@ -27,10 +24,6 @@ export const RESUME_DATA = {
         icon: LinkedInIcon,
       },
     ],
-    dj: {
-      name: "DJ",
-      url: "/dj",
-    },
   },
   education: [
     {
@@ -43,16 +36,6 @@ export const RESUME_DATA = {
     },
   ],
   work: [
-    {
-      company: "Palantir Technologies",
-      logo: "logos/palantir.jpeg",
-      link: "https://www.palantir.com/",
-      badges: ["New York, NY"],
-      title: "Software Engineer Intern",
-      start: "Jun. 2026",
-      end: "Aug. 2026",
-      description: "Production infrastructure",
-    },
     {
       company: "Stripe",
       logo: "logos/stripe.png",
