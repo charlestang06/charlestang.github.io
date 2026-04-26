@@ -7,10 +7,7 @@ export const RESUME_DATA = {
   about: "CS & Applied Math at Brown University",
   summary:
     "I am student at Brown University, pursuing an interest in Applied Mathematics and Computer Science. I am interested in software engineering.",
-  djSummary:
-    "I'm currently a DJ spinning the latest tracks in the Boston/Providence area. I started in December 2023 to mix for my friends and began to get into house, pop, and hip-hop music.",
   avatarUrl: "pfp.jpg",
-  djAvatarUrl: "https://charlestang06.github.io/photos/IMG_0710.JPEG",
   personalWebsiteUrl: "https://charlestang.dev",
   resumeUrl: "Charles_Tang_resume.pdf",
   contact: {
@@ -27,10 +24,6 @@ export const RESUME_DATA = {
         icon: LinkedInIcon,
       },
     ],
-    dj: {
-      name: "DJ",
-      url: "/dj",
-    },
   },
   education: [
     {
@@ -117,38 +110,12 @@ export const RESUME_DATA = {
        Founded and a 501c3 organization providing nationwide, free tutoring.`,
     },
   ],
-  skills: [
-    "Python",
-    "JavaScript",
-    "Java",
-    "HTML/CSS",
-    "MATLAB",
-    "Linux",
-    "REST APIs",
-    "LaTeX",
-    "MySQL/PostgreSQL",
-    "Docker",
-    "AWS",
-    "Git",
-    "Jenkins",
-    "Postman",
-    "VS Code",
-    "NodeJS",
-    "Firebase",
-    "Profilers (Scalene)",
-    "Bootstrap",
-    "Django",
-    "React.js",
-    "Next.js",
-    "Pandas",
-    "Sklearn",
-    "Tensorflow",
-    "LangChain",
-    "LangGraph",
-    "Computer Vision Toolbox",
-    "OR Tools",
-    "FastAPI",
-  ],
+  skills: {
+    Languages: ["Python", "JavaScript", "Java", "HTML/CSS", "MATLAB", "LaTeX"],
+    Frameworks: ["React.js", "Next.js", "Django", "FastAPI", "NodeJS", "Bootstrap"],
+    Tools: ["Docker", "AWS", "Git", "Linux", "Jenkins", "MySQL/PostgreSQL", "Firebase", "REST APIs", "Postman"],
+    "Data & ML": ["Pandas", "Sklearn", "Tensorflow", "LangChain", "LangGraph", "OR Tools", "Computer Vision Toolbox"],
+  },
   projects: [
     {
       title: "MAMS SISO",
