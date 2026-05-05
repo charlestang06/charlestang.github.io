@@ -290,6 +290,15 @@ export const RESUME_DATA = {
       },
     },
     {
+      title: "Vehicle Trajectory on nuScenes",
+      awards: ["CSCI 1430"],
+      description: "Computer vision paper on vehicle trajectory prediction (CSCI 1430)",
+      link: {
+        label: "paper",
+        href: "csci1430.pdf",
+      },
+    },
+    {
       title: "MA Mortgage Markets",
       awards: ["ECON 3130"],
       description: "Logit regression analysis of discrimination (ECON 3130)",
