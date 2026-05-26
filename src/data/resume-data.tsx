@@ -37,6 +37,16 @@ export const RESUME_DATA = {
   ],
   work: [
     {
+      company: "Palantir Technologies",
+      logo: "logos/palantir.jpeg",
+      link: "https://www.palantir.com/",
+      badges: ["New York, NY"],
+      title: "Software Engineer Intern",
+      start: "Jun. 2026",
+      end: "Aug. 2026",
+      description: "Production infrastructure",
+    },
+    {
       company: "Stripe",
       logo: "logos/stripe.png",
       link: "https://stripe.com/",
