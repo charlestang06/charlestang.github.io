@@ -6,7 +6,7 @@ import React from "react";
 
 export const metadata: Metadata = {
   title: "Charles Tang",
-  description: "APMA at Brown University",
+  description: "APMA-CS at Brown University",
 };
 
 // If loading a variable font, you don't need to specify the font weight
