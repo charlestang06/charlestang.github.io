@@ -6,7 +6,7 @@ export const RESUME_DATA = {
   locationLink: "https://www.google.com/maps/place/Massachusetts",
   about: "CS & Applied Math at Brown University",
   summary:
-    "I am student at Brown University, pursuing an interest in Applied Mathematics and Computer Science. I am interested in software engineering.",
+    "I am student at Brown University studying Applied Mathematics and Computer Science. I'm a software engineer working across infrastructure and large-scale systems.",
   avatarUrl: "pfp.jpg",
   personalWebsiteUrl: "https://charlestang.dev",
   resumeUrl: "Charles_Tang_resume.pdf",
@@ -32,7 +32,7 @@ export const RESUME_DATA = {
       coursework:
         "Stochastic Optimization, Real Analysis, Operations Research, Data Structures & Algorithms, Machine Learning, Reinforcement Learning, Computer Systems",
       gpa: "4.0",
-      end: "(Dec 2027)",
+      end: "(Aug 2027)",
     },
   ],
   work: [
@@ -44,7 +44,7 @@ export const RESUME_DATA = {
       title: "Software Engineer Intern",
       start: "Jun. 2026",
       end: "Aug. 2026",
-      description: "Production infrastructure",
+      description: "Data infrastructure & SQL warehousing",
     },
     {
       company: "Stripe",
@@ -54,7 +54,7 @@ export const RESUME_DATA = {
       title: "Software Engineer Intern",
       start: "Jan. 2026",
       end: "May 2026",
-      description: "Payments frontend consumer platform",
+      description: "Frontend infrastructure & developer productivity",
     },
     {
       company: "Cisco Meraki",
@@ -302,7 +302,8 @@ export const RESUME_DATA = {
     {
       title: "Vehicle Trajectory on nuScenes",
       awards: ["CSCI 1430"],
-      description: "Computer vision paper on vehicle trajectory prediction (CSCI 1430)",
+      description:
+        "Computer vision paper on vehicle trajectory prediction (CSCI 1430)",
       link: {
         label: "paper",
         href: "csci1430.pdf",
