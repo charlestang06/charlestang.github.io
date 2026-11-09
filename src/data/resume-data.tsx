@@ -9,7 +9,6 @@ export const RESUME_DATA = {
     "I am student at Brown University studying Applied Mathematics and Computer Science. I'm a software engineer working across infrastructure and large-scale systems.",
   avatarUrl: "pfp.jpg",
   personalWebsiteUrl: "https://charlestang.dev",
-  resumeUrl: "Charles_Tang_resume.pdf",
   contact: {
     email: "charles_tang@brown.edu",
     social: [
@@ -255,7 +254,7 @@ export const RESUME_DATA = {
   papers: [
     {
       title: "Food Web & Agriculture",
-      awards: ["Pending submission"],
+      awards: ["Meritorious"],
       description: "Math modeling paper written for 2025 MCM/ICM contest",
       link: {
         label: "paper",

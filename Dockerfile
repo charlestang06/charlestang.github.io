@@ -10,7 +10,7 @@ WORKDIR /usr/src/app
 COPY package*.json ./
 
 # Install all dependencies.
-RUN npm install
+RUN npm ci
 
 # Copy local code to the container image.
 COPY . .

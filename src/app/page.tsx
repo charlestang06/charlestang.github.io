@@ -83,16 +83,6 @@ export default function Page() {
           <p className="text-pretty font-mono text-sm text-muted-foreground">
             {RESUME_DATA.summary}
           </p>
-          <p className="text-pretty font-mono text-sm text-muted-foreground">
-            View my{" "}
-            <a
-              className="resume-link underline"
-              href={RESUME_DATA.resumeUrl}
-              style={{ textUnderlineOffset: "6px" }}
-            >
-              resume
-            </a>
-          </p>
         </Section>
 
         <Section>
