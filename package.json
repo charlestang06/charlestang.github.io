@@ -8,7 +8,8 @@
     "start": "serve dist --listen 3000",
     "lint": "eslint . --max-warnings 0",
     "export": "npm run build",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "test": "node --import tsx --test tests/*.test.ts tests/*.test.tsx"
   },
   "dependencies": {
     "@radix-ui/react-avatar": "^1.0.4",
@@ -30,16 +31,19 @@
     "vaul": "^1.1.2"
   },
   "devDependencies": {
+    "@testing-library/react": "^16.3.3",
     "@types/node": "^24.19.2",
     "@types/react": "^19.3.0",
     "@types/react-dom": "^19.3.0",
     "autoprefixer": "^10.0.1",
     "eslint": "^10.14.0",
     "eslint-config-next": "16.4.5",
+    "jsdom": "^31.0.1",
     "postcss": "^8",
     "prettier": "^3.1.1",
     "prettier-plugin-tailwindcss": "^0.5.9",
     "tailwindcss": "^3.4.0",
+    "tsx": "^4.23.15",
     "typescript": "^5"
   },
   "engines": {

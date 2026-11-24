@@ -1,12 +1,18 @@
-import { GitHubIcon, LinkedInIcon } from "@/components/icons";
+import {
+  BeliIcon,
+  GitHubIcon,
+  LinkedInIcon,
+  StravaIcon,
+  SpotifyIcon,
+} from "@/components/icons";
 export const RESUME_DATA = {
   name: "Charles Tang",
   initials: "CT",
-  location: "Massachusetts, USA",
-  locationLink: "https://www.google.com/maps/place/Massachusetts",
+  location: "New York, NY",
+  locationLink: "https://www.google.com/maps/place/New+York,+NY",
   about: "CS & Applied Math at Brown University",
   summary:
-    "I am student at Brown University studying Applied Mathematics and Computer Science. I'm a software engineer working across infrastructure and large-scale systems.",
+    "I am a student at Brown University studying Applied Mathematics and Computer Science. I'm a software engineer working across infrastructure and large-scale systems. I also enjoy helping other developers build effectively.",
   avatarUrl: "pfp.jpg",
   personalWebsiteUrl: "https://charlestang.dev",
   contact: {
@@ -22,6 +28,21 @@ export const RESUME_DATA = {
         url: "https://www.linkedin.com/in/charlestang06/",
         icon: LinkedInIcon,
       },
+      {
+        name: "Beli",
+        url: "https://beliapp.co/app/charlestang06",
+        icon: BeliIcon,
+      },
+      {
+        name: "Strava",
+        url: "https://strava.app.link/PVbD9uXRk8b",
+        icon: StravaIcon,
+      },
+      {
+        name: "Spotify",
+        url: "https://open.spotify.com/user/pi5bhcquebyoyb1sxj0v9g0rv?si=01b1c56b7f264c7a",
+        icon: SpotifyIcon,
+      },
     ],
   },
   education: [
@@ -29,9 +50,16 @@ export const RESUME_DATA = {
       school: "Brown University",
       degree: "Bachelor's Degree in Computer Science & Applied Mathematics",
       coursework:
-        "Stochastic Optimization, Real Analysis, Operations Research, Data Structures & Algorithms, Machine Learning, Reinforcement Learning, Computer Systems",
+        "Stochastic Optimization, Real Analysis, Operations Research, Data Structures & Algorithms, Machine Learning, Reinforcement Learning, Computer Systems, Operating Systems, Database Management Systems",
+      selectedCoursework: [
+        "Algorithms",
+        "Operating Systems",
+        "Databases",
+        "Machine Learning",
+        "Reinforcement Learning",
+        "Optimization",
+      ],
       gpa: "4.0",
-      end: "(Aug 2027)",
     },
   ],
   work: [
@@ -86,7 +114,7 @@ export const RESUME_DATA = {
     },
     {
       company: "IOMICS Corporation",
-      logo: "logos/iomics.jpg",
+      logo: "logos/iomics.png",
       link: "https://iomics.us/",
       badges: ["Cambridge, MA"],
       title: "Software Engineer Intern",
@@ -104,23 +132,55 @@ export const RESUME_DATA = {
       end: "2024",
     },
   ],
-  skills: [
-    "Python",
-    "Java/TypeScript",
-    "Java",
-    "HTML/CSS",
-    "Linux",
-    "REST APIs",
-    "LaTeX",
-    "SQL",
-    "Docker",
-    "AWS",
-    "Git",
-    "Jenkins",
-    "Postman",
-    "VSCode",
-    "Node",
-    "React.js",
+  skillGroups: [
+    {
+      name: "Languages",
+      skills: [
+        "Python",
+        "Java",
+        "TypeScript",
+        "JavaScript",
+        "Go",
+        "C++",
+        "SQL",
+        "HTML/CSS",
+        "MATLAB",
+        "LaTeX",
+      ],
+    },
+    {
+      name: "Frameworks & APIs",
+      skills: [
+        "React",
+        "Django",
+        "FastAPI",
+        "Express.js",
+        "LangChain",
+        "LangGraph",
+        "Tailwind CSS",
+        "gRPC",
+        "REST APIs",
+      ],
+    },
+    {
+      name: "Data & Cloud",
+      skills: ["AWS", "Docker", "Trino", "Spark", "MySQL", "PostgreSQL"],
+    },
+    {
+      name: "Developer Tools",
+      skills: [
+        "Git",
+        "GitHub",
+        "Bazel",
+        "Playwright",
+        "Jenkins",
+        "Node.js",
+        "Bash",
+        "Linux",
+        "Postman",
+        "VSCode",
+      ],
+    },
   ],
   projects: [
     {
@@ -253,33 +313,6 @@ export const RESUME_DATA = {
   ],
   papers: [
     {
-      title: "Food Web & Agriculture",
-      awards: ["Meritorious"],
-      description: "Math modeling paper written for 2025 MCM/ICM contest",
-      link: {
-        label: "paper",
-        href: "/2025_MCM.pdf",
-      },
-    },
-    {
-      title: "March Madness",
-      awards: ["Outstanding Winner (1st/22)"],
-      description: "Math modeling paper written for 2024 Brown MCM contest",
-      link: {
-        label: "paper",
-        href: "/Team_01_BMCM_Final_Paper.pdf",
-      },
-    },
-    {
-      title: "Dandelion Populations",
-      awards: ["USA Outstanding Winner (1st/967)", "NCTM Award"],
-      description: "Math modeling paper written for 2023 HiMCM challenge",
-      link: {
-        label: "paper",
-        href: "HiMCM2023.pdf",
-      },
-    },
-    {
       title: "Vehicle Trajectory on nuScenes",
       awards: ["CSCI 1430"],
       description:
@@ -290,25 +323,8 @@ export const RESUME_DATA = {
       },
     },
     {
-      title: "MA Mortgage Markets",
-      awards: ["ECON 3130"],
-      description: "Logit regression analysis of discrimination (ECON 3130)",
-      link: {
-        label: "paper",
-        href: "ECON3130_Paper.pdf",
-      },
-    },
-    {
-      title: "Land Use Analysis",
-      awards: ["Intl. Meritorious (Top 6)"],
-      description: "Math modeling paper written for 2023 IMMC challenge",
-      link: {
-        label: "paper",
-        href: "2023_IM2C_12519_Solution.pdf",
-      },
-    },
-    {
       title: "Honeybee Populations",
+      awarded: true,
       awards: ["USA Finalist (Top 6%)"],
       description: "Math modeling paper written for 2022 HiMCM challenge",
       link: {
@@ -317,12 +333,62 @@ export const RESUME_DATA = {
       },
     },
     {
+      title: "March Madness",
+      awarded: true,
+      awards: ["Outstanding Winner (1st/22)"],
+      description: "Math modeling paper written for 2024 Brown MCM contest",
+      link: {
+        label: "paper",
+        href: "/Team_01_BMCM_Final_Paper.pdf",
+      },
+    },
+    {
+      title: "Dandelion Populations",
+      awarded: true,
+      awards: ["USA Outstanding Winner (1st/967)", "NCTM Award"],
+      description: "Math modeling paper written for 2023 HiMCM challenge",
+      link: {
+        label: "paper",
+        href: "HiMCM2023.pdf",
+      },
+    },
+    {
+      title: "Land Use Analysis",
+      awarded: true,
+      awards: ["Intl. Meritorious (Top 6)"],
+      description: "Math modeling paper written for 2023 IMMC challenge",
+      link: {
+        label: "paper",
+        href: "2023_IM2C_12519_Solution.pdf",
+      },
+    },
+    {
+      title: "Food Web & Agriculture",
+      awarded: true,
+      awards: ["Meritorious"],
+      description: "Math modeling paper written for 2025 MCM/ICM contest",
+      link: {
+        label: "paper",
+        href: "/2025_MCM.pdf",
+      },
+    },
+    {
       title: "E-Bike Demand",
+      awarded: true,
       awards: ["2nd Round Selection"],
       description: "Math modeling paper written for 2022 M3 Modeling challenge",
       link: {
         label: "paper",
         href: "2023_mathworks_scand_paper.pdf",
+      },
+    },
+    {
+      title: "MA Mortgage Markets",
+      awards: ["ECON 3130"],
+      description: "Logit regression analysis of discrimination (ECON 3130)",
+      link: {
+        label: "paper",
+        href: "ECON3130_Paper.pdf",
       },
     },
   ],

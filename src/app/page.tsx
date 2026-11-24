@@ -1,22 +1,32 @@
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Card, CardHeader, CardContent } from "@/components/ui/card";
-import { Badge } from "@/components/ui/badge";
-import { CommandMenu } from "@/components/command-menu";
-import { Metadata } from "next";
+import type { Metadata } from "next";
 import { Section } from "@/components/ui/section";
-import { GlobeIcon, MailIcon, PhoneIcon } from "lucide-react";
+import { GlobeIcon, MailIcon } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { RESUME_DATA } from "@/data/resume-data";
-import { ProjectCard } from "@/components/project-card";
+import { CertificateStack } from "@/components/certificate-stack";
+import { FeaturedProjects } from "@/components/featured-projects";
+import { ExperienceList } from "@/components/experience-list";
+import { PaperBookshelf } from "@/components/paper-bookshelf";
+import { SkillKeycaps } from "@/components/skill-keycaps";
+import { SiteFooter } from "@/components/site-footer";
+import { entryId } from "@/lib/skill-links";
+import { ProductionIcon } from "@/components/production-icon";
+import { ExperienceCard } from "@/components/experience-card";
+import { Coursework } from "@/components/coursework";
 
 export const metadata: Metadata = {
-  title: `${RESUME_DATA.name} | ${RESUME_DATA.about}`,
+  title: `${RESUME_DATA.name} · Software Engineer`,
   description: RESUME_DATA.summary,
 };
 
 export default function Page() {
   return (
-    <main className="container relative mx-auto scroll-my-12 overflow-auto p-4 print:p-12 md:p-16">
+    <main
+      id="top"
+      className="container relative mx-auto scroll-my-12 overflow-auto p-4 md:p-16 print:p-12"
+    >
       <section className="mx-auto w-full max-w-2xl space-y-8 bg-white print:space-y-6">
         <div className="flex items-center justify-between">
           <div className="flex-1 space-y-2">
@@ -33,6 +43,7 @@ export default function Page() {
                 className="inline-flex gap-x-1.5 align-baseline leading-none hover:underline"
                 href={RESUME_DATA.locationLink}
                 target="_blank"
+                rel="noopener noreferrer"
               >
                 <GlobeIcon className="size-3" />
                 {RESUME_DATA.location}
@@ -59,7 +70,11 @@ export default function Page() {
                   size="icon"
                   asChild
                 >
-                  <a href={social.url}>
+                  <a
+                    href={social.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     <social.icon className="size-5" />
                   </a>
                 </Button>
@@ -85,7 +100,7 @@ export default function Page() {
           </p>
         </Section>
 
-        <Section>
+        <Section id="education" className="scroll-mt-8">
           <h2 className="text-xl font-bold">Education</h2>
           {RESUME_DATA.education.map((education) => {
             return (
@@ -95,10 +110,6 @@ export default function Page() {
                     <h3 className="font-semibold leading-none">
                       {education.school}
                     </h3>
-                    <div className="text-sm tabular-nums text-gray-500">
-                      {"start" in education ? `${education.start} - ` : ""}
-                      {education.end}
-                    </div>
                   </div>
                 </CardHeader>
                 <CardContent className="mt-2">{education.degree}</CardContent>
@@ -107,159 +118,60 @@ export default function Page() {
                     GPA: {education.gpa} / 4.0
                   </CardContent>
                 ) : null}
-                <CardContent className="mt-2 text-xs">
-                  Relevant coursework: {education.coursework}
-                </CardContent>
+                <Coursework
+                  selected={education.selectedCoursework}
+                  all={education.coursework}
+                />
               </Card>
             );
           })}
         </Section>
 
         <Section>
-          <h2 className="text-xl font-bold">Work Experience</h2>
-          {RESUME_DATA.work.map((work) => {
-            return (
-              <Card key={work.company} className="flex items-start gap-4">
-                <div className="flex-shrink-0">
-                  <Avatar>
-                    <AvatarImage alt={work.company} src={work.logo} />
-                    <AvatarFallback>
-                      {work.company?.charAt(0).toUpperCase()}
-                    </AvatarFallback>
-                  </Avatar>
-                </div>
-                <div className="flex-1">
-                  <CardHeader>
-                    <div className="flex items-center justify-between gap-x-2 text-base">
-                      <h3 className="inline-flex items-center justify-center gap-x-1 font-semibold leading-none">
-                        <a className="hover:underline" href={work.link}>
-                          {work.company}
-                        </a>
-
-                        <span className="inline-flex gap-x-2">
-                          {work.badges.map((badge) => (
-                            <Badge
-                              variant="secondary"
-                              className="mx-3 align-middle text-xs"
-                              key={badge}
-                            >
-                              {badge}
-                            </Badge>
-                          ))}
-                        </span>
-                      </h3>
-                      <div className="text-sm tabular-nums">
-                        {work.start} - {work.end}
-                      </div>
-                    </div>
-
-                    <h4 className="font-mono text-sm leading-none">
-                      {work.title}
-                    </h4>
-                  </CardHeader>
-                  {"description" in work ? (
-                    <CardContent className="mt-2 text-xs">
-                      {work.description}
-                    </CardContent>
-                  ) : null}
-                </div>
-              </Card>
-            );
-          })}
-        </Section>
-
-        <Section className=" croll-mb-16">
-          <h2 className="text-xl font-bold">Projects</h2>
-          <p className="inline-flex items-center gap-2 font-mono text-xs text-gray-500">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="16"
-              height="16"
-              fill="grey"
-              className="bi bi-gear-fill hover:scale-110"
-              viewBox="0 0 16 16"
-            >
-              <path d="M9.405 1.05c-.413-1.4-2.397-1.4-2.81 0l-.1.34a1.464 1.464 0 0 1-2.105.872l-.31-.17c-1.283-.698-2.686.705-1.987 1.987l.169.311c.446.82.023 1.841-.872 2.105l-.34.1c-1.4.413-1.4 2.397 0 2.81l.34.1a1.464 1.464 0 0 1 .872 2.105l-.17.31c-.698 1.283.705 2.686 1.987 1.987l.311-.169a1.464 1.464 0 0 1 2.105.872l.1.34c.413 1.4 2.397 1.4 2.81 0l.1-.34a1.464 1.464 0 0 1 2.105-.872l.31.17c1.283.698 2.686-.705 1.987-1.987l-.169-.311a1.464 1.464 0 0 1 .872-2.105l.34-.1c1.4-.413 1.4-2.397 0-2.81l-.34-.1a1.464 1.464 0 0 1-.872-2.105l.17-.31c.698-1.283-.705-2.686-1.987-1.987l-.311.169a1.464 1.464 0 0 1-2.105-.872zM8 10.93a2.929 2.929 0 1 1 0-5.86 2.929 2.929 0 0 1 0 5.858z" />
-            </svg>{" "}
-            = production app
-          </p>
-          <div className="-mx-3 grid grid-cols-1 gap-3 print:grid-cols-3 print:gap-2 md:grid-cols-2 lg:grid-cols-3">
-            {RESUME_DATA.projects.map((project) => {
-              return (
-                <ProjectCard
-                  key={project.title}
-                  title={project.title}
-                  description={project.description}
-                  tags={project.techStack}
-                  link={"link" in project ? project.link.href : undefined}
-                  isProject={true}
-                  production={project.production ? project.production : false}
-                />
-              );
-            })}
-          </div>
+          <h2 className="text-xl font-bold">Experience</h2>
+          <ExperienceList
+            entryIds={RESUME_DATA.work.map((work) =>
+              entryId("experience", work.company),
+            )}
+          >
+            {RESUME_DATA.work.map((work) => (
+              <ExperienceCard key={work.company} work={work} />
+            ))}
+          </ExperienceList>
         </Section>
 
         <Section className="scroll-mb-16">
+          <h2 className="text-xl font-bold">Projects</h2>
+          <p className="inline-flex items-center gap-2 font-mono text-xs text-gray-500">
+            <ProductionIcon className="shrink-0 text-gray-500 hover:scale-110" />{" "}
+            = production app
+          </p>
+          <FeaturedProjects projects={RESUME_DATA.projects} />
+        </Section>
+
+        <Section
+          id="papers"
+          className="!mt-0 scroll-mb-16 scroll-mt-8 print:!mt-6"
+        >
           <h2 className="text-xl font-bold">Papers</h2>
-          <div className="-mx-3 grid grid-cols-1 gap-3 print:grid-cols-3 print:gap-2 md:grid-cols-2 lg:grid-cols-3">
-            {RESUME_DATA.papers.map((paper) => {
-              return (
-                <ProjectCard
-                  key={paper.title}
-                  title={paper.title}
-                  description={paper.description}
-                  tags={paper.awards}
-                  link={"link" in paper ? paper.link.href : undefined}
-                  isProject={true}
-                />
-              );
-            })}
-          </div>
+          <PaperBookshelf papers={RESUME_DATA.papers} />
         </Section>
 
         <Section className="scroll-mb-16">
           <h2 className="text-xl font-bold">Certificates</h2>
-          <div className="-mx-3 grid grid-cols-1 gap-3 print:grid-cols-3 print:gap-2 md:grid-cols-2 lg:grid-cols-3">
-            {RESUME_DATA.certificates.map((certificate) => {
-              return (
-                <ProjectCard
-                  key={certificate.title}
-                  title={certificate.title}
-                  description={certificate.description}
-                  tags={certificate.awardee}
-                  link={
-                    "link" in certificate ? certificate.link.href : undefined
-                  }
-                  isProject={true}
-                />
-              );
-            })}
-          </div>
+          <CertificateStack certificates={RESUME_DATA.certificates} />
         </Section>
 
         <Section>
           <h2 className="text-xl font-bold">Skills</h2>
-          <div className="flex flex-wrap gap-1">
-            {RESUME_DATA.skills.map((skill) => {
-              return <Badge key={skill}>{skill}</Badge>;
-            })}
-          </div>
+          <SkillKeycaps
+            groups={RESUME_DATA.skillGroups}
+            projects={RESUME_DATA.projects}
+            experiences={RESUME_DATA.work}
+          />
         </Section>
+        <SiteFooter />
       </section>
-
-      {/* <CommandMenu
-        links={[
-          {
-            url: RESUME_DATA.personalWebsiteUrl,
-            title: "Personal Website",
-          },
-          ...RESUME_DATA.contact.social.map((socialMediaLink) => ({
-            url: socialMediaLink.url,
-            title: socialMediaLink.name,
-          })),
-        ]}
-      /> */}
     </main>
   );
 }
