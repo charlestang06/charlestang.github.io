@@ -2,28 +2,26 @@ import type { Metadata } from "next";
 import { Analytics } from "@vercel/analytics/react";
 import { Inter } from "next/font/google";
 import "./globals.css";
-import React from "react";
+import type { ReactNode } from "react";
 
 export const metadata: Metadata = {
   title: "Charles Tang",
   description: "APMA-CS at Brown University",
 };
 
-// If loading a variable font, you don't need to specify the font weight
 const inter = Inter({
   subsets: ["latin"],
   display: "swap",
 });
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
+export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang="en" className={inter.className}>
-      <body>{children}</body>
-      <Analytics />
+      {/* Grammarly adds body attributes before React hydrates. */}
+      <body suppressHydrationWarning>
+        {children}
+        <Analytics />
+      </body>
     </html>
   );
 }
