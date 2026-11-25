@@ -62,7 +62,8 @@ export default function Page() {
                   asChild
                 >
                   <a href={`mailto:${RESUME_DATA.contact.email}`}>
-                    <MailIcon className="size-5" />
+                    <MailIcon aria-hidden="true" className="size-5" />
+                    <span className="sr-only">Email Charles Tang</span>
                   </a>
                 </Button>
               ) : null}
