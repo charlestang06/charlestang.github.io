@@ -1,5 +1,7 @@
 "use client";
 
+import { FoodGuides } from "./food-guides";
+import guides from "@/data/beli-guides.json";
 import { useContext } from "react";
 import { PersonalView } from "./portfolio-category";
 import {
@@ -9,7 +11,7 @@ import {
   type CSSProperties,
   type ReactNode,
 } from "react";
-import { ArrowUpRight, ChevronLeft, ChevronRight, X } from "lucide-react";
+import { ArrowUpRight, X } from "lucide-react";
 import {
   calendarDays,
   isSafeFoodImage,
@@ -18,6 +20,7 @@ import {
   type FoodSnapshot,
 } from "../lib/food-calendar";
 
+import { ShowMoreButton } from "./show-more-button";
 import { FoodMap } from "./food-map";
 
 const PROFILE_URL = "https://beliapp.co/app/charlestang06";
@@ -86,6 +89,7 @@ export function FoodExplorer({
   today?: string;
 }) {
   const personal = useContext(PersonalView);
+  const [showPlaces, setShowPlaces] = useState(false);
   const [open, setOpen] = useState(false);
   const [snapshot, setSnapshot] = useState<FoodSnapshot | null>(
     initialSnapshot ?? null,
@@ -95,7 +99,6 @@ export function FoodExplorer({
   >(initialSnapshot ? "ready" : "idle");
   const [today, setToday] = useState(suppliedToday ?? "");
   const [year, setYear] = useState(Number(suppliedToday?.slice(0, 4) ?? 2026));
-  const [month, setMonth] = useState("");
   const [selected, setSelected] = useState<string | null>(null);
   const [query, setQuery] = useState("");
   const [city, setCity] = useState("");
@@ -139,12 +142,12 @@ export function FoodExplorer({
   useEffect(() => {
     if (!open && !personal) return;
     const frame = window.requestAnimationFrame(() => {
-        if (!suppliedToday && !initializedDate.current) {
-          initializedDate.current = true;
-          const date = new Date().toISOString().slice(0, 10);
-          setToday(date);
-          setYear(Number(date.slice(0, 4)));
-        }
+      if (!suppliedToday && !initializedDate.current) {
+        initializedDate.current = true;
+        const date = new Date().toISOString().slice(0, 10);
+        setToday(date);
+        setYear(Number(date.slice(0, 4)));
+      }
     });
     return () => window.cancelAnimationFrame(frame);
   }, [open, personal, suppliedToday]);
@@ -196,14 +199,11 @@ export function FoodExplorer({
       ...observedMonths.map((date) => Number(date.slice(0, 4))),
     ]),
   ).sort((a, b) => b - a);
-  const availableMonths = observedMonths
-    .filter((date) => date.startsWith(String(year)))
-    .map((date) => Number(date.slice(5)));
-  const mobileMonth =
-    Number(month) ||
-    availableMonths.at(-1) ||
-    (year === Number(today.slice(0, 4)) ? Number(today.slice(5, 7)) : 1);
   const restaurants = snapshot?.restaurants ?? [];
+  const recordedDays = snapshot?.days.filter(
+    ({ date, count }) => date.startsWith(`${year}-`) && count > 0,
+  ).length;
+  const cities = new Set(restaurants.map(({ city }) => city).filter(Boolean));
   const selectedDay = snapshot?.days.find((day) => day.date === selected);
   const matchingPlaces = restaurants.filter(
     (restaurant) =>
@@ -228,9 +228,8 @@ export function FoodExplorer({
     Bakery: "bakeries",
     Dessert: "desserts",
   };
-  const changePeriod = (nextYear: number, nextMonth: string) => {
+  const changeYear = (nextYear: number) => {
     setYear(nextYear);
-    setMonth(nextMonth);
     setSelected(null);
     setPage(1);
   };
@@ -247,17 +246,13 @@ export function FoodExplorer({
       .getElementById("food-trigger")
       ?.scrollIntoView({ behavior: "instant", block: "center" });
   };
-  function grid(
-    displayMonth: number | undefined,
-    className: string,
-    label: string,
-  ) {
-    const cells = calendarDays(year, displayMonth);
+  function grid() {
+    const cells = calendarDays(year);
     return (
       <div
-        className={`${className}${displayMonth ? " food-selected-month" : ""}`}
+        className="food-year-grid"
         role="group"
-        aria-label={label}
+        aria-label="Year activity calendar"
       >
         <div className="food-day-labels" aria-hidden="true">
           {["S", "M", "T", "W", "T", "F", "S"].map((day, index) => (
@@ -293,13 +288,10 @@ export function FoodExplorer({
                 aria-pressed={selected === date}
                 onClick={() => {
                   setSelected(selected === date ? null : date);
+                  setShowPlaces(true);
                   setPage(1);
                 }}
-              >
-                <span aria-hidden="true" className="food-day-number">
-                  {Number(date.slice(-2))}
-                </span>
-              </button>
+              ></button>
             );
           })}
         </div>
@@ -313,6 +305,7 @@ export function FoodExplorer({
       ref={section}
       tabIndex={-1}
       hidden={!open && !personal}
+      data-standalone={personal ? undefined : ""}
       aria-labelledby="food-title"
       className="food-explorer scroll-mt-8 print:hidden"
     >
@@ -342,19 +335,28 @@ export function FoodExplorer({
           </div>
           {snapshot && (
             <p className="food-stats">
-              {[
-                snapshot.stats.rankedPlaces === null
-                  ? null
-                  : `${snapshot.stats.rankedPlaces} ranked places`,
-                snapshot.stats.rankedThisYear === null
-                  ? null
-                  : `${snapshot.stats.rankedThisYear} ranked this year`,
-                snapshot.stats.weekStreak === null
-                  ? null
-                  : `${snapshot.stats.weekStreak} week streak`,
-              ]
-                .filter(Boolean)
-                .join(" · ")}
+              <strong>{recordedDays}</strong> recorded dining{" "}
+              {recordedDays === 1 ? "day" : "days"} in {year}
+              {snapshot.stats.rankedPlaces !== null && (
+                <>
+                  {" · "}
+                  <strong>{snapshot.stats.rankedPlaces}</strong> ranked places
+                </>
+              )}
+              {cities.size > 0 && (
+                <>
+                  {" · "}
+                  <strong>{cities.size}</strong>{" "}
+                  {cities.size === 1 ? "city" : "cities"}
+                </>
+              )}
+              {snapshot.stats.weekStreak !== null &&
+                snapshot.stats.weekStreak > 0 && (
+                  <>
+                    {" · "}
+                    <strong>{snapshot.stats.weekStreak}</strong>-week streak
+                  </>
+                )}
             </p>
           )}
           <div className="food-period">
@@ -363,68 +365,23 @@ export function FoodExplorer({
               <select
                 aria-label="Calendar year"
                 value={year}
-                onChange={(event) =>
-                  changePeriod(Number(event.target.value), "")
-                }
+                onChange={(event) => changeYear(Number(event.target.value))}
               >
                 {years.map((value) => (
                   <option key={value}>{value}</option>
                 ))}
               </select>
             </label>
-            <label className="food-desktop-period">
-              View{" "}
-              <select
-                aria-label="Calendar month"
-                value={month}
-                onChange={(event) => changePeriod(year, event.target.value)}
-              >
-                <option value="">Full year</option>
-                {availableMonths.map((value) => (
-                  <option key={value} value={value}>
-                    {months[value - 1]}
-                  </option>
-                ))}
-              </select>
-            </label>
-            <div className="food-mobile-period">
-              <button
-                aria-label="Previous month"
-                disabled={mobileMonth <= 1}
-                onClick={() => changePeriod(year, String(mobileMonth - 1))}
-              >
-                <ChevronLeft size={16} />
-              </button>
-              <span>{months[mobileMonth - 1]}</span>
-              <button
-                aria-label="Next month"
-                disabled={
-                  mobileMonth >= 12 ||
-                  `${year}-${String(mobileMonth + 1).padStart(2, "0")}` >
-                    today.slice(0, 7)
-                }
-                onClick={() => changePeriod(year, String(mobileMonth + 1))}
-              >
-                <ChevronRight size={16} />
-              </button>
-            </div>
           </div>
-          <div className="food-desktop-calendar">
-            {!month && (
+          <div className="activity-calendar-scroll">
+            <div className="activity-calendar-year">
               <div className="food-month-labels" aria-hidden="true">
                 {months.map((value) => (
                   <span key={value}>{value}</span>
                 ))}
               </div>
-            )}
-            {grid(
-              month ? Number(month) : undefined,
-              "food-year-grid",
-              "Year activity calendar",
-            )}
-          </div>
-          <div className="food-mobile-calendar">
-            {grid(mobileMonth, "food-month-grid", "Month activity calendar")}
+              {grid()}
+            </div>
           </div>
           <div className="food-legend">
             <span>
@@ -446,204 +403,226 @@ export function FoodExplorer({
                   : null}
             </div>
           )}
+          <FoodGuides guides={guides} restaurants={restaurants} />
           {snapshot && (
             <>
-              <div className="food-list-heading">
-                <h3 className="font-semibold">
-                  {selected ?? "Places"}{" "}
-                  <span className="food-result-count">{filtered.length}</span>
-                </h3>
-                {selected && (
-                  <button
-                    onClick={() => {
-                      setSelected(null);
-                      setPage(1);
-                    }}
-                  >
-                    Clear date selection
-                  </button>
-                )}
-              </div>
-              <div className="food-filters">
-                <input
-                  type="search"
-                  aria-label="Search places"
-                  placeholder="Search places"
-                  value={query}
-                  onChange={(event) => {
-                    setQuery(event.target.value);
-                    setPage(1);
-                  }}
-                />
-                <select
-                  aria-label="City"
-                  value={city}
-                  onChange={(event) => {
-                    setCity(event.target.value);
-                    setPage(1);
-                  }}
-                >
-                  <option value="">All cities</option>
-                  {Array.from(
-                    new Set(
-                      restaurants
-                        .map((restaurant) => restaurant.city)
-                        .filter(Boolean),
-                    ),
-                  )
-                    .sort()
-                    .map((value) => (
-                      <option key={value}>{value}</option>
-                    ))}
-                </select>
-              </div>
-              <div className="food-results-toolbar">
-                <div
-                  className="food-category-counts"
-                  role="group"
-                  aria-label="Place categories"
-                >
-                  <button
-                    aria-pressed={!category}
-                    onClick={() => {
-                      setCategory("");
-                      setPage(1);
-                    }}
-                  >
-                    All {matchingPlaces.length}
-                  </button>
-                  {Object.entries(categoryLabels).map(([value, label]) => {
-                    const count = matchingPlaces.filter((place) =>
-                      place.categories?.includes(value),
-                    ).length;
-                    return count > 0 || category === value ? (
-                      <button
-                        key={value}
-                        aria-pressed={category === value}
-                        onClick={() => {
-                          setCategory(category === value ? "" : value);
+              <div id="food-places" hidden={!showPlaces}>
+                {showPlaces && (
+                  <>
+                    <div className="food-list-heading">
+                      <h3 className="font-semibold">
+                        {selected ?? "Places"}{" "}
+                        <span className="food-result-count">
+                          {filtered.length}
+                        </span>
+                      </h3>
+                      {selected && (
+                        <button
+                          onClick={() => {
+                            setSelected(null);
+                            setPage(1);
+                          }}
+                        >
+                          Clear date selection
+                        </button>
+                      )}
+                    </div>
+                    <div className="food-filters">
+                      <input
+                        type="search"
+                        aria-label="Search places"
+                        placeholder="Search places"
+                        value={query}
+                        onChange={(event) => {
+                          setQuery(event.target.value);
+                          setPage(1);
+                        }}
+                      />
+                      <select
+                        aria-label="City"
+                        value={city}
+                        onChange={(event) => {
+                          setCity(event.target.value);
                           setPage(1);
                         }}
                       >
-                        {count} {label}
-                      </button>
-                    ) : null;
-                  })}
-                </div>
-                <div
-                  className="food-view-toggle"
-                  role="group"
-                  aria-label="Place view"
-                >
-                  <button
-                    aria-pressed={view === "list"}
-                    onClick={() => setView("list")}
-                  >
-                    List
-                  </button>
-                  <button
-                    aria-pressed={view === "map"}
-                    onClick={() => setView("map")}
-                  >
-                    Map
-                  </button>
-                </div>
-              </div>
-              {view === "map" ? (
-                <FoodMap places={filtered} />
-              ) : (
-                <>
-                  <ul className="food-restaurants" aria-label="Places">
-                    {visiblePlaces.map((restaurant) => (
-                      <li key={restaurant.key}>
-                        <span className="food-place-cover" aria-hidden="true">
-                          {isSafeFoodImage(restaurant.imageUrl) && (
-                            <>
-                              {/* eslint-disable-next-line @next/next/no-img-element */}
-                              <img
-                                key={restaurant.imageUrl}
-                                className="food-place-image"
-                                src={restaurant.imageUrl}
-                                alt=""
-                                loading="lazy"
-                                decoding="async"
-                                width={48}
-                                height={48}
-                                onError={(event) => {
-                                  event.currentTarget.hidden = true;
+                        <option value="">All cities</option>
+                        {Array.from(
+                          new Set(
+                            restaurants
+                              .map((restaurant) => restaurant.city)
+                              .filter(Boolean),
+                          ),
+                        )
+                          .sort()
+                          .map((value) => (
+                            <option key={value}>{value}</option>
+                          ))}
+                      </select>
+                    </div>
+                    <div className="food-results-toolbar">
+                      <div
+                        className="food-category-counts"
+                        role="group"
+                        aria-label="Place categories"
+                      >
+                        <button
+                          aria-pressed={!category}
+                          onClick={() => {
+                            setCategory("");
+                            setPage(1);
+                          }}
+                        >
+                          All {matchingPlaces.length}
+                        </button>
+                        {Object.entries(categoryLabels).map(
+                          ([value, label]) => {
+                            const count = matchingPlaces.filter((place) =>
+                              place.categories?.includes(value),
+                            ).length;
+                            return count > 0 || category === value ? (
+                              <button
+                                key={value}
+                                aria-pressed={category === value}
+                                onClick={() => {
+                                  setCategory(category === value ? "" : value);
+                                  setPage(1);
                                 }}
-                              />
-                            </>
-                          )}
-                        </span>
-                        <div className="food-place-copy">
-                          <h4>
-                            {isSafeFoodWebsite(restaurant.websiteUrl) ? (
-                              <a
-                                href={restaurant.websiteUrl}
-                                target="_blank"
-                                rel="noopener noreferrer"
                               >
-                                {restaurant.name}
-                              </a>
-                            ) : (
-                              restaurant.name
-                            )}
-                          </h4>
-                          <p>
-                            {[
-                              restaurant.city,
-                              restaurant.categories?.join(" / "),
-                              restaurant.cuisines.join(", "),
-                            ]
-                              .filter(Boolean)
-                              .join(" · ")}
-                          </p>
-                        </div>
-                        {restaurant.score !== null && (
-                          <span
-                            className="food-score"
-                            aria-label={`Score ${restaurant.score}`}
-                          >
-                            {restaurant.score.toFixed(1)}
-                          </span>
+                                {count} {label}
+                              </button>
+                            ) : null;
+                          },
                         )}
-                      </li>
-                    ))}
-                  </ul>
-                  <nav
-                    className="food-pagination"
-                    aria-label="Place pagination"
-                  >
-                    <button
-                      aria-label="Previous places page"
-                      disabled={currentPage <= 1}
-                      onClick={() => setPage(currentPage - 1)}
-                    >
-                      Previous
-                    </button>
-                    <span aria-live="polite">
-                      {filtered.length
-                        ? `${pageStart + 1}–${Math.min(pageStart + pageSize, filtered.length)} of ${filtered.length}`
-                        : "0 of 0"}
-                    </span>
-                    <button
-                      aria-label="Next places page"
-                      disabled={currentPage >= pageCount}
-                      onClick={() => setPage(currentPage + 1)}
-                    >
-                      Next
-                    </button>
-                  </nav>
-                </>
-              )}
-              {view === "list" && filtered.length === 0 && (
-                <p className="food-note">
-                  {selected && !selectedDay?.restaurants.length
-                    ? "No place details are available for this day."
-                    : "No places match these filters."}
-                </p>
-              )}
+                      </div>
+                      <div
+                        className="food-view-toggle"
+                        role="group"
+                        aria-label="Place view"
+                      >
+                        <button
+                          aria-pressed={view === "list"}
+                          onClick={() => setView("list")}
+                        >
+                          List
+                        </button>
+                        <button
+                          aria-pressed={view === "map"}
+                          onClick={() => setView("map")}
+                        >
+                          Map
+                        </button>
+                      </div>
+                    </div>
+                    {view === "map" ? (
+                      <FoodMap places={filtered} />
+                    ) : (
+                      <>
+                        <ul className="food-restaurants" aria-label="Places">
+                          {visiblePlaces.map((restaurant) => (
+                            <li key={restaurant.key}>
+                              <span
+                                className="food-place-cover"
+                                aria-hidden="true"
+                              >
+                                {isSafeFoodImage(restaurant.imageUrl) && (
+                                  <>
+                                    {/* eslint-disable-next-line @next/next/no-img-element */}
+                                    <img
+                                      key={restaurant.imageUrl}
+                                      className="food-place-image"
+                                      src={restaurant.imageUrl}
+                                      alt=""
+                                      loading="lazy"
+                                      decoding="async"
+                                      width={48}
+                                      height={48}
+                                      onError={(event) => {
+                                        event.currentTarget.hidden = true;
+                                      }}
+                                    />
+                                  </>
+                                )}
+                              </span>
+                              <div className="food-place-copy">
+                                <h4>
+                                  {isSafeFoodWebsite(restaurant.websiteUrl) ? (
+                                    <a
+                                      href={restaurant.websiteUrl}
+                                      target="_blank"
+                                      rel="noopener noreferrer"
+                                    >
+                                      {restaurant.name}
+                                    </a>
+                                  ) : (
+                                    restaurant.name
+                                  )}
+                                </h4>
+                                <p>
+                                  {[
+                                    restaurant.city,
+                                    restaurant.categories?.join(" / "),
+                                    restaurant.cuisines.join(", "),
+                                  ]
+                                    .filter(Boolean)
+                                    .join(" · ")}
+                                </p>
+                              </div>
+                              {restaurant.score !== null && (
+                                <span
+                                  className="food-score"
+                                  aria-label={`Score ${restaurant.score}`}
+                                >
+                                  {restaurant.score.toFixed(1)}
+                                </span>
+                              )}
+                            </li>
+                          ))}
+                        </ul>
+                        <nav
+                          className="food-pagination"
+                          aria-label="Place pagination"
+                        >
+                          <button
+                            aria-label="Previous places page"
+                            disabled={currentPage <= 1}
+                            onClick={() => setPage(currentPage - 1)}
+                          >
+                            Previous
+                          </button>
+                          <span aria-live="polite">
+                            {filtered.length
+                              ? `${pageStart + 1}–${Math.min(pageStart + pageSize, filtered.length)} of ${filtered.length}`
+                              : "0 of 0"}
+                          </span>
+                          <button
+                            aria-label="Next places page"
+                            disabled={currentPage >= pageCount}
+                            onClick={() => setPage(currentPage + 1)}
+                          >
+                            Next
+                          </button>
+                        </nav>
+                      </>
+                    )}
+                    {view === "list" && filtered.length === 0 && (
+                      <p className="food-note">
+                        {selected && !selectedDay?.restaurants.length
+                          ? "No place details are available for this day."
+                          : "No places match these filters."}
+                      </p>
+                    )}
+                  </>
+                )}
+              </div>
+              <ShowMoreButton
+                expanded={showPlaces}
+                onToggle={() => setShowPlaces(!showPlaces)}
+                controls="food-places"
+                label="places"
+                className="mt-4"
+                buttonClassName="min-h-11"
+              />
             </>
           )}
         </>

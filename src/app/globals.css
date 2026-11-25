@@ -1042,9 +1042,12 @@
     monospace;
   font-variant-numeric: tabular-nums;
 }
-.food-mobile-calendar,
-.food-mobile-period {
-  display: none;
+.activity-calendar-scroll {
+  overflow-x: auto;
+  overscroll-behavior-x: contain;
+}
+.activity-calendar-year {
+  min-width: 575px;
 }
 @keyframes food-day-in {
   from {
@@ -1057,62 +1060,6 @@
   }
 }
 @media (max-width: 599px) {
-  .food-desktop-calendar,
-  .food-period .food-desktop-period {
-    display: none;
-  }
-  .food-mobile-calendar {
-    display: block;
-  }
-  .food-mobile-period {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-  }
-  .food-mobile-period button {
-    display: grid;
-    place-items: center;
-    min-width: 36px;
-    min-height: 36px;
-  }
-  .food-mobile-period button:disabled {
-    opacity: 0.25;
-  }
-  .food-month-grid .food-day-labels {
-    display: grid;
-    grid-template-columns: repeat(7, 1fr);
-    grid-template-rows: none;
-    width: 100%;
-    margin-bottom: 8px;
-  }
-  .food-month-grid .food-cells {
-    grid-auto-flow: row;
-    grid-template-columns: repeat(7, minmax(0, 1fr));
-    grid-template-rows: none;
-    gap: 5px;
-  }
-  .food-month-grid .food-day {
-    min-height: 34px;
-    aspect-ratio: 1;
-    max-height: 50px;
-    border-radius: 50%;
-  }
-  .food-month-grid .food-day-blank {
-    max-height: 50px;
-  }
-  .food-month-grid .food-day-number {
-    display: inline;
-    font:
-      11px/1 ui-monospace,
-      monospace;
-    color: #404040;
-  }
-  .food-month-grid .food-day[data-status="activity"] .food-day-number {
-    color: #fff;
-  }
-  .food-month-grid .food-day[data-status="unknown"] .food-day-number {
-    color: #737373;
-  }
   .food-legend {
     justify-content: flex-start;
   }
@@ -1139,17 +1086,6 @@
   }
 }
 
-.food-day-number {
-  display: none;
-}
-@media (max-width: 599px) {
-  .food-month-grid .food-day-number {
-    display: inline;
-  }
-}
-.food-desktop-calendar .food-selected-month {
-  max-width: 260px;
-}
 .food-result-count {
   margin-left: 5px;
   color: #737373;
@@ -1175,7 +1111,7 @@
     order: -1;
   }
 }
-.food-explorer:not([hidden]) {
+.food-explorer[data-standalone]:not([hidden]) {
   min-height: calc(100svh - 4rem);
 }
 .food-data-note {
@@ -1274,3 +1210,8 @@
 .training-sport-track { grid-column: span 2; height: 3px; background: #eee; }
 .training-sport-track > span { display: block; height: 100%; background: #606060; }
 .training button:focus-visible { outline: 2px solid #262626; outline-offset: 1px; }
+
+@keyframes food-guide-in {
+  from { opacity: 0; transform: translateY(-5px); }
+  to { opacity: 1; transform: translateY(0); }
+}
