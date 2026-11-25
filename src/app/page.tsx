@@ -1,3 +1,5 @@
+import { Listening } from "@/components/listening";
+import { PortfolioCategory } from "@/components/portfolio-category";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Card, CardHeader, CardContent } from "@/components/ui/card";
 import type { Metadata } from "next";
@@ -14,6 +16,8 @@ import { SiteFooter } from "@/components/site-footer";
 import { entryId } from "@/lib/skill-links";
 import { ProductionIcon } from "@/components/production-icon";
 import { ExperienceCard } from "@/components/experience-card";
+import { Training } from "@/components/training";
+import { FoodExplorer, FoodLink } from "@/components/food-explorer";
 import { Coursework } from "@/components/coursework";
 
 export const metadata: Metadata = {
@@ -70,13 +74,24 @@ export default function Page() {
                   size="icon"
                   asChild
                 >
-                  <a
-                    href={social.url}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <social.icon className="size-5" />
-                  </a>
+                  {social.name === "Beli" ? (
+                    <FoodLink>
+                      <social.icon className="size-5" />
+                    </FoodLink>
+                  ) : social.name === "Strava" ? (
+                    <a href="#activity" aria-label="Strava activity">
+                      <social.icon className="size-5" />
+                    </a>
+                  ) : (
+                    <a
+                      aria-label={social.name}
+                      href={social.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <social.icon className="size-5" />
+                    </a>
+                  )}
                 </Button>
               ))}
             </div>
@@ -100,76 +115,103 @@ export default function Page() {
           </p>
         </Section>
 
-        <Section id="education" className="scroll-mt-8">
-          <h2 className="text-xl font-bold">Education</h2>
-          {RESUME_DATA.education.map((education) => {
-            return (
-              <Card key={education.school}>
-                <CardHeader>
-                  <div className="flex items-center justify-between gap-x-2 text-base">
-                    <h3 className="font-semibold leading-none">
-                      {education.school}
-                    </h3>
-                  </div>
-                </CardHeader>
-                <CardContent className="mt-2">{education.degree}</CardContent>
-                {education.gpa != null ? (
-                  <CardContent className="mt-2 text-xs">
-                    GPA: {education.gpa} / 4.0
-                  </CardContent>
-                ) : null}
-                <Coursework
-                  selected={education.selectedCoursework}
-                  all={education.coursework}
+        <PortfolioCategory
+          professional={
+            <>
+              <Section id="education" className="scroll-mt-8">
+                <h2 className="text-xl font-bold">Education</h2>
+                {RESUME_DATA.education.map((education) => {
+                  return (
+                    <Card key={education.school}>
+                      <CardHeader>
+                        <div className="flex items-center justify-between gap-x-2 text-base">
+                          <h3 className="font-semibold leading-none">
+                            {education.school}
+                          </h3>
+                        </div>
+                      </CardHeader>
+                      <CardContent className="mt-2">
+                        {education.degree}
+                      </CardContent>
+                      {education.gpa != null ? (
+                        <CardContent className="mt-2 text-xs">
+                          GPA: {education.gpa} / 4.0
+                        </CardContent>
+                      ) : null}
+                      <Coursework
+                        selected={education.selectedCoursework}
+                        all={education.coursework}
+                      />
+                    </Card>
+                  );
+                })}
+              </Section>
+
+              <Section>
+                <h2 className="text-xl font-bold">Experience</h2>
+                <ExperienceList
+                  entryIds={RESUME_DATA.work.map((work) =>
+                    entryId("experience", work.company),
+                  )}
+                >
+                  {RESUME_DATA.work.map((work) => (
+                    <ExperienceCard key={work.company} work={work} />
+                  ))}
+                </ExperienceList>
+              </Section>
+
+              <Section className="scroll-mb-16">
+                <h2 className="text-xl font-bold">Projects</h2>
+                <p className="inline-flex items-center gap-2 font-mono text-xs text-gray-500">
+                  <ProductionIcon className="shrink-0 text-gray-500 hover:scale-110" />{" "}
+                  = production app
+                </p>
+                <FeaturedProjects projects={RESUME_DATA.projects} />
+              </Section>
+
+              <Section
+                id="papers"
+                className="scroll-mb-16 scroll-mt-8 print:!mt-6"
+              >
+                <h2 className="text-xl font-bold">Papers</h2>
+                <PaperBookshelf papers={RESUME_DATA.papers} />
+              </Section>
+
+              <Section className="scroll-mb-16">
+                <h2 className="text-xl font-bold">Certificates</h2>
+                <CertificateStack certificates={RESUME_DATA.certificates} />
+              </Section>
+
+              <Section>
+                <h2 className="text-xl font-bold">Skills</h2>
+                <SkillKeycaps
+                  groups={RESUME_DATA.skillGroups}
+                  projects={RESUME_DATA.projects}
+                  experiences={RESUME_DATA.work}
                 />
-              </Card>
-            );
-          })}
-        </Section>
-
-        <Section>
-          <h2 className="text-xl font-bold">Experience</h2>
-          <ExperienceList
-            entryIds={RESUME_DATA.work.map((work) =>
-              entryId("experience", work.company),
-            )}
-          >
-            {RESUME_DATA.work.map((work) => (
-              <ExperienceCard key={work.company} work={work} />
-            ))}
-          </ExperienceList>
-        </Section>
-
-        <Section className="scroll-mb-16">
-          <h2 className="text-xl font-bold">Projects</h2>
-          <p className="inline-flex items-center gap-2 font-mono text-xs text-gray-500">
-            <ProductionIcon className="shrink-0 text-gray-500 hover:scale-110" />{" "}
-            = production app
-          </p>
-          <FeaturedProjects projects={RESUME_DATA.projects} />
-        </Section>
-
-        <Section
-          id="papers"
-          className="scroll-mb-16 scroll-mt-8 print:!mt-6"
-        >
-          <h2 className="text-xl font-bold">Papers</h2>
-          <PaperBookshelf papers={RESUME_DATA.papers} />
-        </Section>
-
-        <Section className="scroll-mb-16">
-          <h2 className="text-xl font-bold">Certificates</h2>
-          <CertificateStack certificates={RESUME_DATA.certificates} />
-        </Section>
-
-        <Section>
-          <h2 className="text-xl font-bold">Skills</h2>
-          <SkillKeycaps
-            groups={RESUME_DATA.skillGroups}
-            projects={RESUME_DATA.projects}
-            experiences={RESUME_DATA.work}
-          />
-        </Section>
+              </Section>
+            </>
+          }
+          personal={
+            <>
+              <FoodExplorer />
+              <Training
+                profileUrl={
+                  RESUME_DATA.contact.social.find(
+                    ({ name }) => name === "Strava",
+                  )?.url
+                }
+              />
+              <Listening
+                profileUrl={
+                  RESUME_DATA.contact.social.find(
+                    (social) => social.name === "Spotify",
+                  )?.url
+                }
+              />
+            </>
+          }
+        />
         <SiteFooter />
       </section>
     </main>

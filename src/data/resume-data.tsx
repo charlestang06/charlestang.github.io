@@ -12,7 +12,7 @@ export const RESUME_DATA = {
   locationLink: "https://www.google.com/maps/place/New+York,+NY",
   about: "CS & Applied Math at Brown University",
   summary:
-    "I am a student at Brown University studying Applied Mathematics and Computer Science. I'm a software engineer working across infrastructure and large-scale systems. I also enjoy helping other developers build effectively.",
+    "I am a student at Brown University studying Applied Mathematics and Computer Science. I'm a software engineer working across infrastructure and large-scale systems. I also enjoy helping other developers build effectively. Outside of work, I enjoy trying new places to eat, running, and listening to EDM.",
   avatarUrl: "pfp.jpg",
   personalWebsiteUrl: "https://charlestang.dev",
   contact: {
