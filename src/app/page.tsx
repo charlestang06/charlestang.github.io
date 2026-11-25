@@ -151,7 +151,7 @@ export default function Page() {
 
         <Section
           id="papers"
-          className="!mt-0 scroll-mb-16 scroll-mt-8 print:!mt-6"
+          className="scroll-mb-16 scroll-mt-8 print:!mt-6"
         >
           <h2 className="text-xl font-bold">Papers</h2>
           <PaperBookshelf papers={RESUME_DATA.papers} />
