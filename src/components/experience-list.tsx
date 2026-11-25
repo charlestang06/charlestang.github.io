@@ -45,8 +45,8 @@ export function ExperienceList({
             expanded={expanded}
             onToggle={() => setExpanded(!expanded)}
             controls={panelId}
-            className="my-4"
-            buttonClassName="min-h-9"
+            className="mt-2"
+            buttonClassName="min-h-7"
             label="experience entries"
           />
           <div className="hidden flex-col gap-3 pt-3 print:flex">
