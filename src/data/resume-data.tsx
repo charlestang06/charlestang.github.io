@@ -391,6 +391,17 @@ export const RESUME_DATA = {
         href: "ECON3130_Paper.pdf",
       },
     },
+    {
+      title: "A Simulated Study of Close Contacts in Pedestrian Models",
+      awards: [],
+
+      description:
+        "2026 preprint by Charles Tang, Archanaa S. Krishnan, and Patrick Schaumont. Simulates close contacts in rooms and in one-way and two-way pedestrian flow, examining how density, contact radius, and relative speed affect contact frequency and duration.",
+      link: {
+        label: "preprint",
+        href: "/pedestrian-models-preprint.pdf",
+      },
+    },
   ],
   certificates: [
     {

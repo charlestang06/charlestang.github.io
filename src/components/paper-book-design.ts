@@ -7,6 +7,7 @@ import {
   House,
   Map,
   Sprout,
+  Footprints,
   type LucideIcon,
 } from "lucide-react";
 
@@ -30,6 +31,7 @@ export const topicIcons: Record<string, LucideIcon> = {
   "Land Use Analysis": Map,
   "Honeybee Populations": Bug,
   "E-Bike Demand": Bike,
+  "A Simulated Study of Close Contacts in Pedestrian Models": Footprints,
 };
 
 export const bindings = [
