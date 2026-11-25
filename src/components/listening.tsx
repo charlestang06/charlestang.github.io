@@ -1,11 +1,15 @@
+"use client";
+
+import { useState } from "react";
+import { ShowMoreButton } from "./show-more-button";
 import { Section } from "./ui/section";
 
 const liveMusic = [
   {
     year: "2026",
     events: [
-      "Niteharts",
-      "Experts Only",
+      "niteharts",
+      "Experts Only NYC",
       "Beyond Wonderland SoCal",
       "Breakaway Mass",
       "INZO · San Francisco",
@@ -15,9 +19,9 @@ const liveMusic = [
       "Chris Lake · NYC",
       "Martin Garrix · NYC",
       "Galantis · NYC",
-      "Zulan · NYC",
+      "ZULAN · NYC",
       "Sammy Virji · NYC",
-      "Zedd in the Park",
+      "Zedd In The Park",
       "San Holo · DC",
     ],
   },
@@ -25,7 +29,7 @@ const liveMusic = [
     year: "2025",
     events: [
       "Zeds Dead · Boston",
-      "Wobbleland Fest",
+      "Wobbleland",
       "Breakaway Mass",
       "Henry Fong · Providence",
       "it's murph · Boston",
@@ -38,6 +42,8 @@ const liveMusic = [
 ];
 
 export function Listening({ profileUrl }: { profileUrl?: string }) {
+  const [showHistory, setShowHistory] = useState(false);
+
   return (
     <Section className="print:hidden" aria-labelledby="listening-title">
       <div className="flex flex-wrap items-baseline justify-between gap-2">
@@ -59,22 +65,42 @@ export function Listening({ profileUrl }: { profileUrl?: string }) {
         <h3 className="font-semibold">Live music</h3>
         <ul className="mt-2 divide-y border-y font-mono text-xs">
           <li className="flex justify-between gap-3 py-2">
-            <span>EDCLV 2026</span>
+            <span>EDC Las Vegas 2026</span>
             <span className="text-muted-foreground">Upcoming</span>
           </li>
         </ul>
-        {liveMusic.map(({ year, events }) => (
-          <div key={year} className="mt-4">
-            <h4 className="font-mono text-xs text-muted-foreground">{year}</h4>
-            <ul className="mt-1 divide-y border-y font-mono text-xs">
-              {events.map((event) => (
-                <li key={event} className="py-2">
-                  {event}
-                </li>
-              ))}
-            </ul>
-          </div>
-        ))}
+        <div id="live-music-history">
+          {liveMusic.map(({ year, events }) => (
+            <div
+              key={year}
+              className="mt-4"
+              hidden={!showHistory && year !== liveMusic[0].year}
+            >
+              <h4 className="font-mono text-xs text-muted-foreground">
+                {year}
+              </h4>
+              <ul className="mt-1 divide-y border-y font-mono text-xs">
+                {events.map((event, index) => (
+                  <li
+                    key={event}
+                    className="py-2"
+                    hidden={!showHistory && index >= 3}
+                  >
+                    {event}
+                  </li>
+                ))}
+              </ul>
+            </div>
+          ))}
+        </div>
+        <ShowMoreButton
+          expanded={showHistory}
+          onToggle={() => setShowHistory(!showHistory)}
+          controls="live-music-history"
+          label="live music events"
+          className="mt-2"
+          buttonClassName="min-h-11"
+        />
       </div>
     </Section>
   );

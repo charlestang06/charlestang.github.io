@@ -3,6 +3,8 @@
 import { useEffect, useRef, useState, type CSSProperties } from "react";
 import { calendarDays } from "@/lib/food-calendar";
 
+import { ShowMoreButton } from "./show-more-button";
+
 type Total = { day: string; sport: string; count: number; meters?: number };
 const months = [
   "Jan",
@@ -20,6 +22,7 @@ const months = [
 ];
 
 export function Training({ profileUrl }: { profileUrl?: string }) {
+  const [showDetails, setShowDetails] = useState(false);
   const section = useRef<HTMLElement>(null);
   const [data, setData] = useState<Total[]>([]);
   const [failed, setFailed] = useState(false);
@@ -102,21 +105,11 @@ export function Training({ profileUrl }: { profileUrl?: string }) {
     setDay("");
   };
 
-  function calendar(forMonth?: number) {
-    const cells = calendarDays(Number(activeYear), forMonth);
+  function calendar() {
+    const cells = calendarDays(Number(activeYear));
     return (
-      <div
-        className={
-          forMonth
-            ? "food-mobile-calendar food-month-grid"
-            : "food-desktop-calendar"
-        }
-        role="group"
-        aria-label={
-          forMonth ? "Monthly workouts calendar" : "Yearly workouts calendar"
-        }
-      >
-        <div className={forMonth ? undefined : "food-year-grid"}>
+      <div role="group" aria-label="Yearly workouts calendar">
+        <div className="food-year-grid">
           <div className="food-day-labels" aria-hidden="true">
             {["S", "M", "T", "W", "T", "F", "S"].map((label, index) => (
               <span key={index}>{label}</span>
@@ -140,13 +133,7 @@ export function Training({ profileUrl }: { profileUrl?: string }) {
                   data-status="activity"
                   data-level={Math.min(4, count)}
                   onClick={() => setDay(day === date ? "" : date)}
-                >
-                  {forMonth && (
-                    <span className="food-day-number">
-                      {Number(date.slice(-2))}
-                    </span>
-                  )}
-                </button>
+                ></button>
               ) : (
                 <span
                   key={date ?? index}
@@ -154,13 +141,7 @@ export function Training({ profileUrl }: { profileUrl?: string }) {
                     date ? "food-day training-empty-day" : "food-day-blank"
                   }
                   aria-hidden="true"
-                >
-                  {forMonth && date && (
-                    <span className="food-day-number">
-                      {Number(date.slice(-2))}
-                    </span>
-                  )}
-                </span>
+                ></span>
               );
             })}
           </div>
@@ -231,118 +212,119 @@ export function Training({ profileUrl }: { profileUrl?: string }) {
                   <option key={value}>{value}</option>
                 ))}
               </select>
-              <select
-                aria-label="Training month"
-                value={monthIndex}
-                onChange={(event) => selectMonth(Number(event.target.value))}
-                className="sm:hidden"
-              >
-                {months.map((name, index) => (
-                  <option key={name} value={index + 1}>
-                    {name}
-                  </option>
-                ))}
-              </select>
             </div>
           </div>
           <div>
-            <div className="mb-2 hidden justify-between pl-[22px] font-mono text-[10px] text-muted-foreground sm:flex">
-              {months.map((name) => (
-                <span key={name}>{name}</span>
-              ))}
-            </div>
-            {calendar()}
-            {calendar(monthIndex)}
-            <p
-              aria-live="polite"
-              className="mt-2 min-h-4 font-mono text-[11px] text-muted-foreground"
-            >
-              {day
-                ? `${day} · ${days.get(day)} recorded ${days.get(day) === 1 ? "workout" : "workouts"}`
-                : "Darker dots indicate more workouts."}
-            </p>
-          </div>
-          <div className="grid gap-5 sm:grid-cols-2">
-            <div className="min-w-0 border-t pt-3">
-              <h3 className="text-sm font-semibold">Monthly workouts</h3>
-              <div className="mt-2 grid grid-cols-12 gap-1">
-                {monthly.map((count, index) => (
-                  <button
-                    key={months[index]}
-                    type="button"
-                    className="training-month-bar"
-                    aria-label={`${months[index]} · ${count} workouts`}
-                    title={`${months[index]} · ${count} workouts`}
-                    aria-pressed={monthIndex === index + 1}
-                    onClick={() => selectMonth(index + 1)}
-                  >
-                    <span style={{ height: `${(count / peak) * 52}px` }} />
-                    <small>{months[index][0]}</small>
-                  </button>
-                ))}
-              </div>
-              <p
-                className="mt-2 font-mono text-[11px] text-muted-foreground"
-                aria-live="polite"
-              >
-                {months[monthIndex - 1]} · {monthly[monthIndex - 1]} recorded
-                workouts
-              </p>
-            </div>
-            <div className="min-w-0 border-t pt-3">
-              <div className="flex justify-between gap-2">
-                <h3 className="text-sm font-semibold">
-                  Sport breakdown · {months[monthIndex - 1]}
-                </h3>
-                <button
-                  type="button"
-                  className="text-xs text-muted-foreground underline"
-                  hidden={!sport}
-                  onClick={() => {
-                    setSport("");
-                    setDay("");
-                  }}
-                >
-                  All sports
-                </button>
-              </div>
-              {!breakdownTotal && (
-                <p className="mt-2 text-xs text-muted-foreground">
-                  No recorded workouts this month.
-                </p>
-              )}
-              <ul className="mt-2 space-y-1">
-                {Array.from(sportTotals)
-                  .sort((a, b) => b[1] - a[1])
-                  .map(([name, count]) => (
-                    <li key={name}>
-                      <button
-                        type="button"
-                        className="training-sport"
-                        aria-pressed={sport === name}
-                        onClick={() => {
-                          setSport(sport === name ? "" : name);
-                          setDay("");
-                        }}
-                      >
-                        <span>{name}</span>
-                        <span>{count}</span>
-                        <span
-                          className="training-sport-track"
-                          aria-hidden="true"
-                        >
-                          <span
-                            style={{
-                              width: `${(100 * count) / breakdownTotal}%`,
-                            }}
-                          />
-                        </span>
-                      </button>
-                    </li>
+            <div className="activity-calendar-scroll">
+              <div className="activity-calendar-year">
+                <div className="food-month-labels" aria-hidden="true">
+                  {months.map((name) => (
+                    <span key={name}>{name}</span>
                   ))}
-              </ul>
+                </div>
+                {calendar()}
+              </div>
+            </div>
+            {day && (
+              <p
+                aria-live="polite"
+                className="mt-2 font-mono text-[11px] text-muted-foreground"
+              >
+                {day} · {days.get(day)} recorded{" "}
+                {days.get(day) === 1 ? "workout" : "workouts"}
+              </p>
+            )}
+          </div>
+          <div id="training-details" hidden={!showDetails}>
+            <div className="grid gap-5 sm:grid-cols-2">
+              <div className="min-w-0 border-t pt-3">
+                <h3 className="text-sm font-semibold">Monthly workouts</h3>
+                <div className="mt-2 grid grid-cols-12 gap-1">
+                  {monthly.map((count, index) => (
+                    <button
+                      key={months[index]}
+                      type="button"
+                      className="training-month-bar"
+                      aria-label={`${months[index]} · ${count} workouts`}
+                      title={`${months[index]} · ${count} workouts`}
+                      aria-pressed={monthIndex === index + 1}
+                      onClick={() => selectMonth(index + 1)}
+                    >
+                      <span style={{ height: `${(count / peak) * 52}px` }} />
+                      <small>{months[index][0]}</small>
+                    </button>
+                  ))}
+                </div>
+                <p
+                  className="mt-2 font-mono text-[11px] text-muted-foreground"
+                  aria-live="polite"
+                >
+                  {months[monthIndex - 1]} · {monthly[monthIndex - 1]} recorded
+                  workouts
+                </p>
+              </div>
+              <div className="min-w-0 border-t pt-3">
+                <div className="flex justify-between gap-2">
+                  <h3 className="text-sm font-semibold">
+                    Sport breakdown · {months[monthIndex - 1]}
+                  </h3>
+                  <button
+                    type="button"
+                    className="text-xs text-muted-foreground underline"
+                    hidden={!sport}
+                    onClick={() => {
+                      setSport("");
+                      setDay("");
+                    }}
+                  >
+                    All sports
+                  </button>
+                </div>
+                {!breakdownTotal && (
+                  <p className="mt-2 text-xs text-muted-foreground">
+                    No recorded workouts this month.
+                  </p>
+                )}
+                <ul className="mt-2 space-y-1">
+                  {Array.from(sportTotals)
+                    .sort((a, b) => b[1] - a[1])
+                    .map(([name, count]) => (
+                      <li key={name}>
+                        <button
+                          type="button"
+                          className="training-sport"
+                          aria-pressed={sport === name}
+                          onClick={() => {
+                            setSport(sport === name ? "" : name);
+                            setDay("");
+                          }}
+                        >
+                          <span>{name}</span>
+                          <span>{count}</span>
+                          <span
+                            className="training-sport-track"
+                            aria-hidden="true"
+                          >
+                            <span
+                              style={{
+                                width: `${(100 * count) / breakdownTotal}%`,
+                              }}
+                            />
+                          </span>
+                        </button>
+                      </li>
+                    ))}
+                </ul>
+              </div>
             </div>
           </div>
+          <ShowMoreButton
+            expanded={showDetails}
+            onToggle={() => setShowDetails(!showDetails)}
+            controls="training-details"
+            label="training details"
+            buttonClassName="min-h-11"
+          />
         </>
       )}
     </section>

@@ -229,6 +229,7 @@ test("place categories preserve multiple memberships when filtering", () => {
     ],
   });
   fireEvent.click(view.getByRole("link", { name: "Beli" }));
+  fireEvent.click(view.getByRole("button", { name: "Show more places" }));
   fireEvent.click(view.getByRole("button", { name: "1 cafes" }));
   const list = within(view.getByRole("list", { name: "Places" }));
   assert.ok(list.getByText("Fixture A"));
@@ -276,6 +277,7 @@ test("local cover images and safe business websites appear on place rows", () =>
     ],
   });
   fireEvent.click(view.getByRole("link", { name: "Beli" }));
+  fireEvent.click(view.getByRole("button", { name: "Show more places" }));
   assert.equal(
     view.container.querySelector(".food-place-image")?.getAttribute("src"),
     "/images/food/a.jpg",
@@ -295,6 +297,7 @@ test("list and map share city and date filters", async () => {
     })),
   });
   fireEvent.click(view.getByRole("link", { name: "Beli" }));
+  fireEvent.click(view.getByRole("button", { name: "Show more places" }));
   fireEvent.click(view.getByRole("button", { name: "Map" }));
   await waitFor(() =>
     assert.equal(view.container.querySelectorAll(".food-map-marker").length, 2),
@@ -388,6 +391,10 @@ test("a replaced cover retries after an earlier image failed", async () => {
       </>,
     );
     fireEvent.click(view.getByRole("link", { name: "Beli" }));
+    fireEvent.click(
+      await view.findByRole("button", { name: "Show more places" }),
+    );
+
     await waitFor(() =>
       assert.equal(
         view.container.querySelector(".food-place-image")?.getAttribute("src"),
@@ -442,6 +449,7 @@ const paginatedSnapshot: FoodSnapshot = {
 test("place pagination only mounts eight rows and respects previous/next boundaries", () => {
   const view = fixture(paginatedSnapshot);
   fireEvent.click(view.getByRole("link", { name: "Beli" }));
+  fireEvent.click(view.getByRole("button", { name: "Show more places" }));
   const rows = () =>
     within(view.getByRole("list", { name: "Places" })).getAllByRole("listitem");
   assert.equal(rows().length, 8);
@@ -472,6 +480,7 @@ test("place pagination only mounts eight rows and respects previous/next boundar
 test("place filters and date selection reset pagination to the first page", () => {
   const view = fixture(paginatedSnapshot);
   fireEvent.click(view.getByRole("link", { name: "Beli" }));
+  fireEvent.click(view.getByRole("button", { name: "Show more places" }));
   const next = () =>
     fireEvent.click(view.getByRole("button", { name: "Next places page" }));
   next();
@@ -501,6 +510,7 @@ test("place filters and date selection reset pagination to the first page", () =
 test("map renders all filtered places while list pagination only renders one page", async () => {
   const view = fixture(paginatedSnapshot);
   fireEvent.click(view.getByRole("link", { name: "Beli" }));
+  fireEvent.click(view.getByRole("button", { name: "Show more places" }));
   assert.equal(
     within(view.getByRole("list", { name: "Places" })).getAllByRole("listitem")
       .length,
