@@ -9,6 +9,7 @@ import {
   waitFor,
   within,
 } from "@testing-library/react";
+import { PortfolioCategory } from "../src/components/portfolio-category";
 import { FoodExplorer, FoodLink } from "../src/components/food-explorer";
 import {
   calendarDays,
@@ -19,6 +20,39 @@ import {
 afterEach(() => {
   cleanup();
   window.history.replaceState(null, "", "/");
+});
+
+test("Personal stays selected after the page reloads", async () => {
+  const renderTabs = () =>
+    render(
+      <PortfolioCategory
+        professional="Portfolio content"
+        personal="Personal content"
+      />,
+    );
+  window.sessionStorage.removeItem("portfolio-category");
+  try {
+    const first = renderTabs();
+    assert.equal(
+      first
+        .getByRole("button", { name: "Portfolio" })
+        .getAttribute("aria-pressed"),
+      "true",
+    );
+    fireEvent.click(first.getByRole("button", { name: "Personal" }));
+    first.unmount();
+    const reloaded = renderTabs();
+    await waitFor(() =>
+      assert.equal(
+        reloaded
+          .getByRole("button", { name: "Personal" })
+          .getAttribute("aria-pressed"),
+        "true",
+      ),
+    );
+  } finally {
+    window.sessionStorage.removeItem("portfolio-category");
+  }
 });
 
 // Synthetic fixtures exercise filtering; they are never bundled into the site.
