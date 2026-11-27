@@ -1,6 +1,7 @@
 "use client";
 
 import { FoodGuides } from "./food-guides";
+import { RecentFoodRatings } from "./recent-food-ratings";
 import guides from "@/data/beli-guides.json";
 import { useContext } from "react";
 import { PersonalView } from "./portfolio-category";
@@ -403,6 +404,7 @@ export function FoodExplorer({
                   : null}
             </div>
           )}
+          <RecentFoodRatings restaurants={restaurants} />
           <FoodGuides guides={guides} restaurants={restaurants} />
           {snapshot && (
             <>
