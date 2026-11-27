@@ -4,7 +4,7 @@
     "handle": "charlestang06",
     "url": "https://beliapp.co/app/charlestang06"
   },
-  "syncedAt": "2026-11-27T00:54:35.347435+00:00",
+  "syncedAt": "2026-11-27T16:00:27.538416+00:00",
   "source": "live",
   "calendarSemantics": "Dining activity recorded on Beli. Retrieved calendar months show the source report through the sync date; gaps mean no recorded activity, not no dining. Other months contain only explicit visit_dates and gaps are unknown. Counts may include repeat records for the same place.",
   "calendarMonths": [
@@ -4744,7 +4744,7 @@
         "lat": 38.897537,
         "lng": -77.0252454
       },
-      "imageUrl": null,
+      "imageUrl": "/images/food/moon-rabbit-by-kevin-tien-13d9566513-own-485d40bdd0.webp",
       "name": "Moon Rabbit by Kevin Tien",
       "city": "Washington, DC",
       "country": "United States",
@@ -9578,7 +9578,7 @@
         "lat": 38.8626628,
         "lng": -77.0546995
       },
-      "imageUrl": null,
+      "imageUrl": "/images/food/whole-foods-market-b82e852204-own-d8c34442a5.webp",
       "name": "Whole Foods Market",
       "city": "Arlington, VA",
       "country": "United States",
@@ -10155,7 +10155,7 @@
         "lat": 31.243799,
         "lng": 121.47228
       },
-      "imageUrl": null,
+      "imageUrl": "/images/food/the-tree-shanghai-jing-an-joy-city-north-block-shop-f45ab5bce8-own-d6d671043a.webp",
       "name": "THE TREE (Shanghai Jing'an Joy City North Block Shop)",
       "city": "Shanghai",
       "country": "China",
@@ -12867,7 +12867,7 @@
         "lat": 38.9151331,
         "lng": -77.01966920000001
       },
-      "imageUrl": null,
+      "imageUrl": "/images/food/shaw-s-tavern-1db103c4a4-own-faa2c166a5.webp",
       "name": "Shaw's Tavern",
       "city": "Washington, DC",
       "country": "United States",
