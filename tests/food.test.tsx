@@ -69,6 +69,44 @@ function fixture(data = snapshot) {
   );
 }
 
+test("recent favorites show up to three places above 8.5 by visit date, ignoring reranks", () => {
+  const restaurants = [
+    ["Oldest", 10, "2026-11-10"],
+    ["Second", 8.6, "2026-11-14"],
+    ["Threshold", 8.5, "2026-11-19"],
+    ["Newest", 9, "2026-11-15"],
+    ["Third", 9.2, "2026-11-13"],
+    ["Undated", 10, null],
+  ].map(([name, score, date], index) => ({
+    ...snapshot.restaurants[0],
+    key: `recent-${index}`,
+    name: String(name),
+    score: Number(score),
+    imageUrl: name === "Newest" ? "/images/food/favorite.webp" : null,
+    dates: date ? [String(date)] : [],
+    firstRankedAt: "2026-11-23T12:00:00Z",
+  }));
+  const view = fixture({ ...snapshot, restaurants });
+  fireEvent.click(view.getByRole("link", { name: "Beli" }));
+  const favorites = within(
+    view.getByRole("region", { name: "Recent favorites" }),
+  );
+  assert.deepEqual(
+    favorites
+      .getAllByRole("heading", { level: 4 })
+      .map((item) => item.textContent),
+    ["Newest", "Second", "Third"],
+  );
+  assert.equal(
+    favorites.getByText("Visited Nov 15, 2026").getAttribute("datetime"),
+    "2026-11-15",
+  );
+  assert.equal(
+    favorites.getByRole("presentation").getAttribute("src"),
+    "/images/food/favorite.webp",
+  );
+});
+
 test("calendar aligns Sunday rows and distinguishes unknown, complete-zero and future", () => {
   const days = calendarDays(2026);
   assert.equal(days[0], null); // Jan 1, 2026 is Thursday: four leading cells.
@@ -283,7 +321,9 @@ test("local cover images and safe business websites appear on place rows", () =>
     "/images/food/a.jpg",
   );
   assert.equal(
-    view.getByRole("link", { name: "Fixture A" }).getAttribute("href"),
+    within(view.getByRole("list", { name: "Places" }))
+      .getByRole("link", { name: "Fixture A" })
+      .getAttribute("href"),
     "https://example.com/dining",
   );
 });
@@ -473,8 +513,9 @@ test("place pagination only mounts eight rows and respects previous/next boundar
     true,
   );
   fireEvent.click(view.getByRole("button", { name: "Previous places page" }));
-  assert.ok(view.getByText("Page place 1"));
-  assert.ok(!view.queryByText("Page place 12"));
+  const places = within(view.getByRole("list", { name: "Places" }));
+  assert.ok(places.getByText("Page place 1"));
+  assert.equal(places.queryByText("Page place 12"), null);
 });
 
 test("place filters and date selection reset pagination to the first page", () => {
