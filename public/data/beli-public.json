@@ -4,7 +4,7 @@
     "handle": "charlestang06",
     "url": "https://beliapp.co/app/charlestang06"
   },
-  "syncedAt": "2026-11-25T12:40:58.460776+00:00",
+  "syncedAt": "2026-11-27T00:54:35.347435+00:00",
   "source": "live",
   "calendarSemantics": "Dining activity recorded on Beli. Retrieved calendar months show the source report through the sync date; gaps mean no recorded activity, not no dining. Other months contain only explicit visit_dates and gaps are unknown. Counts may include repeat records for the same place.",
   "calendarMonths": [
@@ -21,7 +21,7 @@
     "2026-11"
   ],
   "stats": {
-    "rankedPlaces": 599,
+    "rankedPlaces": 606,
     "rankedThisYear": null,
     "weekStreak": null
   },
@@ -73,7 +73,7 @@
         "Korean",
         "Meat"
       ],
-      "score": 9.988813559322034,
+      "score": 9.988926174496644,
       "rank": null,
       "dates": [
         "2026-05-07"
@@ -98,7 +98,7 @@
         "Korean",
         "Barbecue"
       ],
-      "score": 9.977627118644067,
+      "score": 9.977852348993288,
       "rank": null,
       "dates": [],
       "firstRankedAt": "2026-07-25T15:44:09.396298Z"
@@ -121,7 +121,7 @@
         "Japanese",
         "Meat"
       ],
-      "score": 9.966440677966101,
+      "score": 9.966778523489934,
       "rank": null,
       "dates": [
         "2026-04-16"
@@ -145,7 +145,7 @@
       "cuisines": [
         "Italian"
       ],
-      "score": 9.966440677966101,
+      "score": 9.966778523489934,
       "rank": null,
       "dates": [
         "2025-12-23"
@@ -171,7 +171,7 @@
         "Tacos",
         "Food Truck"
       ],
-      "score": 9.94406779661017,
+      "score": 9.944630872483222,
       "rank": null,
       "dates": [
         "2025-07-11"
@@ -196,7 +196,7 @@
         "Thai",
         "Laotian"
       ],
-      "score": 9.932881355932203,
+      "score": 9.933557046979866,
       "rank": null,
       "dates": [
         "2025-11-17",
@@ -223,7 +223,7 @@
         "Hong Kong Style Cafe",
         "Dim Sum"
       ],
-      "score": 9.921694915254237,
+      "score": 9.92248322147651,
       "rank": null,
       "dates": [
         "2026-02-14"
@@ -247,7 +247,7 @@
       "cuisines": [
         "Portuguese"
       ],
-      "score": 9.910508474576272,
+      "score": 9.911409395973154,
       "rank": null,
       "dates": [
         "2026-08-15"
@@ -271,7 +271,7 @@
       "cuisines": [
         "Cafe"
       ],
-      "score": 9.899322033898304,
+      "score": 9.9003355704698,
       "rank": null,
       "dates": [
         "2026-01-04"
@@ -295,7 +295,7 @@
       "cuisines": [
         "Thai"
       ],
-      "score": 9.888135593220339,
+      "score": 9.889261744966444,
       "rank": null,
       "dates": [
         "2026-02-15",
@@ -322,7 +322,7 @@
         "Udon",
         "Noodles"
       ],
-      "score": 9.876949152542373,
+      "score": 9.878187919463087,
       "rank": null,
       "dates": [
         "2026-04-16"
@@ -347,7 +347,7 @@
         "Hawaiian",
         "Poke"
       ],
-      "score": 9.865762711864408,
+      "score": 9.867114093959731,
       "rank": null,
       "dates": [
         "2026-04-18",
@@ -373,7 +373,7 @@
         "Japanese",
         "Omakase"
       ],
-      "score": 9.85457627118644,
+      "score": 9.856040268456375,
       "rank": null,
       "dates": [
         "2026-07-07"
@@ -398,7 +398,7 @@
         "American",
         "Burgers"
       ],
-      "score": 9.843389830508475,
+      "score": 9.84496644295302,
       "rank": null,
       "dates": [
         "2026-08-08"
@@ -422,7 +422,7 @@
       "cuisines": [
         "Korean"
       ],
-      "score": 9.832203389830509,
+      "score": 9.833892617449665,
       "rank": null,
       "dates": [
         "2026-04-03"
@@ -446,7 +446,7 @@
       "cuisines": [
         "Korean"
       ],
-      "score": 9.821016949152542,
+      "score": 9.82281879194631,
       "rank": null,
       "dates": [
         "2026-09-20"
@@ -471,7 +471,7 @@
         "Italian",
         "American"
       ],
-      "score": 9.809830508474576,
+      "score": 9.811744966442953,
       "rank": null,
       "dates": [
         "2026-08-18"
@@ -495,12 +495,38 @@
       "cuisines": [
         "British"
       ],
-      "score": 9.79864406779661,
+      "score": 9.800671140939597,
       "rank": null,
       "dates": [
         "2026-07-26"
       ],
       "firstRankedAt": "2026-07-26T13:20:44.147198Z"
+    },
+    {
+      "key": "eebee-s-corner-bar-fad03dc5c5",
+      "categories": [
+        "Restaurant"
+      ],
+      "websiteUrl": "http://eebeesbar.com/",
+      "coordinates": {
+        "lat": 38.915356,
+        "lng": -77.02017699999999
+      },
+      "imageUrl": null,
+      "name": "Eebee's Corner Bar",
+      "city": "Washington, DC",
+      "country": "United States",
+      "cuisines": [
+        "American",
+        "Burgers",
+        "Bar"
+      ],
+      "score": 9.789597315436241,
+      "rank": null,
+      "dates": [
+        "2026-11-25"
+      ],
+      "firstRankedAt": "2026-11-26T13:02:16.837166Z"
     },
     {
       "key": "daeho-kalbijjim-beef-soup-5e217c4d9d",
@@ -519,7 +545,7 @@
       "cuisines": [
         "Korean"
       ],
-      "score": 9.787457627118645,
+      "score": 9.778523489932885,
       "rank": null,
       "dates": [
         "2026-02-17",
@@ -545,7 +571,7 @@
         "Taqueria",
         "Mexican"
       ],
-      "score": 9.787457627118645,
+      "score": 9.778523489932885,
       "rank": null,
       "dates": [
         "2026-03-01",
@@ -572,7 +598,7 @@
         "Chinese",
         "Dumplings"
       ],
-      "score": 9.787457627118645,
+      "score": 9.778523489932885,
       "rank": null,
       "dates": [
         "2026-06-28"
@@ -597,7 +623,7 @@
         "Chinese",
         "Noodles"
       ],
-      "score": 9.787457627118645,
+      "score": 9.778523489932885,
       "rank": null,
       "dates": [
         "2026-04-25"
@@ -623,7 +649,7 @@
         "Argentinian",
         "Gastropub"
       ],
-      "score": 9.787457627118645,
+      "score": 9.778523489932885,
       "rank": null,
       "dates": [
         "2026-01-06"
@@ -649,7 +675,7 @@
         "Contemporary",
         "New England"
       ],
-      "score": 9.731525423728813,
+      "score": 9.723154362416107,
       "rank": null,
       "dates": [
         "2026-11-16"
@@ -674,7 +700,7 @@
         "Chinese",
         "Food Court"
       ],
-      "score": 9.720338983050848,
+      "score": 9.712080536912751,
       "rank": null,
       "dates": [
         "2026-08-09"
@@ -698,7 +724,7 @@
       "cuisines": [
         "Pub"
       ],
-      "score": 9.709152542372882,
+      "score": 9.701006711409397,
       "rank": null,
       "dates": [
         "2026-07-28"
@@ -722,7 +748,7 @@
       "cuisines": [
         "Thai"
       ],
-      "score": 9.697966101694915,
+      "score": 9.68993288590604,
       "rank": null,
       "dates": [
         "2026-06-27",
@@ -747,7 +773,7 @@
       "cuisines": [
         "Thai"
       ],
-      "score": 9.68677966101695,
+      "score": 9.678859060402685,
       "rank": null,
       "dates": [
         "2026-06-15"
@@ -772,7 +798,7 @@
         "British",
         "Pub"
       ],
-      "score": 9.675593220338984,
+      "score": 9.667785234899329,
       "rank": null,
       "dates": [
         "2026-07-26"
@@ -796,7 +822,7 @@
       "cuisines": [
         "Italian"
       ],
-      "score": 9.664406779661016,
+      "score": 9.656711409395973,
       "rank": null,
       "dates": [
         "2026-08-16"
@@ -821,7 +847,7 @@
         "Italian",
         "Contemporary"
       ],
-      "score": 9.65322033898305,
+      "score": 9.645637583892617,
       "rank": null,
       "dates": [
         "2025-06-23"
@@ -847,7 +873,7 @@
         "Cantonese",
         "Dim Sum"
       ],
-      "score": 9.642033898305085,
+      "score": 9.634563758389262,
       "rank": null,
       "dates": [],
       "firstRankedAt": "2026-11-17T03:39:26.814028Z"
@@ -869,7 +895,7 @@
       "cuisines": [
         "Italian"
       ],
-      "score": 9.63084745762712,
+      "score": 9.623489932885906,
       "rank": null,
       "dates": [
         "2026-09-24"
@@ -894,7 +920,7 @@
         "Udon",
         "Japanese"
       ],
-      "score": 9.619661016949152,
+      "score": 9.61241610738255,
       "rank": null,
       "dates": [
         "2026-01-31"
@@ -920,7 +946,7 @@
         "Spanish",
         "Bar"
       ],
-      "score": 9.608474576271187,
+      "score": 9.601342281879194,
       "rank": null,
       "dates": [
         "2025-12-26",
@@ -945,7 +971,7 @@
       "cuisines": [
         "Pizza"
       ],
-      "score": 9.597288135593221,
+      "score": 9.590268456375838,
       "rank": null,
       "dates": [
         "2026-06-19"
@@ -971,7 +997,7 @@
         "Dumplings",
         "Shanghainese"
       ],
-      "score": 9.586101694915254,
+      "score": 9.579194630872482,
       "rank": null,
       "dates": [],
       "firstRankedAt": "2026-07-25T15:44:09.396321Z"
@@ -994,7 +1020,7 @@
         "Chinese",
         "Noodles"
       ],
-      "score": 9.574915254237288,
+      "score": 9.568120805369128,
       "rank": null,
       "dates": [
         "2026-01-11"
@@ -1019,7 +1045,7 @@
         "Chinese",
         "Cantonese"
       ],
-      "score": 9.563728813559322,
+      "score": 9.557046979865772,
       "rank": null,
       "dates": [],
       "firstRankedAt": "2026-06-27T12:36:59.858141Z"
@@ -1041,7 +1067,7 @@
       "cuisines": [
         "Thai"
       ],
-      "score": 9.552542372881357,
+      "score": 9.545973154362416,
       "rank": null,
       "dates": [
         "2026-01-25"
@@ -1066,7 +1092,7 @@
         "Korean",
         "Barbecue"
       ],
-      "score": 9.54135593220339,
+      "score": 9.53489932885906,
       "rank": null,
       "dates": [
         "2026-08-11"
@@ -1090,7 +1116,7 @@
       "cuisines": [
         "Thai"
       ],
-      "score": 9.530169491525424,
+      "score": 9.523825503355704,
       "rank": null,
       "dates": [],
       "firstRankedAt": "2026-11-17T03:39:26.814046Z"
@@ -1113,7 +1139,7 @@
         "Italian",
         "Pizza"
       ],
-      "score": 9.518983050847458,
+      "score": 9.512751677852348,
       "rank": null,
       "dates": [
         "2026-10-14"
@@ -1137,7 +1163,7 @@
       "cuisines": [
         "Sandwiches"
       ],
-      "score": 9.50779661016949,
+      "score": 9.501677852348994,
       "rank": null,
       "dates": [],
       "firstRankedAt": "2026-01-26T04:54:25.746402Z"
@@ -1160,7 +1186,7 @@
         "Mexican",
         "Tacos"
       ],
-      "score": 9.496610169491525,
+      "score": 9.490604026845638,
       "rank": null,
       "dates": [
         "2026-10-11"
@@ -1184,7 +1210,7 @@
       "cuisines": [
         "Korean"
       ],
-      "score": 9.48542372881356,
+      "score": 9.479530201342282,
       "rank": null,
       "dates": [],
       "firstRankedAt": "2026-10-03T01:15:25.188545Z"
@@ -1208,7 +1234,7 @@
         "Salvadoran",
         "Guatemalan"
       ],
-      "score": 9.48542372881356,
+      "score": 9.479530201342282,
       "rank": null,
       "dates": [
         "2026-04-11"
@@ -1233,7 +1259,7 @@
         "Chinese",
         "Hunan"
       ],
-      "score": 9.48542372881356,
+      "score": 9.479530201342282,
       "rank": null,
       "dates": [],
       "firstRankedAt": "2026-01-26T04:56:05.916773Z"
@@ -1255,7 +1281,7 @@
       "cuisines": [
         "Mexican"
       ],
-      "score": 9.451864406779661,
+      "score": 9.446308724832214,
       "rank": null,
       "dates": [
         "2025-08-12"
@@ -1281,7 +1307,7 @@
         "American",
         "Fast Food"
       ],
-      "score": 9.440677966101696,
+      "score": 9.43523489932886,
       "rank": null,
       "dates": [
         "2026-06-05"
@@ -1306,7 +1332,7 @@
         "Dumplings",
         "Asian"
       ],
-      "score": 9.429491525423728,
+      "score": 9.424161073825504,
       "rank": null,
       "dates": [
         "2026-06-13"
@@ -1331,7 +1357,7 @@
         "Dumplings",
         "Tibetan"
       ],
-      "score": 9.418305084745763,
+      "score": 9.413087248322148,
       "rank": null,
       "dates": [
         "2026-07-04"
@@ -1355,7 +1381,7 @@
       "cuisines": [
         "Taiwanese"
       ],
-      "score": 9.407118644067797,
+      "score": 9.402013422818792,
       "rank": null,
       "dates": [
         "2024-05-05"
@@ -1380,7 +1406,7 @@
         "Chinese",
         "Cantonese"
       ],
-      "score": 9.39593220338983,
+      "score": 9.390939597315436,
       "rank": null,
       "dates": [
         "2026-11-21"
@@ -1405,7 +1431,7 @@
         "Italian",
         "Pizza"
       ],
-      "score": 9.384745762711864,
+      "score": 9.379865771812081,
       "rank": null,
       "dates": [
         "2026-07-05"
@@ -1430,7 +1456,7 @@
         "Asian",
         "Fusion"
       ],
-      "score": 9.373559322033898,
+      "score": 9.368791946308725,
       "rank": null,
       "dates": [],
       "firstRankedAt": "2026-01-26T04:56:05.916852Z"
@@ -1454,7 +1480,7 @@
         "Barbecue",
         "Meat"
       ],
-      "score": 9.362372881355933,
+      "score": 9.35771812080537,
       "rank": null,
       "dates": [
         "2026-07-15"
@@ -1479,7 +1505,7 @@
         "Italian",
         "Pizza"
       ],
-      "score": 9.351186440677965,
+      "score": 9.346644295302013,
       "rank": null,
       "dates": [
         "2026-03-17"
@@ -1505,7 +1531,7 @@
         "Cantonese",
         "Hong Kong Style Cafe"
       ],
-      "score": 9.34,
+      "score": 9.335570469798657,
       "rank": null,
       "dates": [
         "2026-06-20",
@@ -1530,7 +1556,7 @@
       "cuisines": [
         "American"
       ],
-      "score": 9.328813559322034,
+      "score": 9.324496644295301,
       "rank": null,
       "dates": [
         "2026-07-20"
@@ -1554,7 +1580,7 @@
       "cuisines": [
         "Thai"
       ],
-      "score": 9.317627118644069,
+      "score": 9.313422818791945,
       "rank": null,
       "dates": [
         "2026-08-27"
@@ -1578,7 +1604,7 @@
       "cuisines": [
         "Japanese"
       ],
-      "score": 9.306440677966101,
+      "score": 9.302348993288591,
       "rank": null,
       "dates": [
         "2026-02-12"
@@ -1604,7 +1630,7 @@
         "Hot Pot",
         "Japanese"
       ],
-      "score": 9.295254237288136,
+      "score": 9.291275167785235,
       "rank": null,
       "dates": [],
       "firstRankedAt": "2026-01-26T04:56:05.916713Z"
@@ -1627,7 +1653,7 @@
         "Taqueria",
         "Mexican"
       ],
-      "score": 9.28406779661017,
+      "score": 9.28020134228188,
       "rank": null,
       "dates": [
         "2026-04-12"
@@ -1653,7 +1679,7 @@
         "Tacos",
         "Seafood"
       ],
-      "score": 9.272881355932203,
+      "score": 9.269127516778523,
       "rank": null,
       "dates": [
         "2026-06-27"
@@ -1677,7 +1703,7 @@
       "cuisines": [
         "Thai"
       ],
-      "score": 9.261694915254237,
+      "score": 9.258053691275167,
       "rank": null,
       "dates": [],
       "firstRankedAt": "2026-11-17T03:39:26.814161Z"
@@ -1701,7 +1727,7 @@
         "Szechuan",
         "Asian"
       ],
-      "score": 9.250508474576272,
+      "score": 9.246979865771813,
       "rank": null,
       "dates": [],
       "firstRankedAt": "2026-01-26T04:54:25.746920Z"
@@ -1725,7 +1751,7 @@
         "Korean",
         "Grill"
       ],
-      "score": 9.239322033898304,
+      "score": 9.235906040268457,
       "rank": null,
       "dates": [],
       "firstRankedAt": "2026-11-17T03:39:26.814096Z"
@@ -1747,7 +1773,7 @@
       "cuisines": [
         "Barbecue"
       ],
-      "score": 9.239322033898304,
+      "score": 9.235906040268457,
       "rank": null,
       "dates": [],
       "firstRankedAt": "2026-11-17T03:39:26.814063Z"
@@ -1770,7 +1796,7 @@
         "New England",
         "Contemporary"
       ],
-      "score": 9.239322033898304,
+      "score": 9.235906040268457,
       "rank": null,
       "dates": [
         "2026-10-03"
@@ -1796,7 +1822,7 @@
         "Fried Chicken",
         "American"
       ],
-      "score": 9.239322033898304,
+      "score": 9.235906040268457,
       "rank": null,
       "dates": [],
       "firstRankedAt": "2026-10-03T01:13:26.538659Z"
@@ -1819,7 +1845,7 @@
         "Breakfast",
         "Diner"
       ],
-      "score": 9.239322033898304,
+      "score": 9.235906040268457,
       "rank": null,
       "dates": [],
       "firstRankedAt": "2026-10-03T01:08:37.162164Z"
@@ -1841,7 +1867,7 @@
       "cuisines": [
         "Noodles"
       ],
-      "score": 9.239322033898304,
+      "score": 9.235906040268457,
       "rank": null,
       "dates": [
         "2026-06-06"
@@ -1865,7 +1891,7 @@
       "cuisines": [
         "Japanese"
       ],
-      "score": 9.239322033898304,
+      "score": 9.235906040268457,
       "rank": null,
       "dates": [
         "2024-12-31",
@@ -1891,7 +1917,7 @@
       "cuisines": [
         "Vietnamese"
       ],
-      "score": 9.239322033898304,
+      "score": 9.235906040268457,
       "rank": null,
       "dates": [
         "2026-01-13"
@@ -1915,7 +1941,7 @@
       "cuisines": [
         "Seafood"
       ],
-      "score": 9.239322033898304,
+      "score": 9.235906040268457,
       "rank": null,
       "dates": [
         "2026-09-12"
@@ -1939,7 +1965,7 @@
       "cuisines": [
         "Salvadoran"
       ],
-      "score": 9.239322033898304,
+      "score": 9.235906040268457,
       "rank": null,
       "dates": [
         "2026-09-08"
@@ -1965,7 +1991,7 @@
         "Taqueria",
         "Tacos"
       ],
-      "score": 9.239322033898304,
+      "score": 9.235906040268457,
       "rank": null,
       "dates": [
         "2026-08-26"
@@ -1990,7 +2016,7 @@
         "Mexican",
         "Tacos"
       ],
-      "score": 9.239322033898304,
+      "score": 9.235906040268457,
       "rank": null,
       "dates": [
         "2026-06-14"
@@ -2015,7 +2041,7 @@
         "Mediterranean",
         "Turkish"
       ],
-      "score": 9.239322033898304,
+      "score": 9.235906040268457,
       "rank": null,
       "dates": [
         "2026-02-04"
@@ -2039,7 +2065,7 @@
       "cuisines": [
         "Mexican"
       ],
-      "score": 9.239322033898304,
+      "score": 9.235906040268457,
       "rank": null,
       "dates": [
         "2026-01-16"
@@ -2064,7 +2090,7 @@
         "Mexican",
         "Tacos"
       ],
-      "score": 9.239322033898304,
+      "score": 9.235906040268457,
       "rank": null,
       "dates": [
         "2026-01-05"
@@ -2090,7 +2116,7 @@
         "Chinese",
         "Asian"
       ],
-      "score": 9.239322033898304,
+      "score": 9.235906040268457,
       "rank": null,
       "dates": [
         "2025-11-14"
@@ -2115,7 +2141,7 @@
         "Mexican",
         "Tacos"
       ],
-      "score": 9.060338983050848,
+      "score": 9.058724832214764,
       "rank": null,
       "dates": [
         "2026-01-31"
@@ -2140,7 +2166,7 @@
         "Mexican",
         "Californian"
       ],
-      "score": 9.049152542372882,
+      "score": 9.047651006711408,
       "rank": null,
       "dates": [
         "2026-06-25"
@@ -2166,7 +2192,7 @@
         "Japanese",
         "Hibachi"
       ],
-      "score": 9.037966101694915,
+      "score": 9.036577181208054,
       "rank": null,
       "dates": [
         "2026-03-22"
@@ -2190,7 +2216,7 @@
       "cuisines": [
         "Thai"
       ],
-      "score": 9.026779661016949,
+      "score": 9.025503355704698,
       "rank": null,
       "dates": [
         "2026-09-13"
@@ -2216,7 +2242,7 @@
         "Thai",
         "Burmese"
       ],
-      "score": 9.015593220338983,
+      "score": 9.014429530201342,
       "rank": null,
       "dates": [
         "2026-10-18"
@@ -2240,7 +2266,7 @@
       "cuisines": [
         "Vietnamese"
       ],
-      "score": 9.004406779661018,
+      "score": 9.003355704697986,
       "rank": null,
       "dates": [],
       "firstRankedAt": "2026-09-25T14:51:59.651369Z"
@@ -2262,7 +2288,7 @@
       "cuisines": [
         "Taiwanese"
       ],
-      "score": 8.99322033898305,
+      "score": 8.99228187919463,
       "rank": null,
       "dates": [],
       "firstRankedAt": "2025-12-31T15:24:33.196040Z"
@@ -2286,7 +2312,7 @@
         "Szechuan",
         "Chinese"
       ],
-      "score": 8.982033898305085,
+      "score": 8.981208053691276,
       "rank": null,
       "dates": [
         "2025-04-14"
@@ -2310,7 +2336,7 @@
       "cuisines": [
         "Italian"
       ],
-      "score": 8.97084745762712,
+      "score": 8.97013422818792,
       "rank": null,
       "dates": [
         "2026-11-13"
@@ -2335,7 +2361,7 @@
         "Korean",
         "Fried Chicken"
       ],
-      "score": 8.97084745762712,
+      "score": 8.97013422818792,
       "rank": null,
       "dates": [],
       "firstRankedAt": "2026-01-14T13:36:02.789777Z"
@@ -2359,7 +2385,7 @@
         "Latin American",
         "Breakfast"
       ],
-      "score": 8.97084745762712,
+      "score": 8.97013422818792,
       "rank": null,
       "dates": [
         "2026-01-03"
@@ -2384,7 +2410,7 @@
         "Chinese",
         "Szechuan"
       ],
-      "score": 8.97084745762712,
+      "score": 8.97013422818792,
       "rank": null,
       "dates": [
         "2024-06-04"
@@ -2408,7 +2434,7 @@
       "cuisines": [
         "Seafood"
       ],
-      "score": 8.926101694915253,
+      "score": 8.925838926174496,
       "rank": null,
       "dates": [
         "2026-02-21"
@@ -2433,7 +2459,7 @@
         "Italian",
         "Pizza"
       ],
-      "score": 8.914915254237288,
+      "score": 8.91476510067114,
       "rank": null,
       "dates": [
         "2026-06-04"
@@ -2458,7 +2484,7 @@
         "Pizza",
         "Italian"
       ],
-      "score": 8.903728813559322,
+      "score": 8.903691275167786,
       "rank": null,
       "dates": [
         "2026-06-06"
@@ -2484,7 +2510,7 @@
         "Japanese",
         "Sushi"
       ],
-      "score": 8.892542372881357,
+      "score": 8.89261744966443,
       "rank": null,
       "dates": [
         "2026-06-14"
@@ -2509,7 +2535,7 @@
         "Japanese",
         "Sushi"
       ],
-      "score": 8.88135593220339,
+      "score": 8.881543624161074,
       "rank": null,
       "dates": [
         "2026-11-21"
@@ -2534,7 +2560,7 @@
         "Pizza",
         "Italian"
       ],
-      "score": 8.870169491525424,
+      "score": 8.870469798657718,
       "rank": null,
       "dates": [
         "2026-07-12"
@@ -2558,7 +2584,7 @@
       "cuisines": [
         "Pizza"
       ],
-      "score": 8.858983050847458,
+      "score": 8.859395973154363,
       "rank": null,
       "dates": [],
       "firstRankedAt": "2026-09-25T06:09:30.714855Z"
@@ -2582,7 +2608,7 @@
         "Italian",
         "American"
       ],
-      "score": 8.847796610169492,
+      "score": 8.848322147651007,
       "rank": null,
       "dates": [
         "2026-07-02"
@@ -2606,7 +2632,7 @@
       "cuisines": [
         "Pizza"
       ],
-      "score": 8.836610169491525,
+      "score": 8.837248322147651,
       "rank": null,
       "dates": [],
       "firstRankedAt": "2026-07-18T19:02:47.252244Z"
@@ -2628,7 +2654,7 @@
       "cuisines": [
         "Italian"
       ],
-      "score": 8.82542372881356,
+      "score": 8.826174496644295,
       "rank": null,
       "dates": [],
       "firstRankedAt": "2026-09-25T06:11:48.871281Z"
@@ -2651,7 +2677,7 @@
         "Thai",
         "Gluten Free"
       ],
-      "score": 8.814237288135594,
+      "score": 8.81510067114094,
       "rank": null,
       "dates": [
         "2024-09-02"
@@ -2675,12 +2701,36 @@
       "cuisines": [
         "Thai"
       ],
-      "score": 8.803050847457627,
+      "score": 8.804026845637583,
       "rank": null,
       "dates": [
         "2026-07-24"
       ],
       "firstRankedAt": "2026-07-25T00:41:25.994261Z"
+    },
+    {
+      "key": "dok-khao-thai-alexandria-7dc7ec3dd8",
+      "categories": [
+        "Restaurant"
+      ],
+      "websiteUrl": "https://dokkhao.com/dok-khao-oakville-home/",
+      "coordinates": {
+        "lat": 38.8289382,
+        "lng": -77.05106839999999
+      },
+      "imageUrl": null,
+      "name": "Dok Khao Thai Alexandria",
+      "city": "Alexandria, VA",
+      "country": "United States",
+      "cuisines": [
+        "Thai"
+      ],
+      "score": 8.792953020134227,
+      "rank": null,
+      "dates": [
+        "2026-11-24"
+      ],
+      "firstRankedAt": "2026-11-26T01:21:30.941154Z"
     },
     {
       "key": "gulp-a396ab46f9",
@@ -2699,7 +2749,7 @@
       "cuisines": [
         "Taiwanese"
       ],
-      "score": 8.791864406779661,
+      "score": 8.781879194630873,
       "rank": null,
       "dates": [
         "2026-08-26"
@@ -2724,7 +2774,7 @@
         "Chinese",
         "Szechuan"
       ],
-      "score": 8.780677966101695,
+      "score": 8.770805369127517,
       "rank": null,
       "dates": [
         "2026-01-09"
@@ -2749,7 +2799,7 @@
         "Japanese",
         "Hawaiian"
       ],
-      "score": 8.769491525423728,
+      "score": 8.759731543624161,
       "rank": null,
       "dates": [],
       "firstRankedAt": "2026-01-26T04:54:25.746889Z"
@@ -2773,7 +2823,7 @@
         "Sushi",
         "Udon"
       ],
-      "score": 8.758305084745762,
+      "score": 8.748657718120805,
       "rank": null,
       "dates": [],
       "firstRankedAt": "2026-11-15T07:06:01.320920Z"
@@ -2795,7 +2845,7 @@
       "cuisines": [
         "American"
       ],
-      "score": 8.758305084745762,
+      "score": 8.748657718120805,
       "rank": null,
       "dates": [
         "2026-08-16"
@@ -2820,7 +2870,7 @@
         "Japanese",
         "Izakaya"
       ],
-      "score": 8.758305084745762,
+      "score": 8.748657718120805,
       "rank": null,
       "dates": [
         "2026-08-08"
@@ -2844,7 +2894,7 @@
       "cuisines": [
         "Mexican"
       ],
-      "score": 8.758305084745762,
+      "score": 8.748657718120805,
       "rank": null,
       "dates": [],
       "firstRankedAt": "2026-06-27T12:36:59.858195Z"
@@ -2868,7 +2918,7 @@
         "Pho",
         "Banh Mi"
       ],
-      "score": 8.758305084745762,
+      "score": 8.748657718120805,
       "rank": null,
       "dates": [
         "2026-06-17"
@@ -2893,7 +2943,7 @@
         "Korean",
         "Barbecue"
       ],
-      "score": 8.758305084745762,
+      "score": 8.748657718120805,
       "rank": null,
       "dates": [
         "2026-05-16"
@@ -2917,7 +2967,7 @@
       "cuisines": [
         "Indian"
       ],
-      "score": 8.758305084745762,
+      "score": 8.748657718120805,
       "rank": null,
       "dates": [],
       "firstRankedAt": "2026-01-26T04:50:12.876496Z"
@@ -2940,7 +2990,7 @@
         "American",
         "Grill"
       ],
-      "score": 8.758305084745762,
+      "score": 8.748657718120805,
       "rank": null,
       "dates": [],
       "firstRankedAt": "2025-12-03T16:04:52.120539Z"
@@ -2963,7 +3013,7 @@
         "Chinese",
         "Shanghainese"
       ],
-      "score": 8.758305084745762,
+      "score": 8.748657718120805,
       "rank": null,
       "dates": [],
       "firstRankedAt": "2025-10-26T16:22:02.851320Z"
@@ -2987,7 +3037,7 @@
         "Chinese",
         "Dumplings"
       ],
-      "score": 8.758305084745762,
+      "score": 8.748657718120805,
       "rank": null,
       "dates": [],
       "firstRankedAt": "2025-07-07T01:30:18.347962Z"
@@ -3009,7 +3059,7 @@
       "cuisines": [
         "Breakfast"
       ],
-      "score": 8.646440677966101,
+      "score": 8.637919463087249,
       "rank": null,
       "dates": [
         "2026-10-04"
@@ -3034,7 +3084,7 @@
         "American",
         "Burgers"
       ],
-      "score": 8.635254237288136,
+      "score": 8.626845637583893,
       "rank": null,
       "dates": [
         "2026-07-09"
@@ -3058,7 +3108,7 @@
       "cuisines": [
         "Burgers"
       ],
-      "score": 8.62406779661017,
+      "score": 8.615771812080537,
       "rank": null,
       "dates": [
         "2025-02-02"
@@ -3082,7 +3132,7 @@
       "cuisines": [
         "Italian"
       ],
-      "score": 8.612881355932203,
+      "score": 8.60469798657718,
       "rank": null,
       "dates": [
         "2026-05-31"
@@ -3106,7 +3156,7 @@
       "cuisines": [
         "Chinese"
       ],
-      "score": 8.601694915254237,
+      "score": 8.593624161073826,
       "rank": null,
       "dates": [],
       "firstRankedAt": "2025-12-27T03:19:40.253674Z"
@@ -3130,7 +3180,7 @@
         "Korean",
         "Chinese"
       ],
-      "score": 8.590508474576271,
+      "score": 8.58255033557047,
       "rank": null,
       "dates": [
         "2026-10-10"
@@ -3154,7 +3204,7 @@
       "cuisines": [
         "American"
       ],
-      "score": 8.579322033898306,
+      "score": 8.571476510067114,
       "rank": null,
       "dates": [],
       "firstRankedAt": "2026-10-03T01:10:43.897473Z"
@@ -3176,7 +3226,7 @@
       "cuisines": [
         "Chinese"
       ],
-      "score": 8.579322033898306,
+      "score": 8.571476510067114,
       "rank": null,
       "dates": [
         "2026-08-28"
@@ -3202,7 +3252,7 @@
         "Izakaya",
         "Ramen"
       ],
-      "score": 8.579322033898306,
+      "score": 8.571476510067114,
       "rank": null,
       "dates": [
         "2026-08-19"
@@ -3226,7 +3276,7 @@
       "cuisines": [
         "Steakhouse"
       ],
-      "score": 8.579322033898306,
+      "score": 8.571476510067114,
       "rank": null,
       "dates": [
         "2026-05-27"
@@ -3250,7 +3300,7 @@
       "cuisines": [
         "Peruvian"
       ],
-      "score": 8.579322033898306,
+      "score": 8.571476510067114,
       "rank": null,
       "dates": [
         "2024-01-01"
@@ -3274,7 +3324,7 @@
       "cuisines": [
         "Thai"
       ],
-      "score": 8.579322033898306,
+      "score": 8.571476510067114,
       "rank": null,
       "dates": [],
       "firstRankedAt": "2025-08-22T15:46:35.980789Z"
@@ -3297,7 +3347,7 @@
         "Chinese",
         "Asian"
       ],
-      "score": 8.512203389830509,
+      "score": 8.50503355704698,
       "rank": null,
       "dates": [
         "2026-10-29"
@@ -3321,7 +3371,7 @@
       "cuisines": [
         "Vietnamese"
       ],
-      "score": 8.501016949152543,
+      "score": 8.493959731543624,
       "rank": null,
       "dates": [
         "2026-11-12"
@@ -3345,7 +3395,7 @@
       "cuisines": [
         "Pizza"
       ],
-      "score": 8.489830508474576,
+      "score": 8.482885906040268,
       "rank": null,
       "dates": [
         "2026-05-30"
@@ -3369,7 +3419,7 @@
       "cuisines": [
         "Cantonese"
       ],
-      "score": 8.489830508474576,
+      "score": 8.482885906040268,
       "rank": null,
       "dates": [
         "2026-02-07"
@@ -3393,7 +3443,7 @@
       "cuisines": [
         "Cafe"
       ],
-      "score": 8.489830508474576,
+      "score": 8.482885906040268,
       "rank": null,
       "dates": [
         "2024-08-10"
@@ -3417,7 +3467,7 @@
       "cuisines": [
         "Korean"
       ],
-      "score": 8.456271186440677,
+      "score": 8.449664429530202,
       "rank": null,
       "dates": [
         "2026-08-05",
@@ -3442,7 +3492,7 @@
       "cuisines": [
         "Korean"
       ],
-      "score": 8.445084745762712,
+      "score": 8.438590604026846,
       "rank": null,
       "dates": [
         "2026-10-12"
@@ -3467,7 +3517,7 @@
         "Soul Food",
         "Southern"
       ],
-      "score": 8.433898305084746,
+      "score": 8.42751677852349,
       "rank": null,
       "dates": [
         "2026-03-15"
@@ -3491,7 +3541,7 @@
       "cuisines": [
         "Burmese"
       ],
-      "score": 8.42271186440678,
+      "score": 8.416442953020134,
       "rank": null,
       "dates": [
         "2025-06-10"
@@ -3516,7 +3566,7 @@
         "Chinese",
         "Noodles"
       ],
-      "score": 8.411525423728813,
+      "score": 8.405369127516778,
       "rank": null,
       "dates": [
         "2026-05-03"
@@ -3542,7 +3592,7 @@
         "Dim Sum",
         "Chinese"
       ],
-      "score": 8.400338983050847,
+      "score": 8.394295302013422,
       "rank": null,
       "dates": [
         "2026-06-19"
@@ -3567,7 +3617,7 @@
         "Chinese",
         "Hot Pot"
       ],
-      "score": 8.389152542372882,
+      "score": 8.383221476510068,
       "rank": null,
       "dates": [
         "2026-07-01"
@@ -3591,7 +3641,7 @@
       "cuisines": [
         "American"
       ],
-      "score": 8.377966101694915,
+      "score": 8.372147651006712,
       "rank": null,
       "dates": [
         "2026-06-30"
@@ -3617,7 +3667,7 @@
         "Cantonese",
         "Dim Sum"
       ],
-      "score": 8.366779661016949,
+      "score": 8.361073825503356,
       "rank": null,
       "dates": [
         "2026-06-13"
@@ -3641,7 +3691,7 @@
       "cuisines": [
         "Italian"
       ],
-      "score": 8.355593220338983,
+      "score": 8.35,
       "rank": null,
       "dates": [
         "2026-10-16"
@@ -3666,7 +3716,7 @@
         "Asian Fusion",
         "Southeast Asian"
       ],
-      "score": 8.344406779661018,
+      "score": 8.338926174496644,
       "rank": null,
       "dates": [
         "2026-06-24"
@@ -3690,7 +3740,7 @@
       "cuisines": [
         "Korean"
       ],
-      "score": 8.33322033898305,
+      "score": 8.32785234899329,
       "rank": null,
       "dates": [
         "2026-03-29"
@@ -3715,7 +3765,7 @@
         "Chinese",
         "Barbecue"
       ],
-      "score": 8.322033898305085,
+      "score": 8.316778523489933,
       "rank": null,
       "dates": [
         "2026-02-05"
@@ -3740,7 +3790,7 @@
         "Japanese",
         "Izakaya"
       ],
-      "score": 8.31084745762712,
+      "score": 8.305704697986577,
       "rank": null,
       "dates": [
         "2026-07-05"
@@ -3765,7 +3815,7 @@
         "Korean",
         "Soup"
       ],
-      "score": 8.299661016949152,
+      "score": 8.294630872483221,
       "rank": null,
       "dates": [
         "2026-02-27"
@@ -3790,7 +3840,7 @@
         "Korean",
         "Barbecue"
       ],
-      "score": 8.288474576271186,
+      "score": 8.283557046979865,
       "rank": null,
       "dates": [
         "2026-09-21"
@@ -3815,7 +3865,7 @@
         "Italian",
         "Pizza"
       ],
-      "score": 8.288474576271186,
+      "score": 8.283557046979865,
       "rank": null,
       "dates": [
         "2026-06-20"
@@ -3840,7 +3890,7 @@
         "Pizza",
         "Italian"
       ],
-      "score": 8.288474576271186,
+      "score": 8.283557046979865,
       "rank": null,
       "dates": [
         "2026-03-14"
@@ -3864,7 +3914,7 @@
       "cuisines": [
         "Korean"
       ],
-      "score": 8.288474576271186,
+      "score": 8.283557046979865,
       "rank": null,
       "dates": [
         "2024-11-24"
@@ -3889,7 +3939,7 @@
         "Japanese",
         "Ramen"
       ],
-      "score": 8.243728813559322,
+      "score": 8.239261744966443,
       "rank": null,
       "dates": [
         "2024-07-06"
@@ -3913,7 +3963,7 @@
       "cuisines": [
         "Bar Food"
       ],
-      "score": 8.232542372881356,
+      "score": 8.228187919463087,
       "rank": null,
       "dates": [
         "2025-01-15",
@@ -3938,7 +3988,7 @@
       "cuisines": [
         "Mexican"
       ],
-      "score": 8.22135593220339,
+      "score": 8.217114093959731,
       "rank": null,
       "dates": [
         "2026-03-29"
@@ -3962,7 +4012,7 @@
       "cuisines": [
         "Korean"
       ],
-      "score": 8.210169491525424,
+      "score": 8.206040268456377,
       "rank": null,
       "dates": [
         "2025-01-22"
@@ -3987,7 +4037,7 @@
         "Burgers",
         "Fast Food"
       ],
-      "score": 8.210169491525424,
+      "score": 8.206040268456377,
       "rank": null,
       "dates": [
         "2026-10-09"
@@ -4011,7 +4061,7 @@
       "cuisines": [
         "American"
       ],
-      "score": 8.210169491525424,
+      "score": 8.206040268456377,
       "rank": null,
       "dates": [
         "2025-02-08"
@@ -4036,7 +4086,7 @@
         "Burgers",
         "Fast Food"
       ],
-      "score": 8.210169491525424,
+      "score": 8.206040268456377,
       "rank": null,
       "dates": [
         "2025-09-26"
@@ -4061,7 +4111,7 @@
         "Chinese",
         "Noodles"
       ],
-      "score": 8.210169491525424,
+      "score": 8.206040268456377,
       "rank": null,
       "dates": [],
       "firstRankedAt": "2026-09-25T14:51:59.651402Z"
@@ -4083,7 +4133,7 @@
       "cuisines": [
         "American"
       ],
-      "score": 8.210169491525424,
+      "score": 8.206040268456377,
       "rank": null,
       "dates": [
         "2026-01-14"
@@ -4107,7 +4157,7 @@
       "cuisines": [
         "Taiwanese"
       ],
-      "score": 8.210169491525424,
+      "score": 8.206040268456377,
       "rank": null,
       "dates": [
         "2026-07-04"
@@ -4133,7 +4183,7 @@
         "Shanghainese",
         "Dumplings"
       ],
-      "score": 8.210169491525424,
+      "score": 8.206040268456377,
       "rank": null,
       "dates": [
         "2026-06-19"
@@ -4158,7 +4208,7 @@
         "Mexican",
         "Taqueria"
       ],
-      "score": 8.210169491525424,
+      "score": 8.206040268456377,
       "rank": null,
       "dates": [
         "2026-02-12"
@@ -4183,7 +4233,7 @@
         "Chicken",
         "Fried Chicken"
       ],
-      "score": 8.210169491525424,
+      "score": 8.206040268456377,
       "rank": null,
       "dates": [],
       "firstRankedAt": "2026-01-26T04:50:12.876573Z"
@@ -4206,7 +4256,7 @@
         "Mexican",
         "Tacos"
       ],
-      "score": 8.098305084745762,
+      "score": 8.095302013422819,
       "rank": null,
       "dates": [
         "2026-02-15"
@@ -4231,7 +4281,7 @@
         "Mexican",
         "Tacos"
       ],
-      "score": 8.087118644067797,
+      "score": 8.084228187919463,
       "rank": null,
       "dates": [
         "2026-02-13",
@@ -4257,7 +4307,7 @@
         "Laotian",
         "Pho"
       ],
-      "score": 8.075932203389831,
+      "score": 8.073154362416107,
       "rank": null,
       "dates": [
         "2026-11-20"
@@ -4281,7 +4331,7 @@
       "cuisines": [
         "Vietnamese"
       ],
-      "score": 8.075932203389831,
+      "score": 8.073154362416107,
       "rank": null,
       "dates": [
         "2026-11-07"
@@ -4306,7 +4356,7 @@
         "American",
         "Breakfast"
       ],
-      "score": 8.075932203389831,
+      "score": 8.073154362416107,
       "rank": null,
       "dates": [
         "2026-09-26"
@@ -4330,7 +4380,7 @@
       "cuisines": [
         "Chinese"
       ],
-      "score": 8.075932203389831,
+      "score": 8.073154362416107,
       "rank": null,
       "dates": [
         "2026-06-09"
@@ -4358,7 +4408,7 @@
         "Soups",
         "Vietnamese"
       ],
-      "score": 8.075932203389831,
+      "score": 8.073154362416107,
       "rank": null,
       "dates": [],
       "firstRankedAt": "2025-12-07T23:47:30.299656Z"
@@ -4381,7 +4431,7 @@
         "Bakery",
         "Chinese"
       ],
-      "score": 8.075932203389831,
+      "score": 8.073154362416107,
       "rank": null,
       "dates": [],
       "firstRankedAt": "2025-07-08T05:00:33.909614Z"
@@ -4404,7 +4454,7 @@
         "Dumplings",
         "Chinese"
       ],
-      "score": 8.008813559322034,
+      "score": 8.006711409395972,
       "rank": null,
       "dates": [
         "2026-06-06"
@@ -4428,7 +4478,7 @@
       "cuisines": [
         "Dumplings"
       ],
-      "score": 7.997627118644068,
+      "score": 7.995637583892618,
       "rank": null,
       "dates": [
         "2025-11-21"
@@ -4453,7 +4503,7 @@
         "Donuts",
         "Breakfast"
       ],
-      "score": 7.986440677966101,
+      "score": 7.984563758389262,
       "rank": null,
       "dates": [
         "2024-02-27"
@@ -4477,7 +4527,7 @@
       "cuisines": [
         "Korean"
       ],
-      "score": 7.975254237288135,
+      "score": 7.973489932885906,
       "rank": null,
       "dates": [
         "2026-04-09"
@@ -4502,7 +4552,7 @@
         "Chinese",
         "Noodles"
       ],
-      "score": 7.96406779661017,
+      "score": 7.96241610738255,
       "rank": null,
       "dates": [
         "2025-11-19"
@@ -4528,7 +4578,7 @@
         "Sichuan",
         "Chinese"
       ],
-      "score": 7.952881355932203,
+      "score": 7.951342281879194,
       "rank": null,
       "dates": [
         "2026-09-01"
@@ -4553,7 +4603,7 @@
         "Chinese",
         "Noodles"
       ],
-      "score": 7.941694915254237,
+      "score": 7.940268456375839,
       "rank": null,
       "dates": [
         "2026-06-13"
@@ -4577,7 +4627,7 @@
       "cuisines": [
         "Chinese"
       ],
-      "score": 7.930508474576271,
+      "score": 7.929194630872483,
       "rank": null,
       "dates": [],
       "firstRankedAt": "2026-09-25T06:09:07.281768Z"
@@ -4601,7 +4651,7 @@
         "Taiwanese",
         "Chinese"
       ],
-      "score": 7.919322033898306,
+      "score": 7.918120805369128,
       "rank": null,
       "dates": [
         "2026-11-01"
@@ -4626,7 +4676,7 @@
         "Chinese",
         "Sichuan"
       ],
-      "score": 7.908135593220339,
+      "score": 7.907046979865772,
       "rank": null,
       "dates": [
         "2026-04-05"
@@ -4652,7 +4702,7 @@
         "Udon",
         "Noodles"
       ],
-      "score": 7.896949152542373,
+      "score": 7.895973154362416,
       "rank": null,
       "dates": [
         "2026-05-26"
@@ -4677,12 +4727,38 @@
         "American",
         "Pub"
       ],
-      "score": 7.885762711864407,
+      "score": 7.88489932885906,
       "rank": null,
       "dates": [
         "2026-05-14"
       ],
       "firstRankedAt": "2026-05-14T17:16:32.830673Z"
+    },
+    {
+      "key": "moon-rabbit-by-kevin-tien-13d9566513",
+      "categories": [
+        "Restaurant"
+      ],
+      "websiteUrl": "https://www.moonrabbitdc.com/",
+      "coordinates": {
+        "lat": 38.897537,
+        "lng": -77.0252454
+      },
+      "imageUrl": null,
+      "name": "Moon Rabbit by Kevin Tien",
+      "city": "Washington, DC",
+      "country": "United States",
+      "cuisines": [
+        "Vietnamese",
+        "Contemporary",
+        "Asian Fusion"
+      ],
+      "score": 7.873825503355705,
+      "rank": null,
+      "dates": [
+        "2026-11-25"
+      ],
+      "firstRankedAt": "2026-11-26T01:16:44.306104Z"
     },
     {
       "key": "banh-anh-em-ec167feb3a",
@@ -4702,7 +4778,7 @@
         "Vietnamese",
         "Banh Mi"
       ],
-      "score": 7.8745762711864415,
+      "score": 7.873825503355705,
       "rank": null,
       "dates": [
         "2026-08-01"
@@ -4726,7 +4802,7 @@
       "cuisines": [
         "Mexican"
       ],
-      "score": 7.8745762711864415,
+      "score": 7.873825503355705,
       "rank": null,
       "dates": [
         "2026-04-22",
@@ -4752,7 +4828,7 @@
         "Noodles",
         "Thai"
       ],
-      "score": 7.8745762711864415,
+      "score": 7.873825503355705,
       "rank": null,
       "dates": [
         "2025-12-30"
@@ -4777,7 +4853,7 @@
         "Portuguese",
         "Guatemalan"
       ],
-      "score": 7.841016949152543,
+      "score": 7.829530201342282,
       "rank": null,
       "dates": [
         "2026-09-23"
@@ -4802,7 +4878,7 @@
         "Japanese",
         "Ramen"
       ],
-      "score": 7.8298305084745765,
+      "score": 7.8184563758389265,
       "rank": null,
       "dates": [
         "2026-08-02"
@@ -4826,7 +4902,7 @@
       "cuisines": [
         "Burgers"
       ],
-      "score": 7.81864406779661,
+      "score": 7.8073825503355705,
       "rank": null,
       "dates": [],
       "firstRankedAt": "2026-09-25T06:10:56.508024Z"
@@ -4849,7 +4925,7 @@
         "Beer Garden",
         "Latin American"
       ],
-      "score": 7.807457627118644,
+      "score": 7.796308724832215,
       "rank": null,
       "dates": [
         "2026-01-02"
@@ -4874,7 +4950,7 @@
         "Middle Eastern",
         "Mediterranean"
       ],
-      "score": 7.796271186440678,
+      "score": 7.785234899328859,
       "rank": null,
       "dates": [
         "2026-07-28"
@@ -4900,7 +4976,7 @@
         "Ice Cream",
         "American"
       ],
-      "score": 7.7850847457627115,
+      "score": 7.774161073825503,
       "rank": null,
       "dates": [
         "2024-06-29"
@@ -4924,7 +5000,7 @@
       "cuisines": [
         "American"
       ],
-      "score": 7.773898305084746,
+      "score": 7.763087248322147,
       "rank": null,
       "dates": [
         "2026-08-31"
@@ -4949,7 +5025,7 @@
         "Venezuelan",
         "Peruvian"
       ],
-      "score": 7.76271186440678,
+      "score": 7.752013422818792,
       "rank": null,
       "dates": [
         "2026-10-17"
@@ -4975,7 +5051,7 @@
         "Brunch",
         "Gluten Free"
       ],
-      "score": 7.751525423728813,
+      "score": 7.740939597315436,
       "rank": null,
       "dates": [
         "2026-10-01"
@@ -4999,7 +5075,7 @@
       "cuisines": [
         "Dumplings"
       ],
-      "score": 7.751525423728813,
+      "score": 7.740939597315436,
       "rank": null,
       "dates": [],
       "firstRankedAt": "2026-09-25T14:51:59.651435Z"
@@ -5022,7 +5098,7 @@
         "Italian",
         "Japanese"
       ],
-      "score": 7.751525423728813,
+      "score": 7.740939597315436,
       "rank": null,
       "dates": [],
       "firstRankedAt": "2026-09-25T06:08:05.919687Z"
@@ -5044,7 +5120,7 @@
       "cuisines": [
         "Seafood"
       ],
-      "score": 7.751525423728813,
+      "score": 7.740939597315436,
       "rank": null,
       "dates": [
         "2026-09-12"
@@ -5070,7 +5146,7 @@
         "Burgers",
         "Pizza"
       ],
-      "score": 7.751525423728813,
+      "score": 7.740939597315436,
       "rank": null,
       "dates": [
         "2026-08-24"
@@ -5095,7 +5171,7 @@
         "Mediterranean",
         "Midwestern"
       ],
-      "score": 7.751525423728813,
+      "score": 7.740939597315436,
       "rank": null,
       "dates": [
         "2025-06-21"
@@ -5120,7 +5196,7 @@
         "Breakfast",
         "American"
       ],
-      "score": 7.751525423728813,
+      "score": 7.740939597315436,
       "rank": null,
       "dates": [
         "2026-02-22"
@@ -5144,7 +5220,7 @@
       "cuisines": [
         "Seafood"
       ],
-      "score": 7.751525423728813,
+      "score": 7.740939597315436,
       "rank": null,
       "dates": [],
       "firstRankedAt": "2025-12-31T15:23:59.415460Z"
@@ -5168,7 +5244,7 @@
         "Bistro",
         "Quebecois"
       ],
-      "score": 7.662033898305085,
+      "score": 7.652348993288591,
       "rank": null,
       "dates": [
         "2026-10-23"
@@ -5192,7 +5268,7 @@
       "cuisines": [
         "Burgers"
       ],
-      "score": 7.650847457627119,
+      "score": 7.641275167785235,
       "rank": null,
       "dates": [
         "2026-07-27"
@@ -5216,7 +5292,7 @@
       "cuisines": [
         "British"
       ],
-      "score": 7.639661016949153,
+      "score": 7.630201342281879,
       "rank": null,
       "dates": [
         "2026-07-29"
@@ -5242,7 +5318,7 @@
         "American",
         "Burgers"
       ],
-      "score": 7.628474576271186,
+      "score": 7.619127516778524,
       "rank": null,
       "dates": [
         "2026-04-30"
@@ -5266,7 +5342,7 @@
       "cuisines": [
         "Breakfast"
       ],
-      "score": 7.6172881355932205,
+      "score": 7.608053691275169,
       "rank": null,
       "dates": [
         "2026-10-01"
@@ -5292,7 +5368,7 @@
         "Burgers",
         "Drinks"
       ],
-      "score": 7.606101694915255,
+      "score": 7.596979865771813,
       "rank": null,
       "dates": [
         "2026-09-30"
@@ -5317,7 +5393,7 @@
         "Burgers",
         "American"
       ],
-      "score": 7.594915254237288,
+      "score": 7.585906040268457,
       "rank": null,
       "dates": [
         "2026-10-12"
@@ -5342,7 +5418,7 @@
         "Breakfast",
         "Hawaiian"
       ],
-      "score": 7.583728813559322,
+      "score": 7.574832214765101,
       "rank": null,
       "dates": [
         "2025-01-04"
@@ -5364,7 +5440,7 @@
       "city": "San Francisco, CA",
       "country": "United States",
       "cuisines": [],
-      "score": 7.572542372881356,
+      "score": 7.563758389261745,
       "rank": null,
       "dates": [
         "2026-05-03"
@@ -5388,7 +5464,7 @@
       "cuisines": [
         "Food Court"
       ],
-      "score": 7.56135593220339,
+      "score": 7.5526845637583895,
       "rank": null,
       "dates": [
         "2024-09-01"
@@ -5412,7 +5488,7 @@
       "cuisines": [
         "Mexican"
       ],
-      "score": 7.550169491525423,
+      "score": 7.5416107382550335,
       "rank": null,
       "dates": [
         "2024-11-18"
@@ -5436,7 +5512,7 @@
       "cuisines": [
         "Bagels"
       ],
-      "score": 7.538983050847458,
+      "score": 7.530536912751678,
       "rank": null,
       "dates": [
         "2026-05-28"
@@ -5460,7 +5536,7 @@
       "cuisines": [
         "American"
       ],
-      "score": 7.527796610169492,
+      "score": 7.519463087248322,
       "rank": null,
       "dates": [
         "2024-08-16"
@@ -5484,7 +5560,7 @@
       "cuisines": [
         "Poke"
       ],
-      "score": 7.516610169491526,
+      "score": 7.508389261744966,
       "rank": null,
       "dates": [
         "2026-04-15"
@@ -5508,7 +5584,7 @@
       "cuisines": [
         "Korean"
       ],
-      "score": 7.516610169491526,
+      "score": 7.508389261744966,
       "rank": null,
       "dates": [],
       "firstRankedAt": "2025-12-07T23:48:34.547878Z"
@@ -5530,7 +5606,7 @@
       "cuisines": [
         "Japanese"
       ],
-      "score": 7.494237288135594,
+      "score": 7.486241610738255,
       "rank": null,
       "dates": [
         "2026-04-18"
@@ -5555,7 +5631,7 @@
         "American",
         "Barbecue"
       ],
-      "score": 7.483050847457627,
+      "score": 7.4751677852349,
       "rank": null,
       "dates": [
         "2026-08-25"
@@ -5580,7 +5656,7 @@
         "Japanese",
         "Fast Food"
       ],
-      "score": 7.483050847457627,
+      "score": 7.4751677852349,
       "rank": null,
       "dates": [
         "2026-05-13"
@@ -5607,7 +5683,7 @@
         "Spanish",
         "Tapas"
       ],
-      "score": 7.483050847457627,
+      "score": 7.4751677852349,
       "rank": null,
       "dates": [
         "2026-03-31"
@@ -5631,7 +5707,7 @@
       "cuisines": [
         "Italian"
       ],
-      "score": 7.483050847457627,
+      "score": 7.4751677852349,
       "rank": null,
       "dates": [
         "2025-09-13"
@@ -5657,7 +5733,7 @@
         "Japanese",
         "Asian Fusion"
       ],
-      "score": 7.438305084745763,
+      "score": 7.430872483221476,
       "rank": null,
       "dates": [],
       "firstRankedAt": "2026-09-25T06:08:47.953721Z"
@@ -5680,7 +5756,7 @@
         "American",
         "Pizza"
       ],
-      "score": 7.4271186440677965,
+      "score": 7.419798657718121,
       "rank": null,
       "dates": [
         "2026-06-21"
@@ -5706,7 +5782,7 @@
         "French",
         "Steakhouse"
       ],
-      "score": 7.415932203389831,
+      "score": 7.408724832214766,
       "rank": null,
       "dates": [
         "2026-10-31"
@@ -5731,7 +5807,7 @@
         "Italian",
         "Pizza"
       ],
-      "score": 7.415932203389831,
+      "score": 7.408724832214766,
       "rank": null,
       "dates": [
         "2026-08-18"
@@ -5755,7 +5831,7 @@
       "cuisines": [
         "Thai"
       ],
-      "score": 7.415932203389831,
+      "score": 7.408724832214766,
       "rank": null,
       "dates": [
         "2026-08-01"
@@ -5781,7 +5857,7 @@
         "Ramen",
         "Asian"
       ],
-      "score": 7.415932203389831,
+      "score": 7.408724832214766,
       "rank": null,
       "dates": [
         "2023-10-13"
@@ -5805,7 +5881,7 @@
       "cuisines": [
         "American"
       ],
-      "score": 7.415932203389831,
+      "score": 7.408724832214766,
       "rank": null,
       "dates": [
         "2025-05-26"
@@ -5829,7 +5905,7 @@
       "cuisines": [
         "American"
       ],
-      "score": 7.415932203389831,
+      "score": 7.408724832214766,
       "rank": null,
       "dates": [],
       "firstRankedAt": "2025-12-07T23:48:34.548014Z"
@@ -5852,7 +5928,7 @@
         "Italian",
         "Pizza"
       ],
-      "score": 7.348813559322034,
+      "score": 7.342281879194632,
       "rank": null,
       "dates": [
         "2026-06-25"
@@ -5878,7 +5954,7 @@
         "Banh Mi",
         "Sandwiches"
       ],
-      "score": 7.337627118644068,
+      "score": 7.331208053691276,
       "rank": null,
       "dates": [
         "2026-06-28"
@@ -5904,7 +5980,7 @@
         "Seafood",
         "Italian"
       ],
-      "score": 7.326440677966102,
+      "score": 7.32013422818792,
       "rank": null,
       "dates": [
         "2026-11-16"
@@ -5928,7 +6004,7 @@
       "cuisines": [
         "Nepalese"
       ],
-      "score": 7.315254237288135,
+      "score": 7.309060402684564,
       "rank": null,
       "dates": [
         "2025-07-01"
@@ -5954,7 +6030,7 @@
         "Japanese",
         "Noodles"
       ],
-      "score": 7.315254237288135,
+      "score": 7.309060402684564,
       "rank": null,
       "dates": [],
       "firstRankedAt": "2025-09-20T00:52:25.921901Z"
@@ -5978,7 +6054,7 @@
         "Japanese",
         "Asian"
       ],
-      "score": 7.315254237288135,
+      "score": 7.309060402684564,
       "rank": null,
       "dates": [],
       "firstRankedAt": "2025-07-07T01:06:27.088504Z"
@@ -6000,7 +6076,7 @@
       "cuisines": [
         "Delicatessen"
       ],
-      "score": 7.281694915254238,
+      "score": 7.275838926174497,
       "rank": null,
       "dates": [],
       "firstRankedAt": "2026-01-26T04:50:12.876644Z"
@@ -6022,7 +6098,7 @@
       "cuisines": [
         "Seafood"
       ],
-      "score": 7.270508474576271,
+      "score": 7.264765100671141,
       "rank": null,
       "dates": [
         "2024-07-16"
@@ -6047,7 +6123,7 @@
         "Chinese",
         "Noodles"
       ],
-      "score": 7.2593220338983055,
+      "score": 7.253691275167785,
       "rank": null,
       "dates": [
         "2026-10-12"
@@ -6059,7 +6135,7 @@
       "categories": [
         "Restaurant"
       ],
-      "websiteUrl": null,
+      "websiteUrl": "https://jennysplacema.com/",
       "coordinates": {
         "lat": 42.3454281,
         "lng": -71.5401941
@@ -6071,7 +6147,7 @@
       "cuisines": [
         "Sandwiches"
       ],
-      "score": 7.248135593220339,
+      "score": 7.242617449664429,
       "rank": null,
       "dates": [
         "2026-01-12"
@@ -6096,7 +6172,7 @@
         "Mexican",
         "Tacos"
       ],
-      "score": 7.236949152542373,
+      "score": 7.231543624161073,
       "rank": null,
       "dates": [
         "2026-05-04"
@@ -6122,7 +6198,7 @@
         "Breakfast",
         "Diner"
       ],
-      "score": 7.225762711864407,
+      "score": 7.220469798657719,
       "rank": null,
       "dates": [
         "2026-03-21"
@@ -6146,7 +6222,7 @@
       "cuisines": [
         "American"
       ],
-      "score": 7.214576271186441,
+      "score": 7.209395973154363,
       "rank": null,
       "dates": [
         "2026-03-20"
@@ -6171,7 +6247,7 @@
         "Japanese",
         "American"
       ],
-      "score": 7.203389830508475,
+      "score": 7.198322147651007,
       "rank": null,
       "dates": [
         "2026-11-07"
@@ -6195,7 +6271,7 @@
       "cuisines": [
         "Bubble Tea"
       ],
-      "score": 7.192203389830508,
+      "score": 7.187248322147651,
       "rank": null,
       "dates": [
         "2026-02-21"
@@ -6219,7 +6295,7 @@
       "cuisines": [
         "Sushi"
       ],
-      "score": 7.181016949152543,
+      "score": 7.176174496644295,
       "rank": null,
       "dates": [
         "2026-04-15"
@@ -6243,7 +6319,7 @@
       "cuisines": [
         "Sushi"
       ],
-      "score": 7.169830508474576,
+      "score": 7.16510067114094,
       "rank": null,
       "dates": [
         "2026-10-08"
@@ -6267,7 +6343,7 @@
       "cuisines": [
         "Italian"
       ],
-      "score": 7.15864406779661,
+      "score": 7.154026845637584,
       "rank": null,
       "dates": [
         "2026-07-14"
@@ -6291,7 +6367,7 @@
       "cuisines": [
         "Thai"
       ],
-      "score": 7.147457627118644,
+      "score": 7.142953020134229,
       "rank": null,
       "dates": [
         "2026-06-29"
@@ -6315,7 +6391,7 @@
       "cuisines": [
         "Korean"
       ],
-      "score": 7.136271186440679,
+      "score": 7.131879194630873,
       "rank": null,
       "dates": [
         "2026-06-26"
@@ -6341,7 +6417,7 @@
         "Ramen",
         "Thai"
       ],
-      "score": 7.136271186440679,
+      "score": 7.131879194630873,
       "rank": null,
       "dates": [
         "2026-02-13"
@@ -6366,7 +6442,7 @@
         "Chinese",
         "Dumplings"
       ],
-      "score": 7.136271186440679,
+      "score": 7.131879194630873,
       "rank": null,
       "dates": [
         "2025-06-14"
@@ -6391,7 +6467,7 @@
         "Coffee",
         "Greek"
       ],
-      "score": 7.136271186440679,
+      "score": 7.131879194630873,
       "rank": null,
       "dates": [
         "2025-12-17"
@@ -6415,7 +6491,7 @@
       "cuisines": [
         "Coffee"
       ],
-      "score": 7.136271186440679,
+      "score": 7.131879194630873,
       "rank": null,
       "dates": [],
       "firstRankedAt": "2025-07-07T01:06:17.168859Z"
@@ -6435,7 +6511,7 @@
       "city": "South San Francisco, CA",
       "country": "United States",
       "cuisines": [],
-      "score": 7.080338983050847,
+      "score": 7.076510067114095,
       "rank": null,
       "dates": [
         "2026-04-25"
@@ -6461,7 +6537,7 @@
         "Cafe",
         "Sandwiches"
       ],
-      "score": 7.069152542372882,
+      "score": 7.065436241610739,
       "rank": null,
       "dates": [
         "2026-09-03"
@@ -6485,7 +6561,7 @@
       "cuisines": [
         "Mediterranean"
       ],
-      "score": 7.057966101694915,
+      "score": 7.054362416107383,
       "rank": null,
       "dates": [
         "2026-08-27"
@@ -6510,7 +6586,7 @@
         "Mexican",
         "Tacos"
       ],
-      "score": 7.0467796610169495,
+      "score": 7.043288590604027,
       "rank": null,
       "dates": [
         "2026-08-07"
@@ -6534,7 +6610,7 @@
       "cuisines": [
         "Burgers"
       ],
-      "score": 7.035593220338983,
+      "score": 7.032214765100671,
       "rank": null,
       "dates": [
         "2026-07-05"
@@ -6559,7 +6635,7 @@
         "Hawaiian",
         "Sushi"
       ],
-      "score": 7.0244067796610175,
+      "score": 7.021140939597316,
       "rank": null,
       "dates": [
         "2026-04-16"
@@ -6584,7 +6660,7 @@
         "Burgers",
         "American"
       ],
-      "score": 7.013220338983051,
+      "score": 7.01006711409396,
       "rank": null,
       "dates": [
         "2026-06-21"
@@ -6609,7 +6685,7 @@
         "American",
         "Burgers"
       ],
-      "score": 7.0020338983050845,
+      "score": 6.998993288590604,
       "rank": null,
       "dates": [
         "2026-10-17"
@@ -6634,7 +6710,7 @@
         "Burgers",
         "Tacos"
       ],
-      "score": 6.990847457627119,
+      "score": 6.987919463087248,
       "rank": null,
       "dates": [
         "2026-04-17"
@@ -6659,7 +6735,7 @@
         "Californian",
         "Asian Fusion"
       ],
-      "score": 6.979661016949153,
+      "score": 6.976845637583892,
       "rank": null,
       "dates": [
         "2026-03-01"
@@ -6683,7 +6759,7 @@
       "cuisines": [
         "Poke"
       ],
-      "score": 6.968474576271187,
+      "score": 6.965771812080537,
       "rank": null,
       "dates": [
         "2026-03-18"
@@ -6707,7 +6783,7 @@
       "cuisines": [
         "Cafe"
       ],
-      "score": 6.95728813559322,
+      "score": 6.954697986577182,
       "rank": null,
       "dates": [
         "2026-03-08"
@@ -6731,7 +6807,7 @@
       "cuisines": [
         "Pizza"
       ],
-      "score": 6.946101694915255,
+      "score": 6.943624161073826,
       "rank": null,
       "dates": [
         "2026-03-01"
@@ -6755,7 +6831,7 @@
       "cuisines": [
         "Thai"
       ],
-      "score": 6.934915254237288,
+      "score": 6.93255033557047,
       "rank": null,
       "dates": [
         "2026-02-07"
@@ -6780,7 +6856,7 @@
         "Mexican",
         "Tacos"
       ],
-      "score": 6.934915254237288,
+      "score": 6.93255033557047,
       "rank": null,
       "dates": [
         "2026-01-19"
@@ -6805,7 +6881,7 @@
         "Japanese",
         "Udon"
       ],
-      "score": 6.912542372881356,
+      "score": 6.910402684563758,
       "rank": null,
       "dates": [
         "2026-03-13"
@@ -6831,7 +6907,7 @@
         "Soul Food",
         "American"
       ],
-      "score": 6.901355932203391,
+      "score": 6.899328859060403,
       "rank": null,
       "dates": [
         "2026-07-12"
@@ -6856,7 +6932,7 @@
         "Chinese",
         "Cantonese"
       ],
-      "score": 6.901355932203391,
+      "score": 6.899328859060403,
       "rank": null,
       "dates": [
         "2026-02-18"
@@ -6880,7 +6956,7 @@
       "cuisines": [
         "Fried Chicken"
       ],
-      "score": 6.901355932203391,
+      "score": 6.899328859060403,
       "rank": null,
       "dates": [
         "2026-01-05"
@@ -6904,7 +6980,7 @@
       "cuisines": [
         "Mexican"
       ],
-      "score": 6.867796610169492,
+      "score": 6.866107382550336,
       "rank": null,
       "dates": [
         "2025-10-17"
@@ -6929,7 +7005,7 @@
         "Chinese",
         "Taiwanese"
       ],
-      "score": 6.856610169491526,
+      "score": 6.85503355704698,
       "rank": null,
       "dates": [],
       "firstRankedAt": "2025-08-08T00:26:56.495502Z"
@@ -6952,7 +7028,7 @@
         "Chinese",
         "Shanghainese"
       ],
-      "score": 6.845423728813559,
+      "score": 6.843959731543624,
       "rank": null,
       "dates": [
         "2026-05-23"
@@ -6976,7 +7052,7 @@
       "cuisines": [
         "Italian"
       ],
-      "score": 6.8342372881355935,
+      "score": 6.832885906040269,
       "rank": null,
       "dates": [
         "2026-09-03"
@@ -7000,7 +7076,7 @@
       "cuisines": [
         "Shanghainese"
       ],
-      "score": 6.823050847457627,
+      "score": 6.821812080536914,
       "rank": null,
       "dates": [
         "2026-06-16",
@@ -7025,7 +7101,7 @@
       "cuisines": [
         "American"
       ],
-      "score": 6.811864406779661,
+      "score": 6.810738255033558,
       "rank": null,
       "dates": [],
       "firstRankedAt": "2025-12-30T18:25:38.600069Z"
@@ -7047,7 +7123,7 @@
       "cuisines": [
         "Canadian"
       ],
-      "score": 6.800677966101695,
+      "score": 6.799664429530202,
       "rank": null,
       "dates": [],
       "firstRankedAt": "2025-12-31T15:25:16.419444Z"
@@ -7069,7 +7145,7 @@
       "cuisines": [
         "Hawaiian"
       ],
-      "score": 6.789491525423729,
+      "score": 6.7885906040268456,
       "rank": null,
       "dates": [
         "2025-01-07"
@@ -7095,7 +7171,7 @@
         "Barbecue",
         "Chinese"
       ],
-      "score": 6.778305084745763,
+      "score": 6.7775167785234895,
       "rank": null,
       "dates": [
         "2024-08-10"
@@ -7122,7 +7198,7 @@
         "Ukrainian",
         "Jewish"
       ],
-      "score": 6.767118644067796,
+      "score": 6.766442953020134,
       "rank": null,
       "dates": [
         "2026-02-14"
@@ -7148,7 +7224,7 @@
         "Bakery",
         "Dim Sum"
       ],
-      "score": 6.755932203389831,
+      "score": 6.755369127516779,
       "rank": null,
       "dates": [
         "2026-02-18"
@@ -7172,7 +7248,7 @@
       "cuisines": [
         "Mexican"
       ],
-      "score": 6.744745762711865,
+      "score": 6.744295302013423,
       "rank": null,
       "dates": [
         "2026-02-08",
@@ -7198,7 +7274,7 @@
       "cuisines": [
         "American"
       ],
-      "score": 6.733559322033898,
+      "score": 6.733221476510067,
       "rank": null,
       "dates": [
         "2026-04-04"
@@ -7223,7 +7299,7 @@
         "Mexican",
         "Fast Casual"
       ],
-      "score": 6.722372881355932,
+      "score": 6.722147651006711,
       "rank": null,
       "dates": [
         "2026-06-28"
@@ -7247,12 +7323,34 @@
       "cuisines": [
         "Japanese"
       ],
-      "score": 6.711186440677967,
+      "score": 6.711073825503356,
       "rank": null,
       "dates": [
         "2026-09-19"
       ],
       "firstRankedAt": "2026-09-19T16:23:58.491983Z"
+    },
+    {
+      "key": "craft-food-hall-eec328274c",
+      "categories": [
+        "Restaurant"
+      ],
+      "websiteUrl": "http://craftfoodhalls.com/",
+      "coordinates": {
+        "lat": 42.3246407,
+        "lng": -71.5842376
+      },
+      "imageUrl": null,
+      "name": "Craft Food Hall",
+      "city": "Marlborough, MA",
+      "country": "United States",
+      "cuisines": [],
+      "score": 6.7,
+      "rank": null,
+      "dates": [
+        "2024-06-26"
+      ],
+      "firstRankedAt": "2026-11-26T21:53:43.278617Z"
     },
     {
       "key": "the-old-post-office-bagel-shop-c22cc06b07",
@@ -7271,7 +7369,7 @@
       "cuisines": [
         "Bagels"
       ],
-      "score": 6.7,
+      "score": 6.671304347826087,
       "rank": null,
       "dates": [
         "2026-09-12"
@@ -7297,7 +7395,7 @@
         "Udon",
         "Noodles"
       ],
-      "score": 6.670796460176991,
+      "score": 6.642608695652174,
       "rank": null,
       "dates": [
         "2026-06-18"
@@ -7321,7 +7419,7 @@
       "cuisines": [
         "Barbecue"
       ],
-      "score": 6.6415929203539825,
+      "score": 6.613913043478261,
       "rank": null,
       "dates": [
         "2026-05-02"
@@ -7347,7 +7445,7 @@
         "Dumplings",
         "Chinese"
       ],
-      "score": 6.612389380530973,
+      "score": 6.585217391304348,
       "rank": null,
       "dates": [
         "2026-06-06",
@@ -7374,7 +7472,7 @@
         "Asian Fusion",
         "Japanese"
       ],
-      "score": 6.583185840707965,
+      "score": 6.556521739130435,
       "rank": null,
       "dates": [
         "2026-04-18"
@@ -7398,7 +7496,7 @@
       "cuisines": [
         "Mexican"
       ],
-      "score": 6.553982300884956,
+      "score": 6.527826086956522,
       "rank": null,
       "dates": [
         "2026-01-30"
@@ -7423,7 +7521,7 @@
         "Food Truck",
         "Halal"
       ],
-      "score": 6.524778761061947,
+      "score": 6.499130434782609,
       "rank": null,
       "dates": [
         "2026-06-20",
@@ -7448,7 +7546,7 @@
       "cuisines": [
         "Taiwanese"
       ],
-      "score": 6.495575221238938,
+      "score": 6.470434782608696,
       "rank": null,
       "dates": [
         "2026-08-09"
@@ -7474,7 +7572,7 @@
         "Tacos",
         "Mexican"
       ],
-      "score": 6.4663716814159296,
+      "score": 6.441739130434783,
       "rank": null,
       "dates": [
         "2026-07-05"
@@ -7499,7 +7597,7 @@
         "Asian",
         "Chinese"
       ],
-      "score": 6.43716814159292,
+      "score": 6.41304347826087,
       "rank": null,
       "dates": [
         "2026-08-01"
@@ -7523,7 +7621,7 @@
       "cuisines": [
         "Chinese"
       ],
-      "score": 6.407964601769912,
+      "score": 6.384347826086957,
       "rank": null,
       "dates": [
         "2026-06-19"
@@ -7549,7 +7647,7 @@
         "Pizza",
         "Salad"
       ],
-      "score": 6.378761061946903,
+      "score": 6.355652173913044,
       "rank": null,
       "dates": [
         "2026-03-05"
@@ -7573,7 +7671,7 @@
       "cuisines": [
         "Japanese"
       ],
-      "score": 6.349557522123894,
+      "score": 6.326956521739131,
       "rank": null,
       "dates": [
         "2026-01-29"
@@ -7597,7 +7695,7 @@
       "cuisines": [
         "Chinese"
       ],
-      "score": 6.349557522123894,
+      "score": 6.326956521739131,
       "rank": null,
       "dates": [],
       "firstRankedAt": "2026-01-13T14:07:21.777630Z"
@@ -7619,7 +7717,7 @@
       "cuisines": [
         "Italian"
       ],
-      "score": 6.291150442477877,
+      "score": 6.269565217391305,
       "rank": null,
       "dates": [
         "2025-05-08"
@@ -7644,7 +7742,7 @@
         "Korean",
         "Fried Chicken"
       ],
-      "score": 6.261946902654867,
+      "score": 6.240869565217391,
       "rank": null,
       "dates": [],
       "firstRankedAt": "2025-12-20T20:24:53.319912Z"
@@ -7667,7 +7765,7 @@
         "Chinese",
         "Noodles"
       ],
-      "score": 6.232743362831859,
+      "score": 6.212173913043478,
       "rank": null,
       "dates": [
         "2025-01-02"
@@ -7692,7 +7790,7 @@
         "Asian",
         "Chinese"
       ],
-      "score": 6.20353982300885,
+      "score": 6.183478260869565,
       "rank": null,
       "dates": [
         "2026-05-10"
@@ -7717,7 +7815,7 @@
         "American",
         "National Chain"
       ],
-      "score": 6.174336283185841,
+      "score": 6.154782608695652,
       "rank": null,
       "dates": [
         "2026-11-18"
@@ -7741,7 +7839,7 @@
       "cuisines": [
         "Hawaiian"
       ],
-      "score": 6.145132743362832,
+      "score": 6.126086956521739,
       "rank": null,
       "dates": [
         "2026-04-20"
@@ -7765,7 +7863,7 @@
       "cuisines": [
         "Korean"
       ],
-      "score": 6.115929203539824,
+      "score": 6.097391304347826,
       "rank": null,
       "dates": [],
       "firstRankedAt": "2025-12-30T03:58:13.999603Z"
@@ -7787,7 +7885,7 @@
       "cuisines": [
         "American"
       ],
-      "score": 6.086725663716814,
+      "score": 6.068695652173913,
       "rank": null,
       "dates": [
         "2026-04-26"
@@ -7811,7 +7909,7 @@
       "cuisines": [
         "American"
       ],
-      "score": 6.057522123893806,
+      "score": 6.04,
       "rank": null,
       "dates": [
         "2026-10-10"
@@ -7835,7 +7933,7 @@
       "cuisines": [
         "Chinese"
       ],
-      "score": 6.028318584070797,
+      "score": 6.011304347826087,
       "rank": null,
       "dates": [
         "2026-03-09",
@@ -7860,7 +7958,7 @@
       "cuisines": [
         "Dumplings"
       ],
-      "score": 5.999115044247787,
+      "score": 5.982608695652174,
       "rank": null,
       "dates": [
         "2026-01-22"
@@ -7884,7 +7982,7 @@
       "cuisines": [
         "Mexican"
       ],
-      "score": 5.969911504424779,
+      "score": 5.953913043478261,
       "rank": null,
       "dates": [
         "2026-07-23"
@@ -7909,7 +8007,7 @@
         "American",
         "Brunch"
       ],
-      "score": 5.94070796460177,
+      "score": 5.925217391304348,
       "rank": null,
       "dates": [],
       "firstRankedAt": "2026-06-29T11:54:08.381389Z"
@@ -7932,7 +8030,7 @@
         "Mediterranean",
         "Middle Eastern"
       ],
-      "score": 5.94070796460177,
+      "score": 5.925217391304348,
       "rank": null,
       "dates": [],
       "firstRankedAt": "2025-12-24T04:48:45.114273Z"
@@ -7955,7 +8053,7 @@
         "Korean",
         "Hot Pot"
       ],
-      "score": 5.94070796460177,
+      "score": 5.925217391304348,
       "rank": null,
       "dates": [
         "2025-12-18",
@@ -7981,7 +8079,7 @@
         "Asian",
         "Japanese"
       ],
-      "score": 5.94070796460177,
+      "score": 5.925217391304348,
       "rank": null,
       "dates": [
         "2025-10-10"
@@ -8006,7 +8104,7 @@
         "Szechuan",
         "Chinese"
       ],
-      "score": 5.94070796460177,
+      "score": 5.925217391304348,
       "rank": null,
       "dates": [],
       "firstRankedAt": "2025-09-01T02:46:17.967243Z"
@@ -8030,7 +8128,7 @@
         "Barbecue",
         "Hot Pot"
       ],
-      "score": 5.794690265486726,
+      "score": 5.781739130434783,
       "rank": null,
       "dates": [
         "2024-12-27"
@@ -8054,7 +8152,7 @@
       "cuisines": [
         "Asian"
       ],
-      "score": 5.765486725663717,
+      "score": 5.75304347826087,
       "rank": null,
       "dates": [],
       "firstRankedAt": "2025-12-27T03:21:17.971232Z"
@@ -8077,7 +8175,7 @@
         "Mediterranean",
         "Syrian"
       ],
-      "score": 5.736283185840708,
+      "score": 5.724347826086957,
       "rank": null,
       "dates": [
         "2024-05-26"
@@ -8099,7 +8197,7 @@
       "city": "Marlborough, MA",
       "country": "United States",
       "cuisines": [],
-      "score": 5.707079646017699,
+      "score": 5.695652173913044,
       "rank": null,
       "dates": [],
       "firstRankedAt": "2025-12-31T15:21:02.558924Z"
@@ -8121,7 +8219,7 @@
       "cuisines": [
         "Burgers"
       ],
-      "score": 5.677876106194691,
+      "score": 5.666956521739131,
       "rank": null,
       "dates": [
         "2026-03-07"
@@ -8146,7 +8244,7 @@
         "Latin American",
         "Mexican"
       ],
-      "score": 5.677876106194691,
+      "score": 5.666956521739131,
       "rank": null,
       "dates": [
         "2026-01-03"
@@ -8172,7 +8270,7 @@
         "Vietnamese",
         "Pho"
       ],
-      "score": 5.677876106194691,
+      "score": 5.666956521739131,
       "rank": null,
       "dates": [],
       "firstRankedAt": "2025-08-08T00:25:51.879328Z"
@@ -8194,7 +8292,7 @@
       "cuisines": [
         "Korean"
       ],
-      "score": 5.677876106194691,
+      "score": 5.666956521739131,
       "rank": null,
       "dates": [],
       "firstRankedAt": "2025-07-13T06:08:30.505540Z"
@@ -8217,7 +8315,7 @@
         "Burgers",
         "American"
       ],
-      "score": 5.677876106194691,
+      "score": 5.666956521739131,
       "rank": null,
       "dates": [],
       "firstRankedAt": "2025-07-07T01:26:12.525530Z"
@@ -8240,7 +8338,7 @@
         "Brewery",
         "Hawaiian"
       ],
-      "score": 5.531858407079646,
+      "score": 5.523478260869565,
       "rank": null,
       "dates": [],
       "firstRankedAt": "2025-07-07T01:34:31.652799Z"
@@ -8262,7 +8360,7 @@
       "cuisines": [
         "Italian"
       ],
-      "score": 5.531858407079646,
+      "score": 5.523478260869565,
       "rank": null,
       "dates": [],
       "firstRankedAt": "2025-07-07T01:10:21.974662Z"
@@ -8285,7 +8383,7 @@
         "Asian",
         "Thai"
       ],
-      "score": 5.4734513274336285,
+      "score": 5.466086956521739,
       "rank": null,
       "dates": [
         "2026-03-29"
@@ -8310,7 +8408,7 @@
         "Burgers",
         "American"
       ],
-      "score": 5.444247787610619,
+      "score": 5.437391304347827,
       "rank": null,
       "dates": [
         "2026-08-13"
@@ -8336,7 +8434,7 @@
         "Beer",
         "Tex-Mex"
       ],
-      "score": 5.415044247787611,
+      "score": 5.408695652173913,
       "rank": null,
       "dates": [
         "2026-08-21"
@@ -8360,7 +8458,7 @@
       "cuisines": [
         "Swedish"
       ],
-      "score": 5.3858407079646025,
+      "score": 5.38,
       "rank": null,
       "dates": [
         "2026-08-25"
@@ -8385,7 +8483,7 @@
         "Thai",
         "Asian Fusion"
       ],
-      "score": 5.356637168141593,
+      "score": 5.351304347826087,
       "rank": null,
       "dates": [
         "2026-07-03"
@@ -8410,7 +8508,7 @@
         "Seafood",
         "American"
       ],
-      "score": 5.327433628318584,
+      "score": 5.322608695652175,
       "rank": null,
       "dates": [
         "2026-06-03"
@@ -8434,7 +8532,7 @@
       "cuisines": [
         "Hawaiian"
       ],
-      "score": 5.2982300884955755,
+      "score": 5.293913043478261,
       "rank": null,
       "dates": [
         "2026-04-19"
@@ -8458,7 +8556,7 @@
       "cuisines": [
         "Hawaiian"
       ],
-      "score": 5.269026548672567,
+      "score": 5.265217391304348,
       "rank": null,
       "dates": [
         "2026-04-15"
@@ -8483,7 +8581,7 @@
         "Indian",
         "South Indian"
       ],
-      "score": 5.239823008849558,
+      "score": 5.236521739130435,
       "rank": null,
       "dates": [
         "2026-01-08"
@@ -8509,7 +8607,7 @@
         "Frozen Yogurt",
         "Salad"
       ],
-      "score": 5.210619469026549,
+      "score": 5.207826086956522,
       "rank": null,
       "dates": [
         "2026-04-01"
@@ -8535,7 +8633,7 @@
         "Cantonese",
         "Chinese"
       ],
-      "score": 5.18141592920354,
+      "score": 5.179130434782609,
       "rank": null,
       "dates": [],
       "firstRankedAt": "2026-06-29T11:54:08.381360Z"
@@ -8557,7 +8655,7 @@
       "cuisines": [
         "Japanese"
       ],
-      "score": 5.152212389380531,
+      "score": 5.150434782608696,
       "rank": null,
       "dates": [
         "2025-04-12"
@@ -8583,7 +8681,7 @@
         "Asian",
         "Barbecue"
       ],
-      "score": 5.123008849557523,
+      "score": 5.121739130434783,
       "rank": null,
       "dates": [],
       "firstRankedAt": "2025-10-25T01:51:22.888007Z"
@@ -8606,7 +8704,7 @@
         "Korean",
         "Barbecue"
       ],
-      "score": 5.123008849557523,
+      "score": 5.121739130434783,
       "rank": null,
       "dates": [],
       "firstRankedAt": "2025-07-07T01:42:13.238612Z"
@@ -8628,7 +8726,7 @@
       "cuisines": [
         "Korean"
       ],
-      "score": 5.064601769911505,
+      "score": 5.064347826086957,
       "rank": null,
       "dates": [
         "2026-06-22"
@@ -8653,7 +8751,7 @@
         "Vietnamese",
         "Sandwiches"
       ],
-      "score": 5.035398230088496,
+      "score": 5.035652173913044,
       "rank": null,
       "dates": [
         "2025-12-13"
@@ -8679,7 +8777,7 @@
         "Coffee",
         "Tea"
       ],
-      "score": 5.035398230088496,
+      "score": 5.035652173913044,
       "rank": null,
       "dates": [],
       "firstRankedAt": "2025-07-07T01:05:07.268127Z"
@@ -8701,7 +8799,7 @@
       "cuisines": [
         "Thai"
       ],
-      "score": 4.976991150442478,
+      "score": 4.978260869565218,
       "rank": null,
       "dates": [
         "2025-10-20"
@@ -8726,7 +8824,7 @@
         "American",
         "Burgers"
       ],
-      "score": 4.94778761061947,
+      "score": 4.949565217391305,
       "rank": null,
       "dates": [
         "2026-11-08"
@@ -8750,7 +8848,7 @@
       "cuisines": [
         "Japanese"
       ],
-      "score": 4.91858407079646,
+      "score": 4.920869565217392,
       "rank": null,
       "dates": [
         "2026-05-30"
@@ -8774,7 +8872,7 @@
       "cuisines": [
         "Indian"
       ],
-      "score": 4.889380530973452,
+      "score": 4.892173913043479,
       "rank": null,
       "dates": [
         "2025-01-21"
@@ -8800,7 +8898,7 @@
         "Barbecue",
         "Chicken"
       ],
-      "score": 4.860176991150443,
+      "score": 4.863478260869566,
       "rank": null,
       "dates": [],
       "firstRankedAt": "2025-12-31T15:23:11.464498Z"
@@ -8824,7 +8922,7 @@
         "Asian",
         "Cake"
       ],
-      "score": 4.830973451327434,
+      "score": 4.834782608695653,
       "rank": null,
       "dates": [
         "2026-01-29"
@@ -8850,7 +8948,7 @@
         "Sushi",
         "Asian"
       ],
-      "score": 4.830973451327434,
+      "score": 4.834782608695653,
       "rank": null,
       "dates": [],
       "firstRankedAt": "2025-07-08T05:02:35.175233Z"
@@ -8872,7 +8970,7 @@
       "cuisines": [
         "Food Court"
       ],
-      "score": 4.772566371681416,
+      "score": 4.777391304347827,
       "rank": null,
       "dates": [
         "2025-12-10"
@@ -8896,7 +8994,7 @@
       "cuisines": [
         "Burgers"
       ],
-      "score": 4.743362831858407,
+      "score": 4.748695652173913,
       "rank": null,
       "dates": [
         "2026-03-28"
@@ -8920,7 +9018,7 @@
       "cuisines": [
         "Donuts"
       ],
-      "score": 4.743362831858407,
+      "score": 4.748695652173913,
       "rank": null,
       "dates": [],
       "firstRankedAt": "2025-07-07T01:27:42.420653Z"
@@ -8942,7 +9040,7 @@
       "cuisines": [
         "Puerto Rican"
       ],
-      "score": 4.68495575221239,
+      "score": 4.691304347826087,
       "rank": null,
       "dates": [
         "2024-01-02"
@@ -8967,7 +9065,7 @@
         "Mexican",
         "Taqueria"
       ],
-      "score": 4.65575221238938,
+      "score": 4.662608695652175,
       "rank": null,
       "dates": [
         "2025-07-01"
@@ -8992,7 +9090,7 @@
         "Mexican",
         "Taqueria"
       ],
-      "score": 4.65575221238938,
+      "score": 4.662608695652175,
       "rank": null,
       "dates": [],
       "firstRankedAt": "2025-07-07T01:24:40.489692Z"
@@ -9015,7 +9113,7 @@
         "Italian",
         "Pizza"
       ],
-      "score": 4.65575221238938,
+      "score": 4.662608695652175,
       "rank": null,
       "dates": [],
       "firstRankedAt": "2025-07-07T01:03:27.041357Z"
@@ -9037,7 +9135,7 @@
       "cuisines": [
         "Pizza"
       ],
-      "score": 4.568141592920354,
+      "score": 4.576521739130435,
       "rank": null,
       "dates": [
         "2026-05-28"
@@ -9061,7 +9159,7 @@
       "cuisines": [
         "Taqueria"
       ],
-      "score": 4.538938053097345,
+      "score": 4.547826086956523,
       "rank": null,
       "dates": [
         "2026-01-24",
@@ -9086,7 +9184,7 @@
       "cuisines": [
         "Korean"
       ],
-      "score": 4.509734513274337,
+      "score": 4.519130434782609,
       "rank": null,
       "dates": [
         "2026-03-26"
@@ -9110,7 +9208,7 @@
       "cuisines": [
         "Burgers"
       ],
-      "score": 4.4805309734513274,
+      "score": 4.490434782608696,
       "rank": null,
       "dates": [
         "2025-07-16"
@@ -9135,7 +9233,7 @@
         "Italian",
         "Bakery"
       ],
-      "score": 4.451327433628319,
+      "score": 4.461739130434783,
       "rank": null,
       "dates": [],
       "firstRankedAt": "2025-07-07T01:25:51.537694Z"
@@ -9157,7 +9255,7 @@
       "cuisines": [
         "Tibetan"
       ],
-      "score": 4.42212389380531,
+      "score": 4.43304347826087,
       "rank": null,
       "dates": [
         "2026-07-04"
@@ -9181,7 +9279,7 @@
       "cuisines": [
         "Nepalese"
       ],
-      "score": 4.392920353982301,
+      "score": 4.404347826086957,
       "rank": null,
       "dates": [
         "2026-07-04"
@@ -9205,7 +9303,7 @@
       "cuisines": [
         "Breakfast"
       ],
-      "score": 4.363716814159293,
+      "score": 4.375652173913044,
       "rank": null,
       "dates": [
         "2023-03-28"
@@ -9230,7 +9328,7 @@
         "Bakery",
         "Mexican"
       ],
-      "score": 4.334513274336283,
+      "score": 4.346956521739131,
       "rank": null,
       "dates": [
         "2026-02-16"
@@ -9254,7 +9352,7 @@
       "cuisines": [
         "Vietnamese"
       ],
-      "score": 4.3053097345132745,
+      "score": 4.318260869565218,
       "rank": null,
       "dates": [
         "2026-03-01"
@@ -9278,7 +9376,7 @@
       "cuisines": [
         "American"
       ],
-      "score": 4.276106194690266,
+      "score": 4.289565217391305,
       "rank": null,
       "dates": [],
       "firstRankedAt": "2025-12-31T15:22:08.570534Z"
@@ -9300,7 +9398,7 @@
       "cuisines": [
         "Burgers"
       ],
-      "score": 4.246902654867257,
+      "score": 4.260869565217392,
       "rank": null,
       "dates": [
         "2026-09-18"
@@ -9325,7 +9423,7 @@
         "Food Truck",
         "Food Court"
       ],
-      "score": 4.217699115044248,
+      "score": 4.232173913043479,
       "rank": null,
       "dates": [
         "2025-08-08"
@@ -9350,7 +9448,7 @@
         "Burgers",
         "Fast Food"
       ],
-      "score": 4.188495575221239,
+      "score": 4.2034782608695656,
       "rank": null,
       "dates": [],
       "firstRankedAt": "2025-07-07T01:25:30.249767Z"
@@ -9372,7 +9470,7 @@
       "cuisines": [
         "Bakery"
       ],
-      "score": 4.188495575221239,
+      "score": 4.2034782608695656,
       "rank": null,
       "dates": [],
       "firstRankedAt": "2025-07-07T01:04:40.299533Z"
@@ -9396,7 +9494,7 @@
         "Tex-Mex",
         "Mexican"
       ],
-      "score": 4.1300884955752215,
+      "score": 4.1460869565217395,
       "rank": null,
       "dates": [],
       "firstRankedAt": "2025-07-07T01:01:55.288838Z"
@@ -9418,7 +9516,7 @@
       "cuisines": [
         "American"
       ],
-      "score": 4.100884955752212,
+      "score": 4.1173913043478265,
       "rank": null,
       "dates": [],
       "firstRankedAt": "2025-07-07T01:36:08.957627Z"
@@ -9440,7 +9538,7 @@
       "cuisines": [
         "Pizza"
       ],
-      "score": 4.100884955752212,
+      "score": 4.1173913043478265,
       "rank": null,
       "dates": [],
       "firstRankedAt": "2025-07-07T01:01:23.222467Z"
@@ -9463,12 +9561,38 @@
         "American",
         "Sports Bar"
       ],
-      "score": 4.0424778761061955,
+      "score": 4.0600000000000005,
       "rank": null,
       "dates": [
         "2024-02-14"
       ],
       "firstRankedAt": "2025-12-27T13:36:25.978664Z"
+    },
+    {
+      "key": "whole-foods-market-b82e852204",
+      "categories": [
+        "Restaurant"
+      ],
+      "websiteUrl": "https://www.wholefoodsmarket.com/stores/pentagoncity?utm_source=google&utm_medium=organic&utm_campaign=listings",
+      "coordinates": {
+        "lat": 38.8626628,
+        "lng": -77.0546995
+      },
+      "imageUrl": null,
+      "name": "Whole Foods Market",
+      "city": "Arlington, VA",
+      "country": "United States",
+      "cuisines": [
+        "American",
+        "Chinese",
+        "Indian"
+      ],
+      "score": 4.0313043478260875,
+      "rank": null,
+      "dates": [
+        "2026-11-24"
+      ],
+      "firstRankedAt": "2026-11-26T01:20:28.944442Z"
     },
     {
       "key": "koronet-9ff78da334",
@@ -9487,7 +9611,7 @@
       "cuisines": [
         "Pizza"
       ],
-      "score": 4.013274336283186,
+      "score": 4.0026086956521745,
       "rank": null,
       "dates": [
         "2026-06-07"
@@ -9513,7 +9637,7 @@
         "Dim Sum",
         "Cantonese"
       ],
-      "score": 3.9840707964601774,
+      "score": 3.973913043478261,
       "rank": null,
       "dates": [],
       "firstRankedAt": "2025-10-19T13:11:56.530211Z"
@@ -9537,7 +9661,7 @@
         "Cantonese",
         "Dim Sum"
       ],
-      "score": 3.9548672566371685,
+      "score": 3.9452173913043485,
       "rank": null,
       "dates": [
         "2026-02-18"
@@ -9561,7 +9685,7 @@
       "cuisines": [
         "Cafe"
       ],
-      "score": 3.9548672566371685,
+      "score": 3.9452173913043485,
       "rank": null,
       "dates": [
         "2025-12-29"
@@ -9585,7 +9709,7 @@
       "cuisines": [
         "Fast Food"
       ],
-      "score": 3.896460176991151,
+      "score": 3.887826086956522,
       "rank": null,
       "dates": [
         "2026-04-05"
@@ -9611,7 +9735,7 @@
         "Italian",
         "Pizza"
       ],
-      "score": 3.867256637168142,
+      "score": 3.859130434782609,
       "rank": null,
       "dates": [
         "2026-07-31"
@@ -9636,7 +9760,7 @@
         "American",
         "Breakfast"
       ],
-      "score": 3.8380530973451332,
+      "score": 3.830434782608696,
       "rank": null,
       "dates": [],
       "firstRankedAt": "2025-07-07T01:48:43.177538Z"
@@ -9661,7 +9785,7 @@
         "Bowls",
         "Fast Casual"
       ],
-      "score": 3.808849557522124,
+      "score": 3.801739130434783,
       "rank": null,
       "dates": [],
       "firstRankedAt": "2025-07-07T01:39:46.248841Z"
@@ -9684,7 +9808,7 @@
         "American",
         "Wings"
       ],
-      "score": 3.779646017699115,
+      "score": 3.77304347826087,
       "rank": null,
       "dates": [],
       "firstRankedAt": "2025-08-08T00:27:38.638905Z"
@@ -9708,7 +9832,7 @@
         "Brunch",
         "Cafe"
       ],
-      "score": 3.7504424778761067,
+      "score": 3.7443478260869565,
       "rank": null,
       "dates": [
         "2026-01-16"
@@ -9733,7 +9857,7 @@
         "Seafood",
         "American"
       ],
-      "score": 3.721238938053098,
+      "score": 3.715652173913044,
       "rank": null,
       "dates": [
         "2026-08-29"
@@ -9757,7 +9881,7 @@
       "cuisines": [
         "Chinese"
       ],
-      "score": 3.692035398230089,
+      "score": 3.686956521739131,
       "rank": null,
       "dates": [
         "2026-01-24"
@@ -9782,7 +9906,7 @@
         "Chinese",
         "Bakery"
       ],
-      "score": 3.66283185840708,
+      "score": 3.658260869565218,
       "rank": null,
       "dates": [],
       "firstRankedAt": "2025-07-07T01:37:57.257799Z"
@@ -9805,7 +9929,7 @@
         "Asian",
         "Chinese"
       ],
-      "score": 3.66283185840708,
+      "score": 3.658260869565218,
       "rank": null,
       "dates": [],
       "firstRankedAt": "2025-07-07T01:11:46.625775Z"
@@ -9829,7 +9953,7 @@
         "Grocery",
         "American"
       ],
-      "score": 3.604424778761062,
+      "score": 3.6008695652173914,
       "rank": null,
       "dates": [
         "2026-06-21"
@@ -9853,7 +9977,7 @@
       "cuisines": [
         "Pizza"
       ],
-      "score": 3.5752212389380533,
+      "score": 3.572173913043479,
       "rank": null,
       "dates": [],
       "firstRankedAt": "2025-07-07T01:25:05.509822Z"
@@ -9875,7 +9999,7 @@
       "cuisines": [
         "Bagels"
       ],
-      "score": 3.5752212389380533,
+      "score": 3.572173913043479,
       "rank": null,
       "dates": [],
       "firstRankedAt": "2025-07-07T01:05:43.325715Z"
@@ -9897,7 +10021,7 @@
       "cuisines": [
         "Brunch"
       ],
-      "score": 3.516814159292036,
+      "score": 3.5147826086956524,
       "rank": null,
       "dates": [],
       "firstRankedAt": "2025-07-07T01:05:58.727924Z"
@@ -9919,7 +10043,7 @@
       "cuisines": [
         "Chinese"
       ],
-      "score": 3.487610619469027,
+      "score": 3.4860869565217394,
       "rank": null,
       "dates": [],
       "firstRankedAt": "2025-07-07T01:01:37.051364Z"
@@ -9942,7 +10066,7 @@
         "Indian",
         "Street Food"
       ],
-      "score": 3.458407079646018,
+      "score": 3.4573913043478264,
       "rank": null,
       "dates": [
         "2026-03-08"
@@ -9967,7 +10091,7 @@
         "Pizza",
         "Bakery"
       ],
-      "score": 3.429203539823009,
+      "score": 3.4286956521739134,
       "rank": null,
       "dates": [
         "2026-09-27"
@@ -10016,10 +10140,32 @@
         "Chinese",
         "Szechuan"
       ],
-      "score": 3.1799999999999997,
+      "score": 3.19375,
       "rank": null,
       "dates": [],
       "firstRankedAt": "2025-10-06T03:29:11.459729Z"
+    },
+    {
+      "key": "the-tree-shanghai-jing-an-joy-city-north-block-shop-f45ab5bce8",
+      "categories": [
+        "Restaurant"
+      ],
+      "websiteUrl": null,
+      "coordinates": {
+        "lat": 31.243799,
+        "lng": 121.47228
+      },
+      "imageUrl": null,
+      "name": "THE TREE (Shanghai Jing'an Joy City North Block Shop)",
+      "city": "Shanghai",
+      "country": "China",
+      "cuisines": [],
+      "score": 2.9875,
+      "rank": null,
+      "dates": [
+        "2024-05-26"
+      ],
+      "firstRankedAt": "2026-11-26T21:57:21.165360Z"
     },
     {
       "key": "farm-to-barn-cafe-juicery-e2b44df58f",
@@ -10040,7 +10186,7 @@
         "Brunch",
         "Juices"
       ],
-      "score": 2.96,
+      "score": 2.78125,
       "rank": null,
       "dates": [
         "2026-04-19"
@@ -10064,7 +10210,7 @@
       "cuisines": [
         "Hot Dogs"
       ],
-      "score": 2.7399999999999998,
+      "score": 2.575,
       "rank": null,
       "dates": [
         "2025-07-03"
@@ -10088,7 +10234,7 @@
       "cuisines": [
         "Chinese"
       ],
-      "score": 2.52,
+      "score": 2.36875,
       "rank": null,
       "dates": [
         "2026-06-19"
@@ -10112,7 +10258,7 @@
       "cuisines": [
         "Chinese"
       ],
-      "score": 2.3,
+      "score": 2.1625,
       "rank": null,
       "dates": [
         "2024-10-12"
@@ -10136,7 +10282,7 @@
       "cuisines": [
         "Mediterranean"
       ],
-      "score": 2.08,
+      "score": 1.95625,
       "rank": null,
       "dates": [
         "2026-02-22"
@@ -10161,7 +10307,7 @@
         "Delicatessen",
         "Sandwiches"
       ],
-      "score": 2.08,
+      "score": 1.95625,
       "rank": null,
       "dates": [],
       "firstRankedAt": "2025-12-03T16:04:15.057282Z"
@@ -10184,7 +10330,7 @@
         "Korean",
         "Asian Fusion"
       ],
-      "score": 1.6400000000000001,
+      "score": 1.54375,
       "rank": null,
       "dates": [],
       "firstRankedAt": "2025-07-07T01:17:48.806965Z"
@@ -10208,7 +10354,7 @@
         "Fast Food",
         "American"
       ],
-      "score": 1.4200000000000002,
+      "score": 1.3375,
       "rank": null,
       "dates": [],
       "firstRankedAt": "2025-07-07T01:03:17.207073Z"
@@ -10230,7 +10376,7 @@
       "cuisines": [
         "Food Court"
       ],
-      "score": 1.2000000000000002,
+      "score": 1.13125,
       "rank": null,
       "dates": [],
       "firstRankedAt": "2025-12-29T15:24:51.871076Z"
@@ -10252,7 +10398,7 @@
       "cuisines": [
         "Food Court"
       ],
-      "score": 0.9800000000000004,
+      "score": 0.9250000000000003,
       "rank": null,
       "dates": [],
       "firstRankedAt": "2026-03-28T16:56:15.767854Z"
@@ -10274,7 +10420,7 @@
       "cuisines": [
         "Uyghur"
       ],
-      "score": 0.7599999999999998,
+      "score": 0.71875,
       "rank": null,
       "dates": [],
       "firstRankedAt": "2025-07-07T01:01:14.326281Z"
@@ -10298,7 +10444,7 @@
         "Japanese",
         "American"
       ],
-      "score": 0.54,
+      "score": 0.5125000000000002,
       "rank": null,
       "dates": [
         "2026-10-04"
@@ -10320,7 +10466,7 @@
       "city": "Arlington, VA",
       "country": "United States",
       "cuisines": [],
-      "score": 0.31999999999999984,
+      "score": 0.3062499999999999,
       "rank": null,
       "dates": [
         "2026-10-16"
@@ -12655,7 +12801,7 @@
         "Pub",
         "British"
       ],
-      "score": 6.446153846153846,
+      "score": 6.464285714285714,
       "rank": null,
       "dates": [
         "2026-07-29"
@@ -12679,7 +12825,7 @@
       "cuisines": [
         "Food Court"
       ],
-      "score": 6.1923076923076925,
+      "score": 6.228571428571429,
       "rank": null,
       "dates": [
         "2026-11-08"
@@ -12704,12 +12850,36 @@
         "British",
         "Pub"
       ],
-      "score": 5.938461538461539,
+      "score": 5.992857142857143,
       "rank": null,
       "dates": [
         "2026-07-27"
       ],
       "firstRankedAt": "2026-07-27T22:00:50.697319Z"
+    },
+    {
+      "key": "shaw-s-tavern-1db103c4a4",
+      "categories": [
+        "Bar"
+      ],
+      "websiteUrl": "http://www.shawstavern.com/",
+      "coordinates": {
+        "lat": 38.9151331,
+        "lng": -77.01966920000001
+      },
+      "imageUrl": null,
+      "name": "Shaw's Tavern",
+      "city": "Washington, DC",
+      "country": "United States",
+      "cuisines": [
+        "American"
+      ],
+      "score": 5.757142857142857,
+      "rank": null,
+      "dates": [
+        "2026-11-25"
+      ],
+      "firstRankedAt": "2026-11-26T12:59:17.798866Z"
     },
     {
       "key": "le-dive-west-village-9a1eda5ec9",
@@ -12729,7 +12899,7 @@
         "French",
         "Wine Bar"
       ],
-      "score": 5.684615384615385,
+      "score": 5.521428571428571,
       "rank": null,
       "dates": [
         "2026-08-07"
@@ -12754,7 +12924,7 @@
         "Nepalese",
         "Cocktail Bar"
       ],
-      "score": 5.430769230769231,
+      "score": 5.2857142857142865,
       "rank": null,
       "dates": [
         "2026-10-17"
@@ -12779,7 +12949,7 @@
         "Pub",
         "Bar Food"
       ],
-      "score": 5.176923076923077,
+      "score": 5.050000000000001,
       "rank": null,
       "dates": [
         "2026-10-16"
@@ -12803,7 +12973,7 @@
       "cuisines": [
         "American"
       ],
-      "score": 4.923076923076923,
+      "score": 4.814285714285715,
       "rank": null,
       "dates": [],
       "firstRankedAt": "2026-08-13T12:39:03.185136Z"
@@ -12825,7 +12995,7 @@
       "cuisines": [
         "Cafe"
       ],
-      "score": 4.6692307692307695,
+      "score": 4.578571428571429,
       "rank": null,
       "dates": [
         "2026-07-01"
@@ -12850,7 +13020,7 @@
         "British",
         "Pub"
       ],
-      "score": 4.415384615384616,
+      "score": 4.342857142857143,
       "rank": null,
       "dates": [
         "2026-07-27"
@@ -12875,7 +13045,7 @@
         "British",
         "Pub"
       ],
-      "score": 4.161538461538462,
+      "score": 4.107142857142858,
       "rank": null,
       "dates": [
         "2026-07-30"
@@ -12899,7 +13069,7 @@
       "cuisines": [
         "Bar"
       ],
-      "score": 3.907692307692308,
+      "score": 3.871428571428572,
       "rank": null,
       "dates": [
         "2026-10-07"
@@ -12923,7 +13093,7 @@
       "cuisines": [
         "Thai"
       ],
-      "score": 3.653846153846154,
+      "score": 3.635714285714286,
       "rank": null,
       "dates": [
         "2026-08-08"
@@ -14544,7 +14714,7 @@
       "country": "United States",
       "cuisines": [
         "Gelato",
-        "Ice Cream"
+        "Italian"
       ],
       "score": 4.018750000000001,
       "rank": null,
@@ -14720,9 +14890,10 @@
     },
     {
       "date": "2024-05-26",
-      "count": 1,
+      "count": 2,
       "restaurants": [
-        "fattoush-grill-bakery-18c3eccad5"
+        "fattoush-grill-bakery-18c3eccad5",
+        "the-tree-shanghai-jing-an-joy-city-north-block-shop-f45ab5bce8"
       ]
     },
     {
@@ -14730,6 +14901,13 @@
       "count": 1,
       "restaurants": [
         "little-tao-e7ff7fd684"
+      ]
+    },
+    {
+      "date": "2024-06-26",
+      "count": 1,
+      "restaurants": [
+        "craft-food-hall-eec328274c"
       ]
     },
     {
@@ -16915,6 +17093,23 @@
         "myka-greek-frozen-yogurt-dc97688a66",
         "tora-japanese-restaurant-03f4aa7d16",
         "wing-s-kitchen-9ec124a141"
+      ]
+    },
+    {
+      "date": "2026-11-24",
+      "count": 2,
+      "restaurants": [
+        "dok-khao-thai-alexandria-7dc7ec3dd8",
+        "whole-foods-market-b82e852204"
+      ]
+    },
+    {
+      "date": "2026-11-25",
+      "count": 3,
+      "restaurants": [
+        "eebee-s-corner-bar-fad03dc5c5",
+        "moon-rabbit-by-kevin-tien-13d9566513",
+        "shaw-s-tavern-1db103c4a4"
       ]
     }
   ]
