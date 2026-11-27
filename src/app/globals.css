@@ -1241,12 +1241,9 @@
 .music-totem-year {
   margin: 0.25rem 0 0.35rem;
   padding: 0.125rem 0.35rem;
-  border: 1px solid transparent;
-  border-radius: 4px;
   color: #303030;
   font: 700 12px / 1.2 ui-monospace, monospace;
 }
-.music-totem[aria-expanded="true"] .music-totem-year { border-color: #303030; }
 .music-balloon {
   --vinyl: #efbc62;
   --shade: #a55e26;

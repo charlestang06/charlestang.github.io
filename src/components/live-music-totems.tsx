@@ -54,7 +54,7 @@ export function LiveMusicTotems({ lineups }: { lineups: readonly Lineup[] }) {
           <ul
             key={selected.year}
             aria-label={`${selected.year} shows`}
-            className="grid gap-x-5 gap-y-2 border-t py-3 text-sm motion-safe:animate-[food-guide-in_240ms_ease-out] sm:grid-cols-2"
+            className="grid gap-x-5 gap-y-2 py-3 text-sm motion-safe:animate-[food-guide-in_240ms_ease-out] sm:grid-cols-2"
           >
             {selected.events.map((event) => {
               const [name, city] = event.split(" · ");
