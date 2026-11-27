@@ -1215,3 +1215,272 @@
   from { opacity: 0; transform: translateY(-5px); }
   to { opacity: 1; transform: translateY(0); }
 }
+
+.music-totem-tray {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.5rem;
+  margin-block: 0.65rem;
+  align-items: end;
+  padding: 0.3rem 0.25rem 0;
+  border-bottom: 1px solid #ddd;
+}
+.music-totem {
+  --lean: -7deg;
+  display: grid;
+  justify-items: center;
+  align-content: end;
+  min-width: 0;
+  min-height: 112px;
+  transform: rotate(var(--lean));
+  transform-origin: center bottom;
+  border-radius: 4px;
+}
+.music-totem:nth-child(2) { --lean: 4deg; }
+.music-totem:nth-child(3) { --lean: -3deg; }
+.music-totem-year {
+  margin: 0.25rem 0 0.35rem;
+  padding: 0.125rem 0.35rem;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  color: #303030;
+  font: 700 12px / 1.2 ui-monospace, monospace;
+}
+.music-totem[aria-expanded="true"] .music-totem-year { border-color: #303030; }
+.music-balloon {
+  --vinyl: #efbc62;
+  --shade: #a55e26;
+  --muzzle: #f8d799;
+  position: relative;
+  isolation: isolate;
+  display: block;
+  width: 72px;
+  height: 109px;
+}
+.music-balloon::before,
+.music-balloon::after {
+  content: "";
+  position: absolute;
+  z-index: 0;
+  top: 7px;
+  left: 9px;
+  width: 17px;
+  height: 20px;
+  transform: rotate(-30deg);
+  border: 1px solid #0004;
+  border-radius: 60% 50% 65% 40%;
+  background: radial-gradient(at 25% 25%, #fff9, transparent 42%), var(--vinyl);
+  box-shadow: inset -2px -2px 4px var(--shade);
+}
+.music-balloon::after { left: auto; right: 9px; transform: rotate(30deg); }
+.music-balloon-pole {
+  position: absolute;
+  left: calc(50% - 7px);
+  top: 37px;
+  bottom: 1px;
+  width: 14px;
+  border: 1px solid #0003;
+  border-radius: 40% 38% 32% 28% / 5% 4% 5% 5%;
+  background: linear-gradient(90deg, #0004, #fff8 28%, transparent 54%, #0006), var(--vinyl);
+  box-shadow: 2px 1px 3px #0002;
+}
+.music-balloon-head {
+  position: absolute;
+  top: 15px;
+  left: 12px;
+  width: 48px;
+  height: 42px;
+  border: 1px solid #0005;
+  border-radius: 46% 47% 43% 43%;
+  background: radial-gradient(ellipse at 26% 16%, #fffe, transparent 28%),
+    radial-gradient(ellipse at 36% 18%, var(--vinyl) 42%, var(--shade));
+  box-shadow: inset 0 -2px 0 #0002, 2px 3px 4px #0002;
+}
+.music-balloon-eyes {
+  position: absolute;
+  top: 42%;
+  left: 25%;
+  width: 50%;
+  height: 6px;
+  background: radial-gradient(circle at 10% 50%, #252525 0 2px, transparent 2.5px),
+    radial-gradient(circle at 90% 50%, #252525 0 2px, transparent 2.5px);
+}
+.music-balloon-muzzle {
+  position: absolute;
+  left: 19%;
+  bottom: 10%;
+  width: 62%;
+  height: 37%;
+  border-radius: 50%;
+  background: radial-gradient(ellipse at 50% 17%, #282828 0 3px, transparent 4px),
+    linear-gradient(#fff4, transparent), var(--muzzle);
+}
+.music-balloon[data-animal="giraffe"] .music-balloon-pole {
+  background: linear-gradient(90deg, #0004, #fff8 28%, transparent 54%, #0006),
+    radial-gradient(ellipse at 45% 27%, #a96536 0 3px, transparent 4px) 0 0 / 11px 17px,
+    var(--vinyl);
+}
+.music-balloon-crest {
+  position: absolute;
+  z-index: -1;
+}
+/* The ears sit behind the vinyl face, with printed eyes just below them. */
+.music-balloon:is([data-animal="giraffe"], [data-animal="zebra"]) {
+  height: 129px;
+}
+.music-balloon:is([data-animal="giraffe"], [data-animal="zebra"]) .music-balloon-pole {
+  top: 45px;
+  left: calc(50% - 6px);
+  width: 12px;
+}
+.music-balloon:is([data-animal="giraffe"], [data-animal="zebra"])::before,
+.music-balloon:is([data-animal="giraffe"], [data-animal="zebra"])::after {
+  z-index: -1;
+  top: 10px;
+  left: 7px;
+  width: var(--ear-width);
+  height: var(--ear-height);
+  border-color: var(--ear-rim);
+  border-radius: 80% 20% 50% 60%;
+  transform: rotate(var(--left-ear-angle));
+  transform-origin: right bottom;
+  background: radial-gradient(ellipse at 47% 48%, var(--ear-inner) 0 37%, transparent 60%),
+    linear-gradient(#fff8, transparent 52%), var(--vinyl);
+  box-shadow: inset 0 -2px 3px var(--shade);
+}
+.music-balloon:is([data-animal="giraffe"], [data-animal="zebra"])::after {
+  left: auto;
+  right: 7px;
+  border-radius: 20% 80% 60% 50%;
+  transform: rotate(var(--right-ear-angle));
+  transform-origin: left bottom;
+}
+.music-balloon:is([data-animal="giraffe"], [data-animal="zebra"]) .music-balloon-eyes {
+  top: 19%;
+  left: 13%;
+  width: 74%;
+  height: var(--eye-height);
+  background: none;
+}
+.music-balloon:is([data-animal="giraffe"], [data-animal="zebra"]) .music-balloon-eyes::before,
+.music-balloon:is([data-animal="giraffe"], [data-animal="zebra"]) .music-balloon-eyes::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: var(--eye-width);
+  height: 100%;
+  border: var(--eye-border);
+  border-radius: 50%;
+  transform: rotate(var(--eye-angle));
+  background: radial-gradient(circle 0.8px at 35% 30%, #fff 65%, transparent), #282425;
+}
+.music-balloon:is([data-animal="giraffe"], [data-animal="zebra"]) .music-balloon-eyes::after {
+  left: auto;
+  right: 0;
+  transform: rotate(calc(-1 * var(--eye-angle)));
+}
+.music-balloon:is([data-animal="giraffe"], [data-animal="zebra"]) .music-balloon-muzzle {
+  left: 30%;
+  bottom: 19%;
+  width: 40%;
+  height: 23%;
+  background: radial-gradient(ellipse 1px 2px at 9% 45%, var(--shade) 80%, transparent),
+    radial-gradient(ellipse 1px 2px at 91% 45%, var(--shade) 80%, transparent);
+}
+.music-balloon[data-animal="giraffe"] {
+  --vinyl: #ffe148;
+  --shade: #bfa023;
+  --ear-width: 26px;
+  --ear-height: 12px;
+  --ear-rim: #ba9522;
+  --ear-inner: #d3a82a;
+  --left-ear-angle: 28deg;
+  --right-ear-angle: -28deg;
+  --eye-width: 5px;
+  --eye-height: 8px;
+  --eye-angle: 32deg;
+  --eye-border: 1px solid #fff8d6;
+}
+.music-balloon[data-animal="giraffe"] .music-balloon-crest {
+  top: 1px;
+  left: 29px;
+  width: 15px;
+  height: 17px;
+  border-radius: 48% 48% 40% 40%;
+  background: radial-gradient(ellipse at 35% 20%, #ffd1dd, #df78a5 72%);
+}
+.music-balloon[data-animal="giraffe"] .music-balloon-head {
+  left: 20px;
+  width: 32px;
+  height: 45px;
+  border-radius: 48% 48% 48% 48% / 43% 43% 56% 56%;
+  background: radial-gradient(ellipse at 27% 39%, #fffc, transparent 26%),
+    linear-gradient(104deg, #cfaf22, var(--vinyl) 33% 62%, var(--shade));
+}
+.music-balloon[data-animal="zebra"] {
+  --vinyl: #faf9f5;
+  --shade: #8c8b90;
+  --stripes: repeating-linear-gradient(154deg, transparent 0 10px, #252525 11px 14px, transparent 15px 21px);
+  --ear-width: 27px;
+  --ear-height: 13px;
+  --ear-rim: #a3a0a5;
+  --ear-inner: #c4c1c5;
+  --left-ear-angle: 42deg;
+  --right-ear-angle: -26deg;
+  --eye-width: 3px;
+  --eye-height: 7px;
+  --eye-angle: 24deg;
+  --eye-border: 0;
+}
+.music-balloon[data-animal="zebra"] .music-balloon-crest {
+  top: 1px;
+  left: 33px;
+  width: 8px;
+  height: 19px;
+  transform: rotate(9deg);
+  border-radius: 55% 45% 20% 20%;
+  background: linear-gradient(110deg, #555, #222);
+}
+.music-balloon[data-animal="zebra"] .music-balloon-head {
+  left: 19px;
+  width: 34px;
+  height: 51px;
+  border-radius: 44% 44% 48% 48% / 36% 35% 57% 57%;
+  background: radial-gradient(ellipse at 29% 23%, #fff, transparent 38%),
+    linear-gradient(93deg, #b5b4b6, var(--vinyl) 32% 69%, #a7a5a8);
+}
+.music-balloon[data-animal="zebra"] .music-balloon-pole,
+.music-balloon[data-animal="tiger"] .music-balloon-pole {
+  background: linear-gradient(90deg, #0003, #fff8 27%, transparent 55%, #0004),
+    var(--stripes), var(--vinyl);
+}
+.music-balloon[data-animal="tiger"] {
+  --vinyl: #f99b40;
+  --shade: #a54c2d;
+  --muzzle: #fff1d6;
+  --stripes: repeating-linear-gradient(21deg, transparent 0 8px, #30211e 9px 12px, transparent 13px 18px);
+}
+.music-balloon[data-animal="tiger"]::before,
+.music-balloon[data-animal="tiger"]::after {
+  top: 8px;
+  border-radius: 50%;
+  background: radial-gradient(ellipse at 45% 48%, #fff0db 0 32%, transparent 38%), var(--vinyl);
+}
+.music-balloon[data-animal="tiger"] .music-balloon-head {
+  left: 9px;
+  width: 54px;
+  height: 43px;
+  background: radial-gradient(ellipse at 30% 13%, #fff8, transparent 29%),
+    linear-gradient(14deg, transparent 0 30%, #41241d 31% 36%, transparent 37% 84%, #41241d 85% 89%, transparent 90%),
+    radial-gradient(ellipse at 36% 18%, var(--vinyl) 46%, var(--shade));
+}
+.music-balloon[data-animal="tiger"] .music-balloon-muzzle {
+  background: radial-gradient(ellipse at 50% 22%, #422b27 0 3px, transparent 4px),
+    radial-gradient(ellipse at 29% 60%, var(--muzzle) 0 37%, transparent 41%),
+    radial-gradient(ellipse at 71% 60%, var(--muzzle) 0 37%, transparent 41%);
+}
+@media (prefers-reduced-motion: no-preference) {
+  .music-totem { transition: transform 180ms ease-out; }
+  .music-totem:hover,
+  .music-totem[aria-expanded="true"] { transform: rotate(0) translateY(-3px); }
+}

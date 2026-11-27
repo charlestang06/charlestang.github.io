@@ -5,6 +5,19 @@ import { createContext, useEffect, useState, type ReactNode } from "react";
 export const PersonalView = createContext(false);
 type Category = "Portfolio" | "Personal";
 
+const categoryKey = "portfolio-category";
+const personalHash = /^#(?:food|activity)$/;
+
+function savedCategory(): Category {
+  try {
+    return window.sessionStorage.getItem(categoryKey) === "Personal"
+      ? "Personal"
+      : "Portfolio";
+  } catch {
+    return "Portfolio";
+  }
+}
+
 export function PortfolioCategory({
   professional,
   personal,
@@ -16,8 +29,9 @@ export function PortfolioCategory({
 
   useEffect(() => {
     const sync = () => {
-      if (/^#(?:food|activity)$/.test(location.hash)) setCategory("Personal");
-      else if (!location.hash) setCategory("Portfolio");
+      setCategory(
+        personalHash.test(window.location.hash) ? "Personal" : savedCategory(),
+      );
     };
     const initial = setTimeout(sync, 0);
     window.addEventListener("hashchange", sync);
@@ -46,13 +60,18 @@ export function PortfolioCategory({
             aria-pressed={category === option}
             className="skill-group-label font-mono"
             onClick={() => {
-              if (/^#(?:food|activity)$/.test(location.hash))
-                history.replaceState(
+              if (personalHash.test(window.location.hash))
+                window.history.replaceState(
                   null,
                   "",
-                  location.pathname + location.search,
+                  window.location.pathname + window.location.search,
                 );
               setCategory(option);
+              try {
+                window.sessionStorage.setItem(categoryKey, option);
+              } catch {
+                // The tab remains usable when browser storage is unavailable.
+              }
             }}
           >
             {option}

@@ -1,7 +1,4 @@
-"use client";
-
-import { useState } from "react";
-import { ShowMoreButton } from "./show-more-button";
+import { LiveMusicTotems } from "./live-music-totems";
 import { Section } from "./ui/section";
 
 const liveMusic = [
@@ -39,11 +36,9 @@ const liveMusic = [
     ],
   },
   { year: "2024", events: ["Zedd · Boston"] },
-];
+] as const;
 
 export function Listening({ profileUrl }: { profileUrl?: string }) {
-  const [showHistory, setShowHistory] = useState(false);
-
   return (
     <Section className="print:hidden" aria-labelledby="listening-title">
       <div className="flex flex-wrap items-baseline justify-between gap-2">
@@ -62,46 +57,16 @@ export function Listening({ profileUrl }: { profileUrl?: string }) {
         )}
       </div>
       <div className="mt-2">
-        <h3 className="font-semibold">Live music</h3>
+        <h3 className="font-semibold">Upcoming</h3>
         <ul className="mt-2 divide-y border-y font-mono text-xs">
-          <li className="flex justify-between gap-3 py-2">
-            <span>EDC Las Vegas 2026</span>
-            <span className="text-muted-foreground">Upcoming</span>
-          </li>
-        </ul>
-        <div id="live-music-history">
-          {liveMusic.map(({ year, events }) => (
-            <div
-              key={year}
-              className="mt-4"
-              hidden={!showHistory && year !== liveMusic[0].year}
-            >
-              <h4 className="font-mono text-xs text-muted-foreground">
-                {year}
-              </h4>
-              <ul className="mt-1 divide-y border-y font-mono text-xs">
-                {events.map((event, index) => (
-                  <li
-                    key={event}
-                    className="py-2"
-                    hidden={!showHistory && index >= 3}
-                  >
-                    {event}
-                  </li>
-                ))}
-              </ul>
-            </div>
+          {["EDCLV 2027", "Ultra Miami 2027"].map((event) => (
+            <li key={event} className="py-2">
+              {event}
+            </li>
           ))}
-        </div>
-        <ShowMoreButton
-          expanded={showHistory}
-          onToggle={() => setShowHistory(!showHistory)}
-          controls="live-music-history"
-          label="live music events"
-          className="mt-2"
-          buttonClassName="min-h-11"
-        />
+        </ul>
       </div>
+      <LiveMusicTotems lineups={liveMusic} />
     </Section>
   );
 }
